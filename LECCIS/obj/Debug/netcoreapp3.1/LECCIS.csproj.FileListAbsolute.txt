@@ -1,0 +1,11 @@
+C:\Users\Matt Sommer\source\repos\LECCIS\bin\Debug\netcoreapp3.1\LECCIS.exe
+C:\Users\Matt Sommer\source\repos\LECCIS\bin\Debug\netcoreapp3.1\LECCIS.deps.json
+C:\Users\Matt Sommer\source\repos\LECCIS\bin\Debug\netcoreapp3.1\LECCIS.runtimeconfig.json
+C:\Users\Matt Sommer\source\repos\LECCIS\bin\Debug\netcoreapp3.1\LECCIS.runtimeconfig.dev.json
+C:\Users\Matt Sommer\source\repos\LECCIS\bin\Debug\netcoreapp3.1\LECCIS.dll
+C:\Users\Matt Sommer\source\repos\LECCIS\bin\Debug\netcoreapp3.1\LECCIS.pdb
+C:\Users\Matt Sommer\source\repos\LECCIS\obj\Debug\netcoreapp3.1\LECCIS.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\source\repos\LECCIS\obj\Debug\netcoreapp3.1\LECCIS.AssemblyInfoInputs.cache
+C:\Users\Matt Sommer\source\repos\LECCIS\obj\Debug\netcoreapp3.1\LECCIS.AssemblyInfo.cs
+C:\Users\Matt Sommer\source\repos\LECCIS\obj\Debug\netcoreapp3.1\LECCIS.dll
+C:\Users\Matt Sommer\source\repos\LECCIS\obj\Debug\netcoreapp3.1\LECCIS.pdb

@@ -1,0 +1,9 @@
+C:\Users\Matt Sommer\source\repos\LECCISSearch\bin\Debug\LECCISSearch.exe.config
+C:\Users\Matt Sommer\source\repos\LECCISSearch\bin\Debug\LECCISSearch.exe
+C:\Users\Matt Sommer\source\repos\LECCISSearch\bin\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\source\repos\LECCISSearch\obj\Debug\LECCISSearch.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\source\repos\LECCISSearch\obj\Debug\LECCISSearch.searchForm.resources
+C:\Users\Matt Sommer\source\repos\LECCISSearch\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\Matt Sommer\source\repos\LECCISSearch\obj\Debug\LECCISSearch.csproj.GenerateResource.cache
+C:\Users\Matt Sommer\source\repos\LECCISSearch\obj\Debug\LECCISSearch.exe
+C:\Users\Matt Sommer\source\repos\LECCISSearch\obj\Debug\LECCISSearch.pdb
