@@ -106,3 +106,9 @@ C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISAddPrope
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.exe
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.exe.config
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache

@@ -71,3 +71,16 @@ C:\Users\Remsk\Desktop\Sprint3-master\LECCISResults\obj\Debug\LECCISSearch.Prope
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISResults\obj\Debug\LECCISResults.csproj.GenerateResource.Cache
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISResults\obj\Debug\LECCISSearch.exe
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISResults\obj\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\bin\Debug\LECCISSearch.exe.config
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\bin\Debug\LECCISSearch.exe
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\bin\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\bin\Debug\System.Buffers.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\bin\Debug\System.Memory.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISResults.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISSearch.exe.config
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISResults.resultsForm.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISResults.csproj.GenerateResource.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISResults.csproj.CopyComplete
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISSearch.exe
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISSearch.pdb

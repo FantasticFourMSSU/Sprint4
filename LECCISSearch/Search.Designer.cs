@@ -41,7 +41,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(1515, 55);
+            this.searchButton.Location = new System.Drawing.Point(1312, 55);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(129, 37);
             this.searchButton.TabIndex = 1;
@@ -52,7 +52,7 @@
             // searchPropertyStreetTextBox
             // 
             this.searchPropertyStreetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(1035, 55);
+            this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(832, 55);
             this.searchPropertyStreetTextBox.Name = "searchPropertyStreetTextBox";
             this.searchPropertyStreetTextBox.Size = new System.Drawing.Size(438, 38);
             this.searchPropertyStreetTextBox.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             this.searchPropertyStreetLabel.AutoSize = true;
             this.searchPropertyStreetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(588, 55);
+            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(385, 55);
             this.searchPropertyStreetLabel.Name = "searchPropertyStreetLabel";
             this.searchPropertyStreetLabel.Size = new System.Drawing.Size(383, 37);
             this.searchPropertyStreetLabel.TabIndex = 4;
@@ -72,7 +72,7 @@
             // 
             this.searchPropertyLabel.AutoSize = true;
             this.searchPropertyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyLabel.Location = new System.Drawing.Point(659, 16);
+            this.searchPropertyLabel.Location = new System.Drawing.Point(380, 16);
             this.searchPropertyLabel.Name = "searchPropertyLabel";
             this.searchPropertyLabel.Size = new System.Drawing.Size(0, 37);
             this.searchPropertyLabel.TabIndex = 8;
@@ -82,8 +82,9 @@
             this.resultsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.resultsDataGridView.Location = new System.Drawing.Point(45, 121);
             this.resultsDataGridView.Name = "resultsDataGridView";
+            this.resultsDataGridView.RowHeadersWidth = 82;
             this.resultsDataGridView.RowTemplate.Height = 33;
-            this.resultsDataGridView.Size = new System.Drawing.Size(2142, 421);
+            this.resultsDataGridView.Size = new System.Drawing.Size(1756, 421);
             this.resultsDataGridView.TabIndex = 2;
             // 
             // groupBox1
@@ -95,7 +96,7 @@
             this.groupBox1.Controls.Add(this.searchButton);
             this.groupBox1.Location = new System.Drawing.Point(12, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(2232, 615);
+            this.groupBox1.Size = new System.Drawing.Size(1827, 615);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
@@ -105,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(2256, 667);
+            this.ClientSize = new System.Drawing.Size(1870, 667);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "searchForm";
