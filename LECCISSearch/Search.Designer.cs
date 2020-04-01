@@ -41,7 +41,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(1312, 55);
+            this.searchButton.Location = new System.Drawing.Point(1227, 55);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(129, 37);
             this.searchButton.TabIndex = 1;
@@ -52,7 +52,7 @@
             // searchPropertyStreetTextBox
             // 
             this.searchPropertyStreetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(832, 55);
+            this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(747, 55);
             this.searchPropertyStreetTextBox.Name = "searchPropertyStreetTextBox";
             this.searchPropertyStreetTextBox.Size = new System.Drawing.Size(438, 38);
             this.searchPropertyStreetTextBox.TabIndex = 0;
@@ -62,11 +62,11 @@
             // 
             this.searchPropertyStreetLabel.AutoSize = true;
             this.searchPropertyStreetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(385, 55);
+            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(470, 56);
             this.searchPropertyStreetLabel.Name = "searchPropertyStreetLabel";
-            this.searchPropertyStreetLabel.Size = new System.Drawing.Size(383, 37);
+            this.searchPropertyStreetLabel.Size = new System.Drawing.Size(247, 37);
             this.searchPropertyStreetLabel.TabIndex = 4;
-            this.searchPropertyStreetLabel.Text = "Search By Street Address";
+            this.searchPropertyStreetLabel.Text = "Search Property";
             // 
             // searchPropertyLabel
             // 
@@ -110,7 +110,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "searchForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";
             ((System.ComponentModel.ISupportInitialize)(this.resultsDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);

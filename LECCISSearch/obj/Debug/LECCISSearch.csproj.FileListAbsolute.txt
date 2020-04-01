@@ -107,5 +107,4 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\obj\Deb
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\obj\Debug\LECCISSearch.csproj.CopyComplete
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\obj\Debug\LECCISSearch.exe
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\obj\Debug\LECCISSearch.pdb
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\obj\Debug\LECCISSearch.csprojAssemblyReference.cache
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint4\LECCISSearch\bin\Debug\LECCISSearch.exe.config
