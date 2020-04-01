@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISSearch", "..\LECCISSearch\LECCISSearch.csproj", "{7F5AB07F-1503-427A-8102-DCB7F65A7DE8}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISAddProperty", "..\LECCISAddProperty\LECCISAddProperty.csproj", "{C8A49A07-6299-4545-BD71-BC38E120015C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISResults", "..\LECCISResults\LECCISResults.csproj", "{384FC026-2B1D-4340-9677-0B412DCCE302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISDashboard", "..\..\..\LECCISDashboard\LECCISDashboard\LECCISDashboard.csproj", "{276C95FB-B6A8-4FFF-9887-40A5DD062E3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{384FC026-2B1D-4340-9677-0B412DCCE302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{384FC026-2B1D-4340-9677-0B412DCCE302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{384FC026-2B1D-4340-9677-0B412DCCE302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276C95FB-B6A8-4FFF-9887-40A5DD062E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276C95FB-B6A8-4FFF-9887-40A5DD062E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276C95FB-B6A8-4FFF-9887-40A5DD062E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276C95FB-B6A8-4FFF-9887-40A5DD062E3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

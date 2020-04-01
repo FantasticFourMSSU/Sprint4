@@ -89,3 +89,4 @@ C:\Users\Remsk\Desktop\Sprint3-master\LECCISSearch\obj\Debug\LECCISSearch.csproj
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISSearch\obj\Debug\LECCISSearch.searchForm.resources
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISSearch\obj\Debug\LECCISSearch.Properties.Resources.resources
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISSearch\obj\Debug\LECCISSearch.csproj.GenerateResource.Cache
+C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint41\LECCISSearch\bin\Debug\LECCISSearch.exe.config

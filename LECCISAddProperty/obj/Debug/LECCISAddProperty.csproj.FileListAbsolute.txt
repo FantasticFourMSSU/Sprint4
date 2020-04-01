@@ -106,3 +106,4 @@ C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISAddPrope
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.exe
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
+C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint41\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
