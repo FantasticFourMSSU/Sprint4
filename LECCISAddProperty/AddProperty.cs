@@ -17,8 +17,43 @@ namespace LECCISAddProperty
         public addProperty()
         {
             InitializeComponent();
+            Fillcombo();
         }
 
+        void Fillcombo()
+        {
+            string constring = "Server= 209.106.201.103; Database=group6; uid=dbstudent14;pwd=spicymonster10";
+            string query = "SELECT * FROM Owner;";
+            MySqlConnection conDatabase = new MySqlConnection(constring);
+            MySqlCommand cmdDatabase = new MySqlCommand(query, conDatabase);
+            MySqlDataReader myReader;
+            try
+            {
+                conDatabase.Open();
+                myReader = cmdDatabase.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    string fName = myReader.GetString("firstName" );
+                    string lName = myReader.GetString("lastName");
+
+                    
+                     
+                
+                    comboBox1.Items.Add(fName + lName);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+            
+    }
         //private void Address_Enter(object sender, EventArgs e)
         //{
         //  Address.ForeColor = Color.Gray;
@@ -50,8 +85,8 @@ namespace LECCISAddProperty
             }
             return conn;
 
-
-        }
+        
+    }
 
         //private void addRecord_Click(object sender, EventArgs e)
         //{
@@ -76,7 +111,10 @@ namespace LECCISAddProperty
                 MySqlConnection conn = ConnectToDatabase();
 
 
-                string sql = "INSERT INTO Property(streetNumber, city, state, zip, acres, sqft) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + " ',' " + this.Sqft.Text + " ',' " + this.Acres.Text + " ')";
+               
+              // string sql =  "SELECT * FROM Owner LEFT JOIN OwnerWithProperty ON Owner.ownerId = OwnerWithProperty.ownerId LEFT JOIN Property ON Property.propertyId = OwnerWithProperty.propertyId;";
+               string sql = "INSERT INTO Property(streetNumber, city, state, zip, acres, sqft) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + " ',' " + this.Sqft.Text + " ',' " + this.Acres.Text + " ')";
+              //  sql = "INSERT INTO OwnerWithProperty(ownerId) VALUES (ownerId, LAST_INSERT_ID);";
                 using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                 {
                     using (MySqlDataReader rdr = cmd.ExecuteReader())
@@ -87,6 +125,7 @@ namespace LECCISAddProperty
                                     rdr.GetString(2)));
 
                         }
+                        comboBox1.DisplayMember = "firstName";
 
                     }
                 }
@@ -108,7 +147,12 @@ namespace LECCISAddProperty
         {
             MySqlConnection conn = ConnectToDatabase();
 
-            string sql = "SELECT firstName, lastName FROM Owner;";
+            //string sql = "SELECT * FROM Owner LEFT JOIN OwnerWithProperty ON Owner.ownerId = OwnerWithProperty.ownerId LEFT JOIN Property ON Property.propertyId = OwnerWithProperty.propertyId;";
+
+            
+            
+            
+           string sql = "SELECT firstName, lastName FROM Owner;";
 
             using (MySqlCommand cmd = new MySqlCommand(sql, conn))
             {

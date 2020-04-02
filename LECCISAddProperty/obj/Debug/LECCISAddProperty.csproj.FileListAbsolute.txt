@@ -1,127 +1,9 @@
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\bin\Debug\LECCISSearch.exe
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\obj\Debug\LECCISAddProperty.addPropertyForm.resources
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\obj\Debug\LECCISSearch.exe
-C:\Users\Matt Sommer\source\repos\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\LECCISSearch.exe
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\MySqlConnector.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Buffers.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Memory.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\MySqlConnector.xml
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Buffers.xml
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Memory.xml
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojResolveAssemblyReference.cache
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.LECCISSearch.exe.config
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.Cache
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISSearch.exe
-C:\Users\momotam001\Source\Repos\Sprint3\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\LECCISSearch.exe
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Buffers.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Memory.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Buffers.xml
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Memory.xml
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojResolveAssemblyReference.cache
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.Cache
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISSearch.exe
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\MySqlConnector.dll
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\bin\Debug\MySqlConnector.xml
-C:\Users\momotam001\Source\Repos\Sprint32\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.LECCISSearch.exe.config
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISSearch.exe
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\LECCISSearch.exe
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\MySqlConnector.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Buffers.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Memory.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\MySqlConnector.xml
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Buffers.xml
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Memory.xml
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojResolveAssemblyReference.cache
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.LECCISSearch.exe.config
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.Cache
-C:\Users\momotam001\Source\Repos\Sprint33\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\LECCISSearch.exe
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\MySqlConnector.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Buffers.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Memory.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\MySqlConnector.xml
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Buffers.xml
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Memory.xml
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojResolveAssemblyReference.cache
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.Cache
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.exe
-C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.exe.config
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.exe.config
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CoreCompileInputs.cache
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\LECCISSearch.exe
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\MySql.Data.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Renci.SshNet.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\netstandard.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.AppContext.dll
@@ -218,23 +100,27 @@ C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Xml.XmlD
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Xml.XmlSerializer.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Xml.XPath.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Xml.XPath.XDocument.dll
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Buffers.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Google.Protobuf.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Memory.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Memory.xml
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CopyComplete
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.exe
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Google.Protobuf.dll
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\MySql.Data.dll
-C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Renci.SshNet.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Buffers.dll
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Google.Protobuf.pdb
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Google.Protobuf.xml
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\MySql.Data.xml
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\Renci.SshNet.xml
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Memory.xml
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.exe.config
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CoreCompileInputs.cache
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CopyComplete
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.exe
+C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.pdb

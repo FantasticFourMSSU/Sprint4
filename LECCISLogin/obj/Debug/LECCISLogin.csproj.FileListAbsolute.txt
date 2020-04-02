@@ -1,0 +1,5 @@
+C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
+C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.Login.resources
+C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.Properties.Resources.resources
+C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.csproj.GenerateResource.cache
+C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.csproj.CoreCompileInputs.cache
