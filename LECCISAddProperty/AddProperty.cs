@@ -68,32 +68,32 @@ namespace LECCISAddProperty
             var SF = Sqft.Text;
             var AC = Acres.Text;
 
-            //if (PN == "" || EM == "")
-            //    MessageBox.Show("insert values");
-            //else
-            //{
-
-            MySqlConnection conn = ConnectToDatabase();
-
-
-            string sql = "INSERT INTO Property(streetNumber, city, state, zip, acres, sqft) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + " ',' " + this.Sqft.Text + " ',' " + this.Acres.Text + " ')";
-            using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+            if (CT == "" || ST == "" || ZP == "")
+                MessageBox.Show("insert values");
+            else
             {
-                using (MySqlDataReader rdr = cmd.ExecuteReader())
+
+                MySqlConnection conn = ConnectToDatabase();
+
+
+                string sql = "INSERT INTO Property(streetNumber, city, state, zip, acres, sqft) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + " ',' " + this.Sqft.Text + " ',' " + this.Acres.Text + " ')";
+                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                 {
-                    while (rdr.Read())
+                    using (MySqlDataReader rdr = cmd.ExecuteReader())
                     {
-                        MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
-                                rdr.GetString(2)));
+                        while (rdr.Read())
+                        {
+                            MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
+                                    rdr.GetString(2)));
+
+                        }
 
                     }
-
                 }
+
+                conn.Close();
             }
-
-            conn.Close();
         }
-
         private void Acres_TextChanged(object sender, EventArgs e)
         {
 
