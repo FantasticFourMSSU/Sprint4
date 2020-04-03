@@ -37,6 +37,13 @@ namespace LECCISSearch
                 MessageBox.Show("Search field cannot be empty.", "Invalid Input", MessageBoxButtons.OK);
                 searchPropertyStreetTextBox.Clear();
             }
+            if (searchPropertyStreetTextBox.Text.Contains(")") || 
+                searchPropertyStreetTextBox.Text.Contains("(") ||
+                searchPropertyStreetTextBox.Text.Contains(";"))
+            {
+                MessageBox.Show("Search field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
+                searchPropertyStreetTextBox.Clear();
+            }
             else
             {
              //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
