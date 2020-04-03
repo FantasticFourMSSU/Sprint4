@@ -130,3 +130,22 @@ F:\应用4\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resourc
 F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
 F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
 F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CoreCompileInputs.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\LECCISSearch.exe
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\MySql.Data.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\Renci.SshNet.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\MySql.Data.xml
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CopyComplete
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.exe
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.pdb

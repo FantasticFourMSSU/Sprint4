@@ -68,7 +68,7 @@ namespace LECCISAddOwner
                 MySqlConnection conn = ConnectToDatabase();
 
 
-                string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES (' " + this.firstName.Text + " ','" + this.lastName.Text + " ', '" + this.phoneNumber.Text + " ',' " + this.email.Text + " ' )";
+                string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES ('" + this.firstName.Text + "','" + this.lastName.Text + " ', '" + this.phoneNumber.Text + " ',' " + this.email.Text + " ' )";
                 using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                 {
                     using (MySqlDataReader rdr = cmd.ExecuteReader())
