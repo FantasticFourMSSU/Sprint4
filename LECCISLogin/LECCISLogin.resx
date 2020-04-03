@@ -233,52 +233,52 @@
   <data name="&gt;&gt;userNameLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="UsernameField.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="username.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 9pt</value>
   </data>
-  <data name="UsernameField.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="username.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 197</value>
   </data>
-  <data name="UsernameField.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="username.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 23</value>
   </data>
-  <data name="UsernameField.TabIndex" type="System.Int32, mscorlib">
+  <data name="username.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;UsernameField.Name" xml:space="preserve">
-    <value>UsernameField</value>
+  <data name="&gt;&gt;username.Name" xml:space="preserve">
+    <value>username</value>
   </data>
-  <data name="&gt;&gt;UsernameField.Type" xml:space="preserve">
+  <data name="&gt;&gt;username.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;UsernameField.Parent" xml:space="preserve">
+  <data name="&gt;&gt;username.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;UsernameField.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;username.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="PasswordField.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="password.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 9pt</value>
   </data>
-  <data name="PasswordField.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="password.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 266</value>
   </data>
-  <data name="PasswordField.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="password.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 23</value>
   </data>
-  <data name="PasswordField.TabIndex" type="System.Int32, mscorlib">
+  <data name="password.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;PasswordField.Name" xml:space="preserve">
-    <value>PasswordField</value>
+  <data name="&gt;&gt;password.Name" xml:space="preserve">
+    <value>password</value>
   </data>
-  <data name="&gt;&gt;PasswordField.Type" xml:space="preserve">
+  <data name="&gt;&gt;password.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PasswordField.Parent" xml:space="preserve">
+  <data name="&gt;&gt;password.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;PasswordField.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;password.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

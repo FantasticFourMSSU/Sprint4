@@ -3,3 +3,8 @@ C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.Login.res
 C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.Properties.Resources.resources
 C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.csproj.GenerateResource.cache
 C:\Users\savin\Source\Repos\Sprint45\LECCISLogin\obj\Debug\LECCISLogin.csproj.CoreCompileInputs.cache
+F:\应用4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
+F:\应用4\LECCISLogin\obj\Debug\LECCISLogin.Login.resources
+F:\应用4\LECCISLogin\obj\Debug\LECCISLogin.Properties.Resources.resources
+F:\应用4\LECCISLogin\obj\Debug\LECCISLogin.csproj.GenerateResource.cache
+F:\应用4\LECCISLogin\obj\Debug\LECCISLogin.csproj.CoreCompileInputs.cache

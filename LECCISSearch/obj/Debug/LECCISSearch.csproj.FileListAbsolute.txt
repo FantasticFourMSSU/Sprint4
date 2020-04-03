@@ -232,3 +232,8 @@ C:\Users\savin\Source\Repos\Sprint45\LECCISSearch\obj\Debug\LECCISSearch.csproj.
 C:\Users\savin\Source\Repos\Sprint45\LECCISSearch\obj\Debug\LECCISSearch.csproj.CopyComplete
 C:\Users\savin\Source\Repos\Sprint45\LECCISSearch\obj\Debug\LECCISSearch.exe
 C:\Users\savin\Source\Repos\Sprint45\LECCISSearch\obj\Debug\LECCISSearch.pdb
+F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.csprojAssemblyReference.cache
+F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.searchForm.resources
+F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.Properties.Resources.resources
+F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.csproj.GenerateResource.cache
+F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.csproj.CoreCompileInputs.cache

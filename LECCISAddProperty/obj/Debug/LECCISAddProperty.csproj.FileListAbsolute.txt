@@ -124,3 +124,9 @@ C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\en\LECCISSearch
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CopyComplete
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.exe
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
+F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
+F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
+F:\应用4\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
+F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
+F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
+F:\应用4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CoreCompileInputs.cache

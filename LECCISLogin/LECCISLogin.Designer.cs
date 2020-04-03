@@ -33,8 +33,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.processorLabel = new System.Windows.Forms.Label();
             this.userNameLabel = new System.Windows.Forms.Label();
-            this.UsernameField = new System.Windows.Forms.TextBox();
-            this.PasswordField = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -60,16 +60,16 @@
             resources.ApplyResources(this.userNameLabel, "userNameLabel");
             this.userNameLabel.Name = "userNameLabel";
             // 
-            // UsernameField
+            // username
             // 
-            resources.ApplyResources(this.UsernameField, "UsernameField");
-            this.UsernameField.Name = "UsernameField";
+            resources.ApplyResources(this.username, "username");
+            this.username.Name = "username";
             // 
-            // PasswordField
+            // password
             // 
-            this.PasswordField.CausesValidation = false;
-            resources.ApplyResources(this.PasswordField, "PasswordField");
-            this.PasswordField.Name = "PasswordField";
+            this.password.CausesValidation = false;
+            resources.ApplyResources(this.password, "password");
+            this.password.Name = "password";
             // 
             // Login
             // 
@@ -80,8 +80,8 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.processorLabel);
             this.Controls.Add(this.userNameLabel);
-            this.Controls.Add(this.UsernameField);
-            this.Controls.Add(this.PasswordField);
+            this.Controls.Add(this.username);
+            this.Controls.Add(this.password);
             this.Name = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -94,8 +94,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label processorLabel;
         private System.Windows.Forms.Label userNameLabel;
-        private System.Windows.Forms.TextBox UsernameField;
-        private System.Windows.Forms.TextBox PasswordField;
+        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox password;
     }
 }
 

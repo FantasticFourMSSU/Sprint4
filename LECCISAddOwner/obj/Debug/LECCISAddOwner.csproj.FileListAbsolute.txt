@@ -120,3 +120,8 @@ C:\Users\savin\Source\Repos\Sprint45\LECCISAddOwner\bin\Debug\MySql.Data.xml
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddOwner\bin\Debug\Renci.SshNet.xml
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddOwner\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\savin\Source\Repos\Sprint45\LECCISAddOwner\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\应用4\LECCISAddOwner\obj\Debug\LECCISAddOwner.csprojAssemblyReference.cache
+F:\应用4\LECCISAddOwner\obj\Debug\LECCISAddOwner.addOwnerForm.resources
+F:\应用4\LECCISAddOwner\obj\Debug\LECCISSearch.Properties.Resources.resources
+F:\应用4\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.GenerateResource.cache
+F:\应用4\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.CoreCompileInputs.cache

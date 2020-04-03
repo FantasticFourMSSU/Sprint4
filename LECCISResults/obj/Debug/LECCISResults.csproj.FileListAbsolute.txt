@@ -205,3 +205,15 @@ C:\Users\savin\Source\Repos\Sprint45\LECCISResults\obj\Debug\LECCISResults.cspro
 C:\Users\savin\Source\Repos\Sprint45\LECCISResults\obj\Debug\LECCISResults.csproj.CopyComplete
 C:\Users\savin\Source\Repos\Sprint45\LECCISResults\obj\Debug\LECCISSearch.exe
 C:\Users\savin\Source\Repos\Sprint45\LECCISResults\obj\Debug\LECCISSearch.pdb
+F:\应用4\LECCISResults\bin\Debug\LECCISSearch.exe.config
+F:\应用4\LECCISResults\bin\Debug\LECCISSearch.exe
+F:\应用4\LECCISResults\bin\Debug\LECCISSearch.pdb
+F:\应用4\LECCISResults\bin\Debug\System.Buffers.dll
+F:\应用4\LECCISResults\obj\Debug\LECCISResults.csprojAssemblyReference.cache
+F:\应用4\LECCISResults\obj\Debug\LECCISResults.resultsForm.resources
+F:\应用4\LECCISResults\obj\Debug\LECCISSearch.Properties.Resources.resources
+F:\应用4\LECCISResults\obj\Debug\LECCISResults.csproj.GenerateResource.cache
+F:\应用4\LECCISResults\obj\Debug\LECCISResults.csproj.CoreCompileInputs.cache
+F:\应用4\LECCISResults\obj\Debug\LECCISResults.csproj.CopyComplete
+F:\应用4\LECCISResults\obj\Debug\LECCISSearch.exe
+F:\应用4\LECCISResults\obj\Debug\LECCISSearch.pdb
