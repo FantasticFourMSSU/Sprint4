@@ -22,3 +22,16 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debu
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csproj.CopyComplete
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.exe
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.pdb
+F:\应用1\LECCISLogin\bin\Debug\LECCISLogin.exe.config
+F:\应用1\LECCISLogin\bin\Debug\LECCISLogin.exe
+F:\应用1\LECCISLogin\bin\Debug\LECCISLogin.pdb
+F:\应用1\LECCISLogin\bin\Debug\MySqlConnector.dll
+F:\应用1\LECCISLogin\bin\Debug\MySqlConnector.xml
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.Login.resources
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.Properties.Resources.resources
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.csproj.GenerateResource.cache
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.csproj.CoreCompileInputs.cache
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.csproj.CopyComplete
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.exe
+F:\应用1\LECCISLogin\obj\Debug\LECCISLogin.pdb
