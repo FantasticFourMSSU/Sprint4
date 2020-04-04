@@ -235,3 +235,4 @@ F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.csproj.GenerateResource.cache
 F:\应用4\LECCISSearch\obj\Debug\LECCISSearch.csproj.CoreCompileInputs.cache
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISSearch\obj\Debug\LECCISSearch.csprojAssemblyReference.cache

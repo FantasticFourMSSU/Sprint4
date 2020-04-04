@@ -126,10 +126,14 @@
     <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
   </data>
   <data name="Property.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 47</value>
+    <value>315, 64</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Property.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Property.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 32</value>
+    <value>289, 52</value>
   </data>
   <data name="Property.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -147,23 +151,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Property.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>11</value>
   </data>
   <data name="streetNumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="streetNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 143</value>
+    <value>346, 174</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="streetNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="streetNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
+    <value>464, 38</value>
   </data>
   <data name="streetNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;streetNumber.Name" xml:space="preserve">
     <value>streetNumber</value>
@@ -175,22 +178,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;streetNumber.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>10</value>
   </data>
   <data name="city.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="city.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 252</value>
+    <value>346, 267</value>
   </data>
   <data name="city.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="city.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
+    <value>464, 38</value>
   </data>
   <data name="city.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;city.Name" xml:space="preserve">
     <value>city</value>
@@ -202,49 +205,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;city.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="state.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="state.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 368</value>
-  </data>
-  <data name="state.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="state.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
-  </data>
-  <data name="state.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;state.Name" xml:space="preserve">
-    <value>state</value>
-  </data>
-  <data name="&gt;&gt;state.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;state.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;state.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>9</value>
   </data>
   <data name="zip.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="zip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 471</value>
+    <value>563, 356</value>
   </data>
   <data name="zip.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="zip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
+    <value>247, 38</value>
   </data>
   <data name="zip.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;zip.Name" xml:space="preserve">
     <value>zip</value>
@@ -256,61 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;zip.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="Sqft.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="Sqft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>929, 143</value>
-  </data>
-  <data name="Sqft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="Sqft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
-  </data>
-  <data name="Sqft.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;Sqft.Name" xml:space="preserve">
-    <value>Sqft</value>
-  </data>
-  <data name="&gt;&gt;Sqft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Sqft.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Sqft.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="Acres.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="Acres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>929, 252</value>
-  </data>
-  <data name="Acres.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="Acres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
-  </data>
-  <data name="Acres.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;Acres.Name" xml:space="preserve">
-    <value>Acres</value>
-  </data>
-  <data name="&gt;&gt;Acres.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Acres.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Acres.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -319,13 +241,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 143</value>
+    <value>109, 174</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 25</value>
+    <value>225, 37</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -343,7 +265,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -352,13 +274,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 252</value>
+    <value>263, 258</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 25</value>
+    <value>71, 37</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -376,7 +298,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -385,13 +307,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 368</value>
+    <value>243, 357</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 25</value>
+    <value>91, 37</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -409,7 +331,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -418,13 +340,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 471</value>
+    <value>489, 357</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 25</value>
+    <value>62, 37</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -442,88 +364,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 154</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 25</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Sqft</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 256</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 25</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Acres</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 610</value>
+    <value>340, 581</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 54</value>
+    <value>238, 59</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>6</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Add Record</value>
@@ -538,16 +394,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 549</value>
+    <value>346, 465</value>
+  </data>
+  <data name="comboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 24</value>
+    <value>464, 33</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
     <value>comboBox1</value>
@@ -559,7 +418,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -568,16 +427,22 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 549</value>
+    <value>223, 465</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 25</value>
+    <value>111, 37</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Assign Owner</value>
+    <value>Owner</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -589,16 +454,190 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="state.Items" xml:space="preserve">
+    <value>AK</value>
+  </data>
+  <data name="state.Items1" xml:space="preserve">
+    <value>AL</value>
+  </data>
+  <data name="state.Items2" xml:space="preserve">
+    <value>AR</value>
+  </data>
+  <data name="state.Items3" xml:space="preserve">
+    <value>AZ</value>
+  </data>
+  <data name="state.Items4" xml:space="preserve">
+    <value>CA</value>
+  </data>
+  <data name="state.Items5" xml:space="preserve">
+    <value>CO</value>
+  </data>
+  <data name="state.Items6" xml:space="preserve">
+    <value>CT</value>
+  </data>
+  <data name="state.Items7" xml:space="preserve">
+    <value>DC</value>
+  </data>
+  <data name="state.Items8" xml:space="preserve">
+    <value>DE</value>
+  </data>
+  <data name="state.Items9" xml:space="preserve">
+    <value>FL</value>
+  </data>
+  <data name="state.Items10" xml:space="preserve">
+    <value>GA</value>
+  </data>
+  <data name="state.Items11" xml:space="preserve">
+    <value>HI</value>
+  </data>
+  <data name="state.Items12" xml:space="preserve">
+    <value>IA</value>
+  </data>
+  <data name="state.Items13" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="state.Items14" xml:space="preserve">
+    <value>IL</value>
+  </data>
+  <data name="state.Items15" xml:space="preserve">
+    <value>IN</value>
+  </data>
+  <data name="state.Items16" xml:space="preserve">
+    <value>KS</value>
+  </data>
+  <data name="state.Items17" xml:space="preserve">
+    <value>KY</value>
+  </data>
+  <data name="state.Items18" xml:space="preserve">
+    <value>LA</value>
+  </data>
+  <data name="state.Items19" xml:space="preserve">
+    <value>MA</value>
+  </data>
+  <data name="state.Items20" xml:space="preserve">
+    <value>MD</value>
+  </data>
+  <data name="state.Items21" xml:space="preserve">
+    <value>ME</value>
+  </data>
+  <data name="state.Items22" xml:space="preserve">
+    <value>MI</value>
+  </data>
+  <data name="state.Items23" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="state.Items24" xml:space="preserve">
+    <value>MO</value>
+  </data>
+  <data name="state.Items25" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="state.Items26" xml:space="preserve">
+    <value>MT</value>
+  </data>
+  <data name="state.Items27" xml:space="preserve">
+    <value>NC</value>
+  </data>
+  <data name="state.Items28" xml:space="preserve">
+    <value>ND</value>
+  </data>
+  <data name="state.Items29" xml:space="preserve">
+    <value>NE</value>
+  </data>
+  <data name="state.Items30" xml:space="preserve">
+    <value>NH</value>
+  </data>
+  <data name="state.Items31" xml:space="preserve">
+    <value>NJ</value>
+  </data>
+  <data name="state.Items32" xml:space="preserve">
+    <value>NM</value>
+  </data>
+  <data name="state.Items33" xml:space="preserve">
+    <value>NV</value>
+  </data>
+  <data name="state.Items34" xml:space="preserve">
+    <value>NY</value>
+  </data>
+  <data name="state.Items35" xml:space="preserve">
+    <value>OH</value>
+  </data>
+  <data name="state.Items36" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="state.Items37" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="state.Items38" xml:space="preserve">
+    <value>PA</value>
+  </data>
+  <data name="state.Items39" xml:space="preserve">
+    <value>RI</value>
+  </data>
+  <data name="state.Items40" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="state.Items41" xml:space="preserve">
+    <value>SD</value>
+  </data>
+  <data name="state.Items42" xml:space="preserve">
+    <value>TN</value>
+  </data>
+  <data name="state.Items43" xml:space="preserve">
+    <value>TX</value>
+  </data>
+  <data name="state.Items44" xml:space="preserve">
+    <value>UT</value>
+  </data>
+  <data name="state.Items45" xml:space="preserve">
+    <value>VA</value>
+  </data>
+  <data name="state.Items46" xml:space="preserve">
+    <value>VT</value>
+  </data>
+  <data name="state.Items47" xml:space="preserve">
+    <value>WA</value>
+  </data>
+  <data name="state.Items48" xml:space="preserve">
+    <value>WI</value>
+  </data>
+  <data name="state.Items49" xml:space="preserve">
+    <value>WV</value>
+  </data>
+  <data name="state.Items50" xml:space="preserve">
+    <value>WY</value>
+  </data>
+  <data name="state.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 356</value>
+  </data>
+  <data name="state.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 33</value>
+  </data>
+  <data name="state.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;state.Name" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="&gt;&gt;state.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;state.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;state.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>12, 25</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1427, 841</value>
+    <value>918, 709</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2392,7 +2431,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Law Enforcement Community Check Information System (LECCIS)</value>

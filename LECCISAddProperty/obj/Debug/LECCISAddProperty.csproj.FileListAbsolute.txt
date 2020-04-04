@@ -140,7 +140,6 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bi
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\MySql.Data.xml
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources

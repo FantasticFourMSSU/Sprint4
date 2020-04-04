@@ -13,6 +13,10 @@ namespace LECCISAddProperty
 {
     public partial class addProperty : Form
     {
+        MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent14;pwd=spicymonster10;");
+
+        public int ownerID;
+        public int propID;
 
         public addProperty()
         {
@@ -20,102 +24,50 @@ namespace LECCISAddProperty
             Fillcombo();
         }
 
-        void Fillcombo()
+        public void Fillcombo()
         {
-            string constring = "Server= 209.106.201.103; Database=group6; uid=dbstudent14;pwd=spicymonster10";
+            myconnection.Open();
+
             string query = "SELECT * FROM Owner;";
-            MySqlConnection conDatabase = new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand(query, conDatabase);
+            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
             MySqlDataReader myReader;
             try
             {
-                conDatabase.Open();
                 myReader = cmdDatabase.ExecuteReader();
 
                 while (myReader.Read())
                 {
-                    string fName = myReader.GetString("firstName" );
+                    string fName = myReader.GetString("firstName");
                     string lName = myReader.GetString("lastName");
 
-                    
-                     
-                
-                    comboBox1.Items.Add(fName + lName);
-
+                    comboBox1.Items.Add(fName + " " + lName);
                 }
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error fetching data","Data Retrieval Error",MessageBoxButtons.RetryCancel);
             }
-
-
-
-            
-    }
-        //private void Address_Enter(object sender, EventArgs e)
-        //{
-        //  Address.ForeColor = Color.Gray;
-        //}
-
-        //private void Address_Leave(object sender, EventArgs e)
-        //{
-        //  Address.ForeColor = Color.Black;
-        //}
-
-        private void Address_TextChanged(object sender, EventArgs e)
-        {
-
+            myconnection.Close();
         }
-
-        private void StreetNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private MySqlConnection ConnectToDatabase()
-        {
-            string myconnection = "Server= 209.106.201.103; Database=group6; uid=dbstudent14;pwd=spicymonster10";
-            MySqlConnection conn = new MySqlConnection(myconnection);
-            conn.Open();
-            if (conn.State == System.Data.ConnectionState.Open)
-            {
-                MessageBox.Show("connection opened");
-
-            }
-            return conn;
-
-        
-    }
-
-        //private void addRecord_Click(object sender, EventArgs e)
-        //{
-
-
-        //    }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            myconnection.Open();
+
             var SN = streetNumber.Text;
             var CT = city.Text;
             var ST = state.Text;
             var ZP = zip.Text;
-            var SF = Sqft.Text;
-            var AC = Acres.Text;
 
-            if (CT == "" || ST == "" || ZP == "")
-                MessageBox.Show("insert values");
+            if (SN == "" || CT == "" || ST == "" || ZP == "")
+                MessageBox.Show("Please insert values for each field","Invalid Input",MessageBoxButtons.OK);
             else
             {
+                string sql = "INSERT INTO Property(streetNumber, city, state, zip) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + "')";
+                string sql2 = "SELECT MAX(propertyId) AS LastID from Property;";
+                string sql3 = "INSERT INTO OwnerWithProperty VALUES(" + ownerID + "," + propID + ");";
 
-                MySqlConnection conn = ConnectToDatabase();
-
-
-               
-              // string sql =  "SELECT * FROM Owner LEFT JOIN OwnerWithProperty ON Owner.ownerId = OwnerWithProperty.ownerId LEFT JOIN Property ON Property.propertyId = OwnerWithProperty.propertyId;";
-               string sql = "INSERT INTO Property(streetNumber, city, state, zip, acres, sqft) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + " ',' " + this.Sqft.Text + " ',' " + this.Acres.Text + " ')";
-              //  sql = "INSERT INTO OwnerWithProperty(ownerId) VALUES (ownerId, LAST_INSERT_ID);";
-                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                using (MySqlCommand cmd = new MySqlCommand(sql, myconnection))
                 {
                     using (MySqlDataReader rdr = cmd.ExecuteReader())
                     {
@@ -123,51 +75,63 @@ namespace LECCISAddProperty
                         {
                             MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
                                     rdr.GetString(2)));
-
                         }
-                        comboBox1.DisplayMember = "firstName";
-
                     }
                 }
+                myconnection.Close();
+                myconnection.Open();
+                MySqlCommand cmdDatabase = new MySqlCommand(sql2, myconnection);
+                MySqlDataReader myReader;
+                try
+                {
+                    myReader = cmdDatabase.ExecuteReader();
 
-                conn.Close();
+                    while (myReader.Read())
+                    {
+                        int PID = Convert.ToInt32(myReader.GetString("LastID"));
+
+                        propID = PID;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching data", "Data Retrieval Error", MessageBoxButtons.RetryCancel);
+                }
+                myconnection.Close();
+                myconnection.Open();
+                using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
+                {
+                    using (MySqlDataReader rdr2 = cmd2.ExecuteReader())
+                    {
+                        while (rdr2.Read())
+                        {
+                            MessageBox.Show(string.Format("{0} {1} {2}", rdr2.GetInt32(0), rdr2.GetString(1),
+                                    rdr2.GetString(2)));
+
+                        }
+                    }
+                }
             }
-        }
-        private void Acres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
+            myconnection.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MySqlConnection conn = ConnectToDatabase();
+            myconnection.Open();
 
-            //string sql = "SELECT * FROM Owner LEFT JOIN OwnerWithProperty ON Owner.ownerId = OwnerWithProperty.ownerId LEFT JOIN Property ON Property.propertyId = OwnerWithProperty.propertyId;";
-
-            
-            
-            
-           string sql = "SELECT firstName, lastName FROM Owner;";
-
-            using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + comboBox1.Text + "';";
+            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
+            using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
             {
-                using (MySqlDataReader rdr = cmd.ExecuteReader())
+                while (myReader.Read())
                 {
-                    while (rdr.Read())
-                    {
-                        MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
-                                rdr.GetString(2)));
+                    int OID = Convert.ToInt32(myReader.GetString("ownerId"));
 
-                    }
-
+                    ownerID = OID;
                 }
             }
-        }
+            myconnection.Close();
 
+        }
     }
 }
