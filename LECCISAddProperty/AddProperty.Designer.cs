@@ -53,6 +53,7 @@
             resources.ApplyResources(this.streetNumber, "streetNumber");
             this.streetNumber.ForeColor = System.Drawing.Color.Gray;
             this.streetNumber.Name = "streetNumber";
+            this.streetNumber.TextChanged += new System.EventHandler(this.streetNumber_TextChanged);
             // 
             // city
             // 

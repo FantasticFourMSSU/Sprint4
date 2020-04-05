@@ -148,3 +148,29 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\ob
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CopyComplete
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.exe
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.en.resources
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.GenerateResource.cache
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CoreCompileInputs.cache
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\LECCISSearch.exe.config
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\LECCISSearch.exe
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\LECCISSearch.pdb
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\Google.Protobuf.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\MySql.Data.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\Renci.SshNet.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\System.Memory.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\System.Buffers.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\Google.Protobuf.pdb
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\Google.Protobuf.xml
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\MySql.Data.xml
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\bin\Debug\Renci.SshNet.xml
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISAddProperty.csproj.CopyComplete
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISSearch.exe
+C:\Users\savin\Source\Repos\Sprint47\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
