@@ -74,7 +74,7 @@ namespace LECCISAddProperty
 
 
                 string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
-                MessageBox.Show(sql3);
+               
 
                 
 
