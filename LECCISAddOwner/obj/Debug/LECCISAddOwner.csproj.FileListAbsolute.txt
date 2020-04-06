@@ -129,8 +129,6 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\D
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\LECCISSearch.pdb
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\MySql.Data.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\Renci.SshNet.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\MySql.Data.xml
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.CopyComplete
@@ -187,3 +185,6 @@ C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddOwner\obj\Debug\LEC
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.GenerateResource.Cache
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddOwner\obj\Debug\LECCISSearch.exe
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddOwner\obj\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\System.Buffers.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\System.Memory.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISSearch.exe.config
