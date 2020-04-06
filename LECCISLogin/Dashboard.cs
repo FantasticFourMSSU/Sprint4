@@ -22,7 +22,7 @@ namespace LECCISLogin
         private void searchButton_Click(object sender, EventArgs e)
         {
 
-
+            LECCISResults.resultsForm results = new LECCISResults.resultsForm();
         }
 
         private void addOwnerButton_Click(object sender, EventArgs e)
