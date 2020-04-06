@@ -100,6 +100,7 @@
             this.addOwnerButton.TabIndex = 2;
             this.addOwnerButton.Text = "Add Owner";
             this.addOwnerButton.UseVisualStyleBackColor = false;
+            this.addOwnerButton.Click += new System.EventHandler(this.addOwnerButton_Click);
             // 
             // toolStrip1
             // 

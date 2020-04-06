@@ -41,9 +41,10 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(1227, 55);
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.Location = new System.Drawing.Point(1227, 52);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(129, 37);
+            this.searchButton.Size = new System.Drawing.Size(129, 50);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -51,10 +52,10 @@
             // 
             // searchPropertyStreetTextBox
             // 
-            this.searchPropertyStreetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchPropertyStreetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(747, 55);
             this.searchPropertyStreetTextBox.Name = "searchPropertyStreetTextBox";
-            this.searchPropertyStreetTextBox.Size = new System.Drawing.Size(438, 38);
+            this.searchPropertyStreetTextBox.Size = new System.Drawing.Size(438, 44);
             this.searchPropertyStreetTextBox.TabIndex = 0;
             this.searchPropertyStreetTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchBox_keyDown);
             // 
@@ -62,11 +63,11 @@
             // 
             this.searchPropertyStreetLabel.AutoSize = true;
             this.searchPropertyStreetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(470, 56);
+            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(339, 55);
             this.searchPropertyStreetLabel.Name = "searchPropertyStreetLabel";
-            this.searchPropertyStreetLabel.Size = new System.Drawing.Size(247, 37);
+            this.searchPropertyStreetLabel.Size = new System.Drawing.Size(380, 37);
             this.searchPropertyStreetLabel.TabIndex = 4;
-            this.searchPropertyStreetLabel.Text = "Search Property";
+            this.searchPropertyStreetLabel.Text = "Search Name or Property";
             // 
             // searchPropertyLabel
             // 

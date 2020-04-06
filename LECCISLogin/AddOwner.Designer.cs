@@ -43,6 +43,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.addPropertyGroupBox = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.addPropertyGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,8 +51,8 @@
             // 
             this.firstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstName.ForeColor = System.Drawing.Color.Gray;
-            this.firstName.Location = new System.Drawing.Point(328, 91);
-            this.firstName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.firstName.Location = new System.Drawing.Point(364, 150);
+            this.firstName.Margin = new System.Windows.Forms.Padding(6);
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(346, 38);
             this.firstName.TabIndex = 0;
@@ -60,8 +61,8 @@
             // 
             this.lastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastName.ForeColor = System.Drawing.Color.Gray;
-            this.lastName.Location = new System.Drawing.Point(328, 228);
-            this.lastName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lastName.Location = new System.Drawing.Point(364, 287);
+            this.lastName.Margin = new System.Windows.Forms.Padding(6);
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(346, 38);
             this.lastName.TabIndex = 1;
@@ -70,8 +71,8 @@
             // 
             this.phoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneNumber.ForeColor = System.Drawing.Color.Gray;
-            this.phoneNumber.Location = new System.Drawing.Point(328, 366);
-            this.phoneNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.phoneNumber.Location = new System.Drawing.Point(364, 425);
+            this.phoneNumber.Margin = new System.Windows.Forms.Padding(6);
             this.phoneNumber.Name = "phoneNumber";
             this.phoneNumber.Size = new System.Drawing.Size(346, 38);
             this.phoneNumber.TabIndex = 2;
@@ -80,8 +81,8 @@
             // 
             this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email.ForeColor = System.Drawing.Color.Gray;
-            this.email.Location = new System.Drawing.Point(328, 501);
-            this.email.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.email.Location = new System.Drawing.Point(364, 560);
+            this.email.Margin = new System.Windows.Forms.Padding(6);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(346, 38);
             this.email.TabIndex = 3;
@@ -89,8 +90,8 @@
             // button
             // 
             this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button.Location = new System.Drawing.Point(301, 641);
-            this.button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button.Location = new System.Drawing.Point(301, 700);
+            this.button.Margin = new System.Windows.Forms.Padding(6);
             this.button.Name = "button";
             this.button.Size = new System.Drawing.Size(288, 85);
             this.button.TabIndex = 4;
@@ -134,7 +135,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(68, 97);
+            this.label5.Location = new System.Drawing.Point(150, 151);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(175, 37);
@@ -145,7 +146,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(68, 228);
+            this.label6.Location = new System.Drawing.Point(152, 287);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(173, 37);
@@ -156,7 +157,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(68, 366);
+            this.label7.Location = new System.Drawing.Point(92, 425);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(233, 37);
@@ -167,7 +168,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(76, 501);
+            this.label8.Location = new System.Drawing.Point(228, 560);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 37);
@@ -176,6 +177,7 @@
             // 
             // addPropertyGroupBox
             // 
+            this.addPropertyGroupBox.Controls.Add(this.label9);
             this.addPropertyGroupBox.Controls.Add(this.label8);
             this.addPropertyGroupBox.Controls.Add(this.label7);
             this.addPropertyGroupBox.Controls.Add(this.label6);
@@ -191,6 +193,16 @@
             this.addPropertyGroupBox.TabIndex = 9;
             this.addPropertyGroupBox.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(308, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(274, 55);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Add Owner";
+            // 
             // addOwnerForm
             // 
             this.AcceptButton = this.button;
@@ -204,7 +216,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addOwnerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";
@@ -230,6 +242,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox addPropertyGroupBox;
+        private System.Windows.Forms.Label label9;
     }
 }
 
