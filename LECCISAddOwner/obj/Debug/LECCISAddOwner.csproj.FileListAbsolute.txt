@@ -187,3 +187,25 @@ C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddOwner\obj\Debug\LEC
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\System.Buffers.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\bin\Debug\System.Memory.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISSearch.exe.config
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\LECCISSearch.exe.config
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\LECCISSearch.exe
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\LECCISSearch.pdb
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\Google.Protobuf.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\MySql.Data.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\Renci.SshNet.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\System.Buffers.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\System.Memory.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\Google.Protobuf.pdb
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\Google.Protobuf.xml
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\MySql.Data.xml
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\bin\Debug\Renci.SshNet.xml
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISSearch.exe.config
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISAddOwner.addOwnerForm.resources
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISSearch.Properties.Resources.resources
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.GenerateResource.cache
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.CoreCompileInputs.cache
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.CopyComplete
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISSearch.exe
+C:\Users\savin\Source\Repos\Sprint49\LECCISAddOwner\obj\Debug\LECCISSearch.pdb

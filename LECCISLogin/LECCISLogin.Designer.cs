@@ -51,6 +51,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.Name = "btnExit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -69,6 +70,7 @@
             // 
             resources.ApplyResources(this.username, "username");
             this.username.Name = "username";
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // password
             // 

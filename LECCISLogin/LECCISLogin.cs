@@ -15,8 +15,8 @@ namespace LECCISLogin
 
     {
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent14;pwd=spicymonster10;");
-        MySqlCommand cmd;
-        MySqlDataReader dr;
+       // MySqlCommand cmd;
+       // MySqlDataReader dr;
 
 
 
@@ -25,37 +25,48 @@ namespace LECCISLogin
             InitializeComponent();
             myconnection.Open();
         }
-       
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+
             string user = username.Text;
             string pass = password.Text;
-            cmd = new MySqlCommand();
-            cmd.Connection = myconnection;
-            cmd.CommandText = "SELECT * FROM Users where Username='" + username.Text + "' AND Password = '" + password.Text + "'";
-            dr = cmd.ExecuteReader();
-            if (dr.Read())
-            {
-      
-                Dashboard main = new Dashboard();
-                this.Hide();
-                main.ShowDialog();
-                this.Close();
-                
-
-            }
+            if (user == "" || pass == "")
+                MessageBox.Show("Please Insert values for each field", "Invalid Input", MessageBoxButtons.OK);
             else
             {
-                MessageBox.Show("Invalid username or password","Invalid Login", MessageBoxButtons.RetryCancel);
-            }
-            myconnection.Close();
-            
-        }
+                MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent14;pwd=spicymonster10;");
+                string query = "SELECT * FROM Users where Username='" + username.Text + "' AND Password = '" + password.Text + "'";
+                // dr = cmd.ExecuteReader();
+                MySqlDataAdapter sda = new MySqlDataAdapter(query, myconnection);
+                DataTable dtb1 = new DataTable();
+                sda.Fill(dtb1);
+                if (dtb1.Rows.Count == 1)
+                {
 
+                    Dashboard main = new Dashboard();
+                    this.Hide();
+                    main.ShowDialog();
+                    this.Close();
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password", "Invalid Login", MessageBoxButtons.RetryCancel);
+                }
+                myconnection.Close();
+
+            }
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
