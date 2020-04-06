@@ -45,6 +45,10 @@
       <HintPath>..\LECCIS\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MySqlConnector, Version=0.63.1.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\LECCIS\packages\MySqlConnector.0.63.1\lib\net45\MySqlConnector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\LECCIS\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
       <Private>True</Private>
