@@ -8,13 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LECCISResults
+namespace LECCISLogin
 {
-  public partial class resultsForm : Form
-  {
-    public resultsForm()
+    public partial class LoadingForm : Form
     {
-      InitializeComponent();
+        public LoadingForm()
+        {
+            InitializeComponent();
+
+        }
+
+
     }
-  }
 }

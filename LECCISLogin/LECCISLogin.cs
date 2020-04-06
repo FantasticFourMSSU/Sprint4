@@ -35,7 +35,6 @@ namespace LECCISLogin
                 MessageBox.Show("Please Insert values for each field", "Invalid Input", MessageBoxButtons.OK);
             else
             {
-                MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent14;pwd=spicymonster10;");
                 string query = "SELECT * FROM Users where Username='" + username.Text + "' AND Password = '" + password.Text + "'";
                 // dr = cmd.ExecuteReader();
                 MySqlDataAdapter sda = new MySqlDataAdapter(query, myconnection);
