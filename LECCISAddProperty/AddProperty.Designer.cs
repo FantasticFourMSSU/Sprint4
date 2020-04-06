@@ -202,6 +202,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox state;
   
-    }
+  }
 }
 

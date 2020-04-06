@@ -268,3 +268,5 @@ C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISResults\obj\Debug\LECC
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISResults\obj\Debug\LECCISResults.csproj.GenerateResource.Cache
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISResults\obj\Debug\LECCISSearch.exe
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISResults\obj\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\bin\Debug\System.Memory.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISResults\obj\Debug\LECCISSearch.exe.config

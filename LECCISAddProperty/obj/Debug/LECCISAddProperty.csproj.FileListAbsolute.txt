@@ -136,8 +136,6 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bi
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\en\LECCISSearch.resources.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\MySql.Data.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\Renci.SshNet.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\MySql.Data.xml
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.addProperty.resources
@@ -204,3 +202,7 @@ C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddProperty\obj\Debug\
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddProperty\obj\Debug\en\LECCISSearch.resources.dll
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.exe
 C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISAddProperty\obj\Debug\LECCISSearch.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Buffers.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\bin\Debug\System.Memory.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISAddProperty.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddProperty\obj\Debug\LECCISSearch.exe.config

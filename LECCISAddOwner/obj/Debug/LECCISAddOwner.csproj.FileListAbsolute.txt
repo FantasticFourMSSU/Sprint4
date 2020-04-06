@@ -90,7 +90,6 @@ C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddOwner\bin\Debug\System.Memory.xml
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddOwner\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddOwner\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Remsk\Desktop\Sprint3-master\LECCISAddOwner\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISAddOwner.csprojAssemblyReference.cache
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISAddOwner.addOwnerForm.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISSearch.Properties.Resources.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISAddOwner\obj\Debug\LECCISAddOwner.csproj.GenerateResource.cache
