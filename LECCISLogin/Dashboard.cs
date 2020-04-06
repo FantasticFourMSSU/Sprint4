@@ -28,7 +28,6 @@ namespace LECCISLogin
         private void addOwnerButton_Click(object sender, EventArgs e)
         {
 
-
         }
 
         private void addPropertyButton_Click(object sender, EventArgs e)
