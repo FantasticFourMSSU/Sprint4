@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISResults", "..\LECCISR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISLogin", "..\LECCISLogin\LECCISLogin.csproj", "{3EB7B682-5329-4F94-931B-21C27289470C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LECCISDashboard", "..\..\Sprint4\LECCISDashboard\LECCISDashboard.csproj", "{E95BFCE7-E6C0-4043-9A19-F7726CADF34B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3EB7B682-5329-4F94-931B-21C27289470C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EB7B682-5329-4F94-931B-21C27289470C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EB7B682-5329-4F94-931B-21C27289470C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E95BFCE7-E6C0-4043-9A19-F7726CADF34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E95BFCE7-E6C0-4043-9A19-F7726CADF34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E95BFCE7-E6C0-4043-9A19-F7726CADF34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E95BFCE7-E6C0-4043-9A19-F7726CADF34B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
