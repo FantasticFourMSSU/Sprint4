@@ -14,107 +14,38 @@ namespace LECCISLogin
   public partial class Login : Form
 
     {
-        //string passwordFound;
-        //public static string usernameInput;
-        //public string connectionString = "Server= 209.106.201.103; Database=group6; uid=dbstudent14;pwd=spicymonster10";
+        MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent14;pwd=spicymonster10;");
+        MySqlCommand cmd;
+        MySqlDataReader dr;
+
+
 
         public Login()
-    {
-      InitializeComponent();
-    }
-        private MySqlConnection ConnectToDatabase()
         {
-            string myconnection = "Server= 209.106.201.103; Database=group6; uid=dbstudent14;pwd=spicymonster10";
-            MySqlConnection conn = new MySqlConnection(myconnection);
-            conn.Open();
-            if (conn.State == System.Data.ConnectionState.Open)
-            {
-                MessageBox.Show("connection opened");
-            }
-            return conn;
+            InitializeComponent();
+            myconnection.Open();
         }
+       
         private void btnLogin_Click(object sender, EventArgs e)
         {
-        //    CheckPassword(connectionString);
-        //    if (password.Text == passwordFound)
-        //    {
-        //        usernameInput = username.Text;
-        //        this.Hide();
-        //        //Main_Menu_Page mainMenu = new Main_Menu_Page();
-        //        //mainMenu.ShowDialog();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Login failed. Please check the information you put in.");
-        //    }
-        //}
-        //private void CheckPassword(string connectionString)
-        //{
-        //    string queryString =
-        //    $"Select userPassword FROM Employees WHERE userName = '{username.Text}';";
-        //    using (MySqlConnection connection = new MySqlConnection(connectionString))
-        //    {
-        //        MySqlCommand command = new MySqlCommand(
-        //        queryString, connection);
-        //        connection.Open();
-        //        using (MySqlDataReader reader = command.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
-        //                passwordFound = (String.Format("{0}", reader[0]));
-        //            }
-        //        }
-        //        connection.Close();
-        //        command.Dispose();
-        //    }
-
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            using (MySqlConnection con = new MySqlConnection(@"Server= 209.106.201.103; Database=group6; uid=dbstudent14;pwd=spicymonster10"))
+            
+            string user = username.Text;
+            string pass = password.Text;
+            cmd = new MySqlCommand();
+            cmd.Connection = myconnection;
+            cmd.CommandText = "SELECT * FROM Users where Username='" + username.Text + "' AND Password = '" + password.Text + "'";
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
             {
-                MySqlCommand cmd = new MySqlCommand("select * from Users where username like @username and password = @password;");
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@password", password);
-                cmd.Connection = con;
-                con.Open();
-
-                DataSet ds = new DataSet();
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(ds);
-                con.Close();
-
-                bool loginSuccessful = ((ds.Tables.Count > 0) && (ds.Tables[0].Rows.Count > 0));
-
-                if (loginSuccessful)
-                {
-                    MessageBox.Show("Success!");
-                }
-                else
-                {
-                    MessageBox.Show("Invalid username or password");
-                }
+                MessageBox.Show("Login sucessful", "Login Status");
+                
             }
-            ////////////////////////////////////////////////////////
-            //var UN = username.Text;
-            //var PW = password.Text;
-            ////if (PN == "" || EM == "")
-            ////    MessageBox.Show("insert values");
-            ////else
-            ////{
-            //MySqlConnection conn = ConnectToDatabase();
-
-
-            //string sql = "INSERT INTO Property(username, password) VALUES (' " + this.username.Text + " ','" + this.password.Text + " ')";
-            //using (MySqlCommand cmd = new MySqlCommand(sql, conn))
-            //{
-            //    using (MySqlDataReader rdr = cmd.ExecuteReader())
-            //    {
-            //        while (rdr.Read())
-            //        {
-            //            MessageBox.Show(string.Format("{0} {1} ", rdr.GetInt32(0), rdr.GetString(1)));
-            //        }
-            //    }
-            //}
-            //conn.Close();
+            else
+            {
+                MessageBox.Show("Invalid username or password","Invalid Login", MessageBoxButtons.RetryCancel);
+            }
+            myconnection.Close();
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

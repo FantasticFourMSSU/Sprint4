@@ -35,6 +35,11 @@
             this.userNameLabel = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
+            this.loginGroupBox = new System.Windows.Forms.GroupBox();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loginGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -71,20 +76,45 @@
             resources.ApplyResources(this.password, "password");
             this.password.Name = "password";
             // 
+            // loginGroupBox
+            // 
+            this.loginGroupBox.Controls.Add(this.titleLabel);
+            this.loginGroupBox.Controls.Add(this.pictureBox1);
+            this.loginGroupBox.Controls.Add(this.btnLogin);
+            this.loginGroupBox.Controls.Add(this.btnExit);
+            this.loginGroupBox.Controls.Add(this.processorLabel);
+            this.loginGroupBox.Controls.Add(this.userNameLabel);
+            this.loginGroupBox.Controls.Add(this.username);
+            this.loginGroupBox.Controls.Add(this.password);
+            resources.ApplyResources(this.loginGroupBox, "loginGroupBox");
+            this.loginGroupBox.Name = "loginGroupBox";
+            this.loginGroupBox.TabStop = false;
+            // 
+            // titleLabel
+            // 
+            resources.ApplyResources(this.titleLabel, "titleLabel");
+            this.titleLabel.Name = "titleLabel";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
+            this.AcceptButton = this.btnLogin;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.processorLabel);
-            this.Controls.Add(this.userNameLabel);
-            this.Controls.Add(this.username);
-            this.Controls.Add(this.password);
+            this.CancelButton = this.btnExit;
+            this.Controls.Add(this.loginGroupBox);
             this.Name = "Login";
+            this.loginGroupBox.ResumeLayout(false);
+            this.loginGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
     }
 
@@ -96,6 +126,9 @@
         private System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.GroupBox loginGroupBox;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
