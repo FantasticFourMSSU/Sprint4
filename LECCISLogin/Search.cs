@@ -32,11 +32,7 @@ namespace LECCISSearch
         }
         void searchButton_Click(object sender, EventArgs e)
         {
-            if (searchPropertyStreetTextBox.TextLength == 0)
-            {
-                MessageBox.Show("Search field cannot be empty.", "Invalid Input", MessageBoxButtons.OK);
-                searchPropertyStreetTextBox.Clear();
-            }
+
             if (searchPropertyStreetTextBox.Text.Contains(")") || 
                 searchPropertyStreetTextBox.Text.Contains("(") ||
                 searchPropertyStreetTextBox.Text.Contains(";"))

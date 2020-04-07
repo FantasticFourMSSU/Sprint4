@@ -82,14 +82,7 @@ namespace LECCISLogin
 
                 string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + "')";
 
-
-
                 string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
-
-
-
-
-
 
 
 
@@ -99,31 +92,12 @@ namespace LECCISLogin
                     {
                         while (rdr.Read())
                         {
-                            MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
-                                    rdr.GetString(2)));
+                            
                         }
                     }
                 }
                 myconnection.Close();
-                //myconnection.Open();
-                //MySqlCommand cmdDatabase = new MySqlCommand(sql2, myconnection);
-                //MySqlDataReader myReader;
-                //try
-                //{
-                //    myReader = cmdDatabase.ExecuteReader();
-
-                //    while (myReader.Read())
-                //    {
-                //        int PID = Convert.ToInt32(myReader.GetString("LastID"));
-
-                //        propID = PID;
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show("Error fetching data", "Data Retrieval Error", MessageBoxButtons.RetryCancel);
-                //}
-                // myconnection.Close();
+                
                 myconnection.Open();
                 using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
                 {
@@ -131,14 +105,14 @@ namespace LECCISLogin
                     {
                         while (rdr2.Read())
                         {
-                            MessageBox.Show(string.Format("{0} {1} {2}", rdr2.GetInt32(0), rdr2.GetString(1),
-                                    rdr2.GetString(2)));
-
+                            
                         }
+                        MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
+                        myconnection.Close();
                     }
                 }
             }
-            myconnection.Close();
+            this.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

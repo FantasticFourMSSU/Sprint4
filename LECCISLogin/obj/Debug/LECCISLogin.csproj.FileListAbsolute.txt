@@ -117,3 +117,7 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debu
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.addProperty.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.addProperty.en.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.LoadingForm.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\LECCISLogin.exe.manifest
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\LECCISLogin.application
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.exe.manifest
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.application

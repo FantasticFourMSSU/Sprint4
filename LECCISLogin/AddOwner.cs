@@ -54,26 +54,51 @@ namespace LECCISLogin
                 firstName.Clear();
                 lastName.Clear();
                 phoneNumber.Clear();
-                email.Clear(); 
+                email.Clear();
             }
             else
             {
-                string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES ('" + this.firstName.Text + "','" + this.lastName.Text + " ', '" + this.phoneNumber.Text + " ',' " + this.email.Text + " ' )";
-                using (MySqlCommand cmd = new MySqlCommand(sql, myconnection))
+                string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES ('" + this.firstName.Text + "','" + this.lastName.Text + " ', '" + PN + " ',' " + this.email.Text + " ' )";
+                MySqlCommand cmd = new MySqlCommand(sql, myconnection);
+                MySqlDataReader rdr;
+                rdr = cmd.ExecuteReader();
+                try
                 {
-                    using (MySqlDataReader rdr = cmd.ExecuteReader())
+                    while (rdr.Read())
                     {
-                        while (rdr.Read())
-                        {
-                            MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
-                                    rdr.GetString(2)));
-
-                        }
-
                     }
+                    MessageBox.Show("Owner Added Sucessfully", "Success Message", MessageBoxButtons.OK);
+                    myconnection.Close();
+                    this.Close();  
                 }
-                myconnection.Close();
+                catch
+                {
+   
+                    MessageBox.Show("Values could not be addded", "System Error", MessageBoxButtons.AbortRetryIgnore);
+                }
             }
+            //        using (MySqlDataReader rdr = cmd.ExecuteReader())
+            //        {
+            //            while (rdr.Read())
+            //            {
+            //                MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
+            //                        rdr.GetString(2)));
+
+            //            }
+
+            //        }
+            //    }
+            //    myconnection.Close();
+            //}
+            //MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+            //MySqlDataReader MyReader2;
+            //MyConn2.Open();
+            //MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.  
+            //MessageBox.Show("Save Data");
+            //while (MyReader2.Read())
+            //{
+            //}
+            //MyConn2.Close();
 
         }
 
