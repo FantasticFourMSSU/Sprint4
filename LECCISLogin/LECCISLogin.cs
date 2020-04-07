@@ -32,7 +32,10 @@ namespace LECCISLogin
             string user = username.Text;
             string pass = password.Text;
             if (user == "" || pass == "")
-                MessageBox.Show("Please Insert values for each field", "Invalid Input", MessageBoxButtons.OK);
+            {
+                MessageBox.Show("Please enter a username and password.", "Invalid Input", MessageBoxButtons.OK);
+            }
+            
             else
             {
                 string query = "SELECT * FROM Users where Username='" + username.Text + "' AND Password = '" + password.Text + "'";

@@ -60,8 +60,19 @@ namespace LECCISLogin
             var ST = state.Text;
             var ZP = zip.Text;
 
-            if (SN == "" || CT == "" || ST == "" || ZP == "")
-                MessageBox.Show("Please insert values for each field","Invalid Input",MessageBoxButtons.OK);
+            if (SN == "" || CT == "" || ST == "" || ZP == "" || comboBox1.Text == "")
+            {
+                MessageBox.Show("Please insert values for each field", "Invalid Input", MessageBoxButtons.OK);
+            }
+            if (streetNumber.Text.Contains(")") || streetNumber.Text.Contains("(") || streetNumber.Text.Contains(";") ||
+                city.Text.Contains(")") || city.Text.Contains("(") || city.Text.Contains(";") ||
+                zip.Text.Contains(")") || zip.Text.Contains("(") || zip.Text.Contains(";"))
+            {
+                MessageBox.Show("Field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
+                streetNumber.Clear();
+                city.Clear();
+                zip.Clear();
+            }
             else
             {
 
@@ -74,13 +85,13 @@ namespace LECCISLogin
 
 
                 string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
-               
 
-                
 
-                
 
-                
+
+
+
+
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, myconnection))
                 {
@@ -112,7 +123,7 @@ namespace LECCISLogin
                 //{
                 //    MessageBox.Show("Error fetching data", "Data Retrieval Error", MessageBoxButtons.RetryCancel);
                 //}
-               // myconnection.Close();
+                // myconnection.Close();
                 myconnection.Open();
                 using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
                 {

@@ -42,7 +42,20 @@ namespace LECCISLogin
             var EM = email.Text;
 
             if (FN == "" || LN == "" || PN == "" || EM == "")
-                MessageBox.Show("insert values");
+            {
+                MessageBox.Show("Field can not be blank.", "Insert values");
+            }
+            if (firstName.Text.Contains(")") || firstName.Text.Contains("(") || firstName.Text.Contains(";") ||
+                lastName.Text.Contains(")") || lastName.Text.Contains("(") || lastName.Text.Contains(";") ||
+                phoneNumber.Text.Contains(";") ||
+                email.Text.Contains(")") || email.Text.Contains("(") || email.Text.Contains(";"))
+            {
+                MessageBox.Show("Field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
+                firstName.Clear();
+                lastName.Clear();
+                phoneNumber.Clear();
+                email.Clear(); 
+            }
             else
             {
                 string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES ('" + this.firstName.Text + "','" + this.lastName.Text + " ', '" + this.phoneNumber.Text + " ',' " + this.email.Text + " ' )";
