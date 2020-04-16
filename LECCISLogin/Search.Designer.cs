@@ -42,9 +42,10 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(1227, 52);
+            this.searchButton.Location = new System.Drawing.Point(818, 33);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(129, 50);
+            this.searchButton.Size = new System.Drawing.Size(86, 32);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -53,19 +54,22 @@
             // searchPropertyStreetTextBox
             // 
             this.searchPropertyStreetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(747, 55);
+            this.searchPropertyStreetTextBox.Location = new System.Drawing.Point(498, 35);
+            this.searchPropertyStreetTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchPropertyStreetTextBox.Name = "searchPropertyStreetTextBox";
-            this.searchPropertyStreetTextBox.Size = new System.Drawing.Size(438, 44);
+            this.searchPropertyStreetTextBox.Size = new System.Drawing.Size(293, 30);
             this.searchPropertyStreetTextBox.TabIndex = 0;
+            this.searchPropertyStreetTextBox.TextChanged += new System.EventHandler(this.searchPropertyStreetTextBox_TextChanged);
             this.searchPropertyStreetTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchBox_keyDown);
             // 
             // searchPropertyStreetLabel
             // 
             this.searchPropertyStreetLabel.AutoSize = true;
             this.searchPropertyStreetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(339, 55);
+            this.searchPropertyStreetLabel.Location = new System.Drawing.Point(226, 35);
+            this.searchPropertyStreetLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.searchPropertyStreetLabel.Name = "searchPropertyStreetLabel";
-            this.searchPropertyStreetLabel.Size = new System.Drawing.Size(380, 37);
+            this.searchPropertyStreetLabel.Size = new System.Drawing.Size(232, 25);
             this.searchPropertyStreetLabel.TabIndex = 4;
             this.searchPropertyStreetLabel.Text = "Search Name or Property";
             // 
@@ -73,19 +77,21 @@
             // 
             this.searchPropertyLabel.AutoSize = true;
             this.searchPropertyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyLabel.Location = new System.Drawing.Point(380, 16);
+            this.searchPropertyLabel.Location = new System.Drawing.Point(253, 10);
+            this.searchPropertyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.searchPropertyLabel.Name = "searchPropertyLabel";
-            this.searchPropertyLabel.Size = new System.Drawing.Size(0, 37);
+            this.searchPropertyLabel.Size = new System.Drawing.Size(0, 25);
             this.searchPropertyLabel.TabIndex = 8;
             // 
             // resultsDataGridView
             // 
             this.resultsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultsDataGridView.Location = new System.Drawing.Point(45, 121);
+            this.resultsDataGridView.Location = new System.Drawing.Point(30, 77);
+            this.resultsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resultsDataGridView.Name = "resultsDataGridView";
             this.resultsDataGridView.RowHeadersWidth = 82;
             this.resultsDataGridView.RowTemplate.Height = 33;
-            this.resultsDataGridView.Size = new System.Drawing.Size(1756, 421);
+            this.resultsDataGridView.Size = new System.Drawing.Size(1171, 269);
             this.resultsDataGridView.TabIndex = 2;
             // 
             // groupBox1
@@ -95,21 +101,24 @@
             this.groupBox1.Controls.Add(this.searchPropertyStreetTextBox);
             this.groupBox1.Controls.Add(this.searchPropertyStreetLabel);
             this.groupBox1.Controls.Add(this.searchButton);
-            this.groupBox1.Location = new System.Drawing.Point(12, 26);
+            this.groupBox1.Location = new System.Drawing.Point(8, 17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1827, 615);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1218, 394);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
             // searchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1870, 667);
+            this.ClientSize = new System.Drawing.Size(1247, 427);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "searchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";

@@ -14,7 +14,7 @@ namespace LECCISSearch
 
     public partial class searchForm : Form
     {
-        MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent14;pwd=spicymonster10;");
+        MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
         MySqlDataAdapter adpt;
         DataTable dt;
 
@@ -56,7 +56,10 @@ namespace LECCISSearch
             }
         }
 
+        private void searchPropertyStreetTextBox_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 
