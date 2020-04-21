@@ -80,10 +80,10 @@ namespace LECCISSearch
                 //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
                 adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty " +
                     "ON Property.propertyId = OwnerWithProperty.propertyId Left Join Owner ON Owner.ownerId = OwnerWithProperty.ownerId " +
-                    "WHERE streetNumber like '%" + searchPropertyStreetTextBox.Text + "%' " +
-                    "OR firstName like '%" + searchPropertyStreetTextBox.Text + "%' " +
-                    "OR lastName like '%" + searchPropertyStreetTextBox.Text + "%' " +
-                    "OR CONCAT(firstName, ' ', lastName) like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
+                    "WHERE streetNumber like '%" + searchOwner.Text + "%' " +
+                    "OR firstName like '%" + searchOwner.Text + "%' " +
+                    "OR lastName like '%" + searchOwner.Text + "%' " +
+                    "OR CONCAT(firstName, ' ', lastName) like '%" + searchOwner.Text + "%'", myconnection);
                 dt = new DataTable();
                 adpt.Fill(dt);
                 resultsDataGridView.DataSource = dt;
