@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addOwnerForm));
             this.firstName = new System.Windows.Forms.TextBox();
             this.lastName = new System.Windows.Forms.TextBox();
-            this.phoneNumber = new System.Windows.Forms.TextBox();
+            this.phoneNumber1 = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,12 +43,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.addPropertyGroupBox = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.phoneNumber3 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.phoneNumber2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.addPropertyGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,14 +71,14 @@
             this.lastName.Size = new System.Drawing.Size(175, 23);
             this.lastName.TabIndex = 1;
             // 
-            // phoneNumber
+            // phoneNumber1
             // 
-            this.phoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneNumber.ForeColor = System.Drawing.Color.Gray;
-            this.phoneNumber.Location = new System.Drawing.Point(191, 204);
-            this.phoneNumber.Name = "phoneNumber";
-            this.phoneNumber.Size = new System.Drawing.Size(44, 23);
-            this.phoneNumber.TabIndex = 2;
+            this.phoneNumber1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumber1.ForeColor = System.Drawing.Color.Gray;
+            this.phoneNumber1.Location = new System.Drawing.Point(191, 204);
+            this.phoneNumber1.Name = "phoneNumber1";
+            this.phoneNumber1.Size = new System.Drawing.Size(44, 23);
+            this.phoneNumber1.TabIndex = 2;
             // 
             // email
             // 
@@ -174,9 +174,9 @@
             // 
             // addPropertyGroupBox
             // 
-            this.addPropertyGroupBox.Controls.Add(this.textBox2);
+            this.addPropertyGroupBox.Controls.Add(this.phoneNumber3);
             this.addPropertyGroupBox.Controls.Add(this.label12);
-            this.addPropertyGroupBox.Controls.Add(this.textBox1);
+            this.addPropertyGroupBox.Controls.Add(this.phoneNumber2);
             this.addPropertyGroupBox.Controls.Add(this.label11);
             this.addPropertyGroupBox.Controls.Add(this.label10);
             this.addPropertyGroupBox.Controls.Add(this.label9);
@@ -186,7 +186,7 @@
             this.addPropertyGroupBox.Controls.Add(this.label5);
             this.addPropertyGroupBox.Controls.Add(this.button);
             this.addPropertyGroupBox.Controls.Add(this.email);
-            this.addPropertyGroupBox.Controls.Add(this.phoneNumber);
+            this.addPropertyGroupBox.Controls.Add(this.phoneNumber1);
             this.addPropertyGroupBox.Controls.Add(this.lastName);
             this.addPropertyGroupBox.Controls.Add(this.firstName);
             this.addPropertyGroupBox.Location = new System.Drawing.Point(14, 20);
@@ -197,16 +197,43 @@
             this.addPropertyGroupBox.TabIndex = 9;
             this.addPropertyGroupBox.TabStop = false;
             // 
-            // label9
+            // phoneNumber3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(154, 15);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(143, 29);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Add Owner";
+            this.phoneNumber3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumber3.ForeColor = System.Drawing.Color.Gray;
+            this.phoneNumber3.Location = new System.Drawing.Point(331, 204);
+            this.phoneNumber3.Name = "phoneNumber3";
+            this.phoneNumber3.Size = new System.Drawing.Size(44, 23);
+            this.phoneNumber3.TabIndex = 14;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(311, 204);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(14, 20);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "-";
+            // 
+            // phoneNumber2
+            // 
+            this.phoneNumber2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumber2.ForeColor = System.Drawing.Color.Gray;
+            this.phoneNumber2.Location = new System.Drawing.Point(261, 204);
+            this.phoneNumber2.Name = "phoneNumber2";
+            this.phoneNumber2.Size = new System.Drawing.Size(44, 23);
+            this.phoneNumber2.TabIndex = 12;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(241, 204);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(14, 20);
+            this.label11.TabIndex = 11;
+            this.label11.Text = ")";
             // 
             // label10
             // 
@@ -219,43 +246,16 @@
             this.label10.Text = "(";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label11
+            // label9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(241, 204);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(14, 20);
-            this.label11.TabIndex = 11;
-            this.label11.Text = ")";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(261, 204);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(44, 23);
-            this.textBox1.TabIndex = 12;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(311, 204);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(14, 20);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "-";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(331, 204);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(44, 23);
-            this.textBox2.TabIndex = 14;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(154, 15);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(143, 29);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Add Owner";
             // 
             // addOwnerForm
             // 
@@ -270,7 +270,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addOwnerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";
@@ -284,7 +284,7 @@
 
         private System.Windows.Forms.TextBox firstName;
         private System.Windows.Forms.TextBox lastName;
-        private System.Windows.Forms.TextBox phoneNumber;
+        private System.Windows.Forms.TextBox phoneNumber1;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Label label1;
@@ -298,9 +298,9 @@
         private System.Windows.Forms.GroupBox addPropertyGroupBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox phoneNumber3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox phoneNumber2;
         private System.Windows.Forms.Label label11;
     }
 }

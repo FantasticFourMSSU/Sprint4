@@ -38,7 +38,10 @@ namespace LECCISLogin
         {
             var FN = firstName.Text;
             var LN = lastName.Text;
-            var PN = phoneNumber.Text;
+            var PN1 = phoneNumber1.Text;
+            var PN2 = phoneNumber2.Text;
+            var PN3 = phoneNumber3.Text;
+            var PN = PN1 + PN2 + PN3;
             var EM = email.Text;
 
             if (FN == "" || LN == "" || PN == "" || EM == "")
@@ -47,13 +50,13 @@ namespace LECCISLogin
             }
             if (firstName.Text.Contains(")") || firstName.Text.Contains("(") || firstName.Text.Contains(";") ||
                 lastName.Text.Contains(")") || lastName.Text.Contains("(") || lastName.Text.Contains(";") ||
-                phoneNumber.Text.Contains(";") ||
+                phoneNumber1.Text.Contains(";") ||
                 email.Text.Contains(")") || email.Text.Contains("(") || email.Text.Contains(";"))
             {
                 MessageBox.Show("Field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
                 firstName.Clear();
                 lastName.Clear();
-                phoneNumber.Clear();
+                phoneNumber1.Clear();
                 email.Clear();
             }
             else
