@@ -11,13 +11,14 @@ using MySql.Data.MySqlClient;
 
 namespace LECCISLogin
 {
+    
   public partial class Login : Form
 
     {
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
-       // MySqlCommand cmd;
-       // MySqlDataReader dr;
-
+        // MySqlCommand cmd;
+        // MySqlDataReader dr;
+        
 
 
         public Login()
@@ -45,8 +46,8 @@ namespace LECCISLogin
                 sda.Fill(dtb1);
                 if (dtb1.Rows.Count == 1)
                 {
-
-                    Dashboard main = new Dashboard();
+                    string userloggedin = user;
+                    Dashboard main = new Dashboard(userloggedin);
                     this.Hide();
                     main.ShowDialog();
                     this.Close();
