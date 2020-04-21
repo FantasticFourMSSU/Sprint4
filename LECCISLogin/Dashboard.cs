@@ -48,5 +48,22 @@ namespace LECCISLogin
             login.ShowDialog();
             this.Close();
         }
+
+        private void addRecordButton_Click(object sender, EventArgs e)
+        {
+            addRecordPanel.Visible = true;
+            addOwnerButton.Visible = true;
+            addPropertyButton.Visible = true;
+            returnButton.Visible = true;
+
+        }
+
+        private void returnButton_Click(object sender, EventArgs e)
+        {
+            addRecordPanel.Visible = false;
+            addOwnerButton.Visible = false;
+            addPropertyButton.Visible = false;
+            returnButton.Visible = false;
+        }
     }
 }

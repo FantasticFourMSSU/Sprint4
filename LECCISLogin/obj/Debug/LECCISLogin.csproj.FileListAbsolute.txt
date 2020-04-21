@@ -85,7 +85,6 @@ C:\Users\Remsk\source\repos\Sprint4\LECCIS\Sprint45\LECCISLogin\obj\Debug\LECCIS
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\System.Buffers.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\System.Memory.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.Dashboard.resources
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
 C:\Users\savin\Source\Repos\Sprint49\LECCISLogin\bin\Debug\LECCISLogin.exe.config
 C:\Users\savin\Source\Repos\Sprint49\LECCISLogin\bin\Debug\LECCISLogin.exe
 C:\Users\savin\Source\Repos\Sprint49\LECCISLogin\bin\Debug\LECCISLogin.pdb
@@ -121,3 +120,4 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debu
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\LECCISLogin.application
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.exe.manifest
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.application
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
