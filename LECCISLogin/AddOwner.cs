@@ -41,7 +41,7 @@ namespace LECCISLogin
             var PN1 = phoneNumber1.Text;
             var PN2 = phoneNumber2.Text;
             var PN3 = phoneNumber3.Text;
-            var PN = PN1 + PN2 + PN3;
+            var PN = PN1 + "-" + PN2 + "-" + PN3;
             var EM = email.Text;
 
             if (FN == "" || LN == "" || PN == "" || EM == "")
