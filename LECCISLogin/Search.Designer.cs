@@ -43,10 +43,9 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(584, 23);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchButton.Location = new System.Drawing.Point(779, 31);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(64, 24);
+            this.searchButton.Size = new System.Drawing.Size(85, 32);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -55,10 +54,9 @@
             // searchPropertyNameOrOwnerTextBox
             // 
             this.searchPropertyNameOrOwnerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyNameOrOwnerTextBox.Location = new System.Drawing.Point(374, 18);
-            this.searchPropertyNameOrOwnerTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchPropertyNameOrOwnerTextBox.Location = new System.Drawing.Point(499, 24);
             this.searchPropertyNameOrOwnerTextBox.Name = "searchPropertyNameOrOwnerTextBox";
-            this.searchPropertyNameOrOwnerTextBox.Size = new System.Drawing.Size(172, 26);
+            this.searchPropertyNameOrOwnerTextBox.Size = new System.Drawing.Size(228, 30);
             this.searchPropertyNameOrOwnerTextBox.TabIndex = 0;
             this.searchPropertyNameOrOwnerTextBox.TextChanged += new System.EventHandler(this.searchPropertyStreetTextBox_TextChanged);
             this.searchPropertyNameOrOwnerTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchBox_keyDown);
@@ -67,21 +65,19 @@
             // 
             this.searchPropertyLabel.AutoSize = true;
             this.searchPropertyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchPropertyLabel.Location = new System.Drawing.Point(190, 8);
-            this.searchPropertyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.searchPropertyLabel.Location = new System.Drawing.Point(253, 11);
             this.searchPropertyLabel.Name = "searchPropertyLabel";
-            this.searchPropertyLabel.Size = new System.Drawing.Size(0, 20);
+            this.searchPropertyLabel.Size = new System.Drawing.Size(0, 25);
             this.searchPropertyLabel.TabIndex = 8;
             // 
             // resultsDataGridView
             // 
             this.resultsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultsDataGridView.Location = new System.Drawing.Point(22, 58);
-            this.resultsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resultsDataGridView.Location = new System.Drawing.Point(29, 77);
             this.resultsDataGridView.Name = "resultsDataGridView";
             this.resultsDataGridView.RowHeadersWidth = 82;
             this.resultsDataGridView.RowTemplate.Height = 33;
-            this.resultsDataGridView.Size = new System.Drawing.Size(878, 202);
+            this.resultsDataGridView.Size = new System.Drawing.Size(1171, 269);
             this.resultsDataGridView.TabIndex = 2;
             this.resultsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.resultsDataGridView_CellContentClick);
             // 
@@ -93,20 +89,19 @@
             this.groupBox1.Controls.Add(this.searchPropertyLabel);
             this.groupBox1.Controls.Add(this.searchPropertyNameOrOwnerTextBox);
             this.groupBox1.Controls.Add(this.searchButton);
-            this.groupBox1.Location = new System.Drawing.Point(6, 13);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(8, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(914, 296);
+            this.groupBox1.Size = new System.Drawing.Size(1219, 395);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
             // SearchNameOrPropertyCheckbox
             // 
             this.SearchNameOrPropertyCheckbox.AutoSize = true;
-            this.SearchNameOrPropertyCheckbox.Location = new System.Drawing.Point(177, 8);
+            this.SearchNameOrPropertyCheckbox.Location = new System.Drawing.Point(236, 11);
+            this.SearchNameOrPropertyCheckbox.Margin = new System.Windows.Forms.Padding(4);
             this.SearchNameOrPropertyCheckbox.Name = "SearchNameOrPropertyCheckbox";
-            this.SearchNameOrPropertyCheckbox.Size = new System.Drawing.Size(162, 16);
+            this.SearchNameOrPropertyCheckbox.Size = new System.Drawing.Size(194, 21);
             this.SearchNameOrPropertyCheckbox.TabIndex = 9;
             this.SearchNameOrPropertyCheckbox.Text = "Search Name Or Property";
             this.SearchNameOrPropertyCheckbox.UseVisualStyleBackColor = true;
@@ -114,23 +109,23 @@
             // SearchOwnerOnlyCheckbox
             // 
             this.SearchOwnerOnlyCheckbox.AutoSize = true;
-            this.SearchOwnerOnlyCheckbox.Location = new System.Drawing.Point(177, 31);
+            this.SearchOwnerOnlyCheckbox.Location = new System.Drawing.Point(236, 41);
+            this.SearchOwnerOnlyCheckbox.Margin = new System.Windows.Forms.Padding(4);
             this.SearchOwnerOnlyCheckbox.Name = "SearchOwnerOnlyCheckbox";
-            this.SearchOwnerOnlyCheckbox.Size = new System.Drawing.Size(126, 16);
+            this.SearchOwnerOnlyCheckbox.Size = new System.Drawing.Size(153, 21);
             this.SearchOwnerOnlyCheckbox.TabIndex = 10;
             this.SearchOwnerOnlyCheckbox.Text = "Search Owner Only";
             this.SearchOwnerOnlyCheckbox.UseVisualStyleBackColor = true;
             // 
             // searchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(935, 320);
+            this.ClientSize = new System.Drawing.Size(1247, 427);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "searchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";

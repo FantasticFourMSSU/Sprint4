@@ -39,6 +39,30 @@ namespace LECCISLogin
 
         }
 
+        private void editButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty " +
+                        "ON Property.propertyId = OwnerWithProperty.propertyId Left Join Owner ON Owner.ownerId = OwnerWithProperty.ownerId " +
+                        "WHERE streetNumber like '%" + SearchOwnerOrPropertyTextbox.Text + "%' " +
+                        "OR firstName like '%" + SearchOwnerOrPropertyTextbox.Text + "%' " +
+                        "OR lastName like '%" + SearchOwnerOrPropertyTextbox.Text + "%' " +
+                        "OR CONCAT(firstName, ' ', lastName) like '%" + SearchOwnerOrPropertyTextbox.Text+ "%'", myconnection);
+            dt = new DataTable();
+            adpt.Fill(dt);
+            deletedataGridView.DataSource = dt;
+       
+        }
+
         //private void button3_Click(object sender, EventArgs e)
         //{
         //    adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty ON property.propertyId = OwnerWithProperty.propertyId Left Join Owners ON Owner.ownerId = OwnerWithProperty.ownerId;", myconnection); 
@@ -49,6 +73,6 @@ namespace LECCISLogin
 
         //}
 
-        
+
     }
 }
