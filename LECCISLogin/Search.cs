@@ -24,7 +24,7 @@ namespace LECCISSearch
             myconnection.Open();
         }
         void searchBox_keyDown(object sender, KeyEventArgs e)
-        {
+        { 
             if (e.KeyCode == Keys.Enter)
             {
                 searchButton_Click((object)sender, (EventArgs)e);
