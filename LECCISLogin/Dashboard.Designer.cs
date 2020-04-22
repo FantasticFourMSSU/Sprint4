@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.mainGroupBox = new System.Windows.Forms.GroupBox();
-            this.mainTitleLabel = new System.Windows.Forms.Label();
+            this.addRecordPanel = new System.Windows.Forms.Panel();
+            this.returnButton = new System.Windows.Forms.Button();
             this.addPropertyButton = new System.Windows.Forms.Button();
+            this.addOwnerButton = new System.Windows.Forms.Button();
+            this.mainTitleLabel = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
+            this.editRecordButton = new System.Windows.Forms.Button();
             this.addRecordButton = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.logoutToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.addRecordPanel = new System.Windows.Forms.Panel();
-            this.editRecordButton = new System.Windows.Forms.Button();
-            this.addOwnerButton = new System.Windows.Forms.Button();
-            this.returnButton = new System.Windows.Forms.Button();
             this.mainGroupBox.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.addRecordPanel.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainGroupBox
@@ -53,57 +53,116 @@
             this.mainGroupBox.Controls.Add(this.searchButton);
             this.mainGroupBox.Controls.Add(this.editRecordButton);
             this.mainGroupBox.Controls.Add(this.addRecordButton);
-            this.mainGroupBox.Location = new System.Drawing.Point(424, 64);
+            this.mainGroupBox.Location = new System.Drawing.Point(283, 41);
+            this.mainGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainGroupBox.Name = "mainGroupBox";
-            this.mainGroupBox.Size = new System.Drawing.Size(1892, 1180);
+            this.mainGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainGroupBox.Size = new System.Drawing.Size(1261, 755);
             this.mainGroupBox.TabIndex = 4;
             this.mainGroupBox.TabStop = false;
             // 
-            // mainTitleLabel
+            // addRecordPanel
             // 
-            this.mainTitleLabel.AutoSize = true;
-            this.mainTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainTitleLabel.Location = new System.Drawing.Point(705, 82);
-            this.mainTitleLabel.Name = "mainTitleLabel";
-            this.mainTitleLabel.Size = new System.Drawing.Size(482, 63);
-            this.mainTitleLabel.TabIndex = 5;
-            this.mainTitleLabel.Text = "Officer Dashboard";
+            this.addRecordPanel.Controls.Add(this.returnButton);
+            this.addRecordPanel.Controls.Add(this.addPropertyButton);
+            this.addRecordPanel.Controls.Add(this.addOwnerButton);
+            this.addRecordPanel.Location = new System.Drawing.Point(0, 104);
+            this.addRecordPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addRecordPanel.Name = "addRecordPanel";
+            this.addRecordPanel.Size = new System.Drawing.Size(1257, 648);
+            this.addRecordPanel.TabIndex = 6;
+            this.addRecordPanel.Visible = false;
+            this.addRecordPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addRecordPanel_Paint);
+            // 
+            // returnButton
+            // 
+            this.returnButton.Location = new System.Drawing.Point(531, 408);
+            this.returnButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(197, 47);
+            this.returnButton.TabIndex = 6;
+            this.returnButton.Text = "Return to Dashboard";
+            this.returnButton.UseVisualStyleBackColor = true;
+            this.returnButton.Visible = false;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // addPropertyButton
             // 
             this.addPropertyButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.addPropertyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addPropertyButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addPropertyButton.Location = new System.Drawing.Point(1019, 302);
+            this.addPropertyButton.Location = new System.Drawing.Point(679, 193);
+            this.addPropertyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addPropertyButton.Name = "addPropertyButton";
-            this.addPropertyButton.Size = new System.Drawing.Size(429, 191);
+            this.addPropertyButton.Size = new System.Drawing.Size(286, 122);
             this.addPropertyButton.TabIndex = 3;
             this.addPropertyButton.Text = "Add Property";
             this.addPropertyButton.UseVisualStyleBackColor = false;
             this.addPropertyButton.Visible = false;
             this.addPropertyButton.Click += new System.EventHandler(this.addPropertyButton_Click);
             // 
+            // addOwnerButton
+            // 
+            this.addOwnerButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.addOwnerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addOwnerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addOwnerButton.Location = new System.Drawing.Point(250, 193);
+            this.addOwnerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addOwnerButton.Name = "addOwnerButton";
+            this.addOwnerButton.Size = new System.Drawing.Size(286, 122);
+            this.addOwnerButton.TabIndex = 4;
+            this.addOwnerButton.Text = "Add Owner";
+            this.addOwnerButton.UseVisualStyleBackColor = false;
+            this.addOwnerButton.Visible = false;
+            this.addOwnerButton.Click += new System.EventHandler(this.addOwnerButton_Click);
+            // 
+            // mainTitleLabel
+            // 
+            this.mainTitleLabel.AutoSize = true;
+            this.mainTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainTitleLabel.Location = new System.Drawing.Point(470, 52);
+            this.mainTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.mainTitleLabel.Name = "mainTitleLabel";
+            this.mainTitleLabel.Size = new System.Drawing.Size(309, 39);
+            this.mainTitleLabel.TabIndex = 5;
+            this.mainTitleLabel.Text = "Officer Dashboard";
+            // 
             // searchButton
             // 
             this.searchButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.searchButton.Location = new System.Drawing.Point(157, 336);
+            this.searchButton.Location = new System.Drawing.Point(105, 215);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(429, 191);
+            this.searchButton.Size = new System.Drawing.Size(286, 122);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search for Record";
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // editRecordButton
+            // 
+            this.editRecordButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.editRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editRecordButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.editRecordButton.Location = new System.Drawing.Point(871, 215);
+            this.editRecordButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.editRecordButton.Name = "editRecordButton";
+            this.editRecordButton.Size = new System.Drawing.Size(286, 122);
+            this.editRecordButton.TabIndex = 5;
+            this.editRecordButton.Text = "Modify a Record";
+            this.editRecordButton.UseVisualStyleBackColor = false;
             // 
             // addRecordButton
             // 
             this.addRecordButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.addRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addRecordButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addRecordButton.Location = new System.Drawing.Point(730, 336);
+            this.addRecordButton.Location = new System.Drawing.Point(487, 215);
+            this.addRecordButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addRecordButton.Name = "addRecordButton";
-            this.addRecordButton.Size = new System.Drawing.Size(429, 191);
+            this.addRecordButton.Size = new System.Drawing.Size(286, 122);
             this.addRecordButton.TabIndex = 2;
             this.addRecordButton.Text = "Add Record";
             this.addRecordButton.UseVisualStyleBackColor = false;
@@ -116,7 +175,7 @@
             this.logoutToolStripLabel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(2740, 51);
+            this.toolStrip1.Size = new System.Drawing.Size(1489, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -126,77 +185,30 @@
             this.logoutToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.logoutToolStripLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.logoutToolStripLabel.Name = "logoutToolStripLabel";
-            this.logoutToolStripLabel.Size = new System.Drawing.Size(136, 45);
+            this.logoutToolStripLabel.Size = new System.Drawing.Size(84, 28);
             this.logoutToolStripLabel.Text = "Log out";
             this.logoutToolStripLabel.Click += new System.EventHandler(this.logoutToolStripLabel_Click);
             // 
-            // addRecordPanel
-            // 
-            this.addRecordPanel.Controls.Add(this.returnButton);
-            this.addRecordPanel.Controls.Add(this.addPropertyButton);
-            this.addRecordPanel.Controls.Add(this.addOwnerButton);
-            this.addRecordPanel.Location = new System.Drawing.Point(0, 162);
-            this.addRecordPanel.Name = "addRecordPanel";
-            this.addRecordPanel.Size = new System.Drawing.Size(1886, 1012);
-            this.addRecordPanel.TabIndex = 6;
-            this.addRecordPanel.Visible = false;
-            // 
-            // editRecordButton
-            // 
-            this.editRecordButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.editRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editRecordButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.editRecordButton.Location = new System.Drawing.Point(1307, 336);
-            this.editRecordButton.Name = "editRecordButton";
-            this.editRecordButton.Size = new System.Drawing.Size(429, 191);
-            this.editRecordButton.TabIndex = 5;
-            this.editRecordButton.Text = "Modify a Record";
-            this.editRecordButton.UseVisualStyleBackColor = false;
-            // 
-            // addOwnerButton
-            // 
-            this.addOwnerButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.addOwnerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addOwnerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addOwnerButton.Location = new System.Drawing.Point(438, 302);
-            this.addOwnerButton.Name = "addOwnerButton";
-            this.addOwnerButton.Size = new System.Drawing.Size(429, 191);
-            this.addOwnerButton.TabIndex = 4;
-            this.addOwnerButton.Text = "Add Owner";
-            this.addOwnerButton.UseVisualStyleBackColor = false;
-            this.addOwnerButton.Visible = false;
-            this.addOwnerButton.Click += new System.EventHandler(this.addOwnerButton_Click);
-            // 
-            // returnButton
-            // 
-            this.returnButton.Location = new System.Drawing.Point(796, 637);
-            this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(295, 74);
-            this.returnButton.TabIndex = 6;
-            this.returnButton.Text = "Return to Dashboard";
-            this.returnButton.UseVisualStyleBackColor = true;
-            this.returnButton.Visible = false;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
-            // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(2740, 1781);
+            this.ClientSize = new System.Drawing.Size(1489, 675);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.mainGroupBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1974, 1341);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(1285, 675);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.mainGroupBox.ResumeLayout(false);
             this.mainGroupBox.PerformLayout();
+            this.addRecordPanel.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.addRecordPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

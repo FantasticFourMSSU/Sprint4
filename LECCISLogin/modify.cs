@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace LECCISLogin
 {
@@ -29,8 +30,11 @@ namespace LECCISLogin
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
-           
+            adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty ON property.propertyId = OwnerWithProperty.propertyId Left Join Owners ON Owner.ownerId = OwnerWithProperty.ownerId;", myconnection); 
+                dt = new DataTable();
+            adpt.Fill(dt);
+            deletedataGridView.DataSource = dt; 
+
 
         }
     }

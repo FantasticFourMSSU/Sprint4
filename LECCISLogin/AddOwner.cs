@@ -13,6 +13,7 @@ namespace LECCISLogin
 {
   public partial class addOwnerForm : Form
   {
+        
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
 
 

@@ -65,5 +65,10 @@ namespace LECCISLogin
             addPropertyButton.Visible = false;
             returnButton.Visible = false;
         }
+
+        private void addRecordPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
