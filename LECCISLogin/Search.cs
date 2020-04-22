@@ -33,26 +33,56 @@ namespace LECCISSearch
         void searchButton_Click(object sender, EventArgs e)
         {
 
-            if (searchPropertyStreetTextBox.Text.Contains(")") || 
-                searchPropertyStreetTextBox.Text.Contains("(") ||
-                searchPropertyStreetTextBox.Text.Contains(";"))
+            if (SearchNameOrPropertyCheckbox.Checked == true && SearchOwnerOnlyCheckbox.Checked == false)
             {
-                MessageBox.Show("Search field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
-                searchPropertyStreetTextBox.Clear();
+                if (searchPropertyNameOrOwnerTextBox.Text.Contains(")") ||
+                searchPropertyNameOrOwnerTextBox.Text.Contains("(") ||
+                searchPropertyNameOrOwnerTextBox.Text.Contains(";"))
+                {
+                    MessageBox.Show("Search field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
+                    searchPropertyNameOrOwnerTextBox.Clear();
+                }
+                else
+                {
+                    //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
+                    adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty " +
+                        "ON Property.propertyId = OwnerWithProperty.propertyId Left Join Owner ON Owner.ownerId = OwnerWithProperty.ownerId " +
+                        "WHERE streetNumber like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
+                        "OR firstName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
+                        "OR lastName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
+                        "OR CONCAT(firstName, ' ', lastName) like '%" + searchPropertyNameOrOwnerTextBox.Text + "%'", myconnection);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    resultsDataGridView.DataSource = dt;
+                    searchPropertyNameOrOwnerTextBox.Clear();
+                }
+            }
+            else if (SearchNameOrPropertyCheckbox.Checked == false && SearchOwnerOnlyCheckbox.Checked == true)
+            {
+                if (searchPropertyNameOrOwnerTextBox.Text.Contains(")") ||
+               searchPropertyNameOrOwnerTextBox.Text.Contains("(") ||
+               searchPropertyNameOrOwnerTextBox.Text.Contains(";"))
+                {
+                    MessageBox.Show("Search field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
+                    searchPropertyNameOrOwnerTextBox.Clear();
+                }
+                else
+                {
+                    //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
+                    adpt = new MySqlDataAdapter("SELECT * from Owners " +
+                        "OR firstName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
+                        "OR lastName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
+                        "OR CONCAT(firstName, ' ', lastName) like '%" + searchPropertyNameOrOwnerTextBox.Text + "%'", myconnection);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    resultsDataGridView.DataSource = dt;
+                    searchPropertyNameOrOwnerTextBox.Clear();
+                }
             }
             else
             {
-             //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
-                adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty " +
-                    "ON Property.propertyId = OwnerWithProperty.propertyId Left Join Owner ON Owner.ownerId = OwnerWithProperty.ownerId " +
-                    "WHERE streetNumber like '%" + searchPropertyStreetTextBox.Text + "%' " +
-                    "OR firstName like '%" + searchPropertyStreetTextBox.Text + "%' " +
-                    "OR lastName like '%" + searchPropertyStreetTextBox.Text + "%' " +
-                    "OR CONCAT(firstName, ' ', lastName) like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
-                dt = new DataTable();
-                adpt.Fill(dt);
-                resultsDataGridView.DataSource = dt;
-                searchPropertyStreetTextBox.Clear();
+                MessageBox.Show("Wrong way of checking", "Please Check one and only one of the checkbox to search ", MessageBoxButtons.OK);
+                searchPropertyNameOrOwnerTextBox.Clear();
             }
         }
 
@@ -66,32 +96,14 @@ namespace LECCISSearch
 
         }
 
-        private void searchButton2_Click(object sender, EventArgs e)
-        {
-            if (searchOwner.Text.Contains(")") ||
-                   searchOwner.Text.Contains("(") ||
-                   searchOwner.Text.Contains(";"))
-            {
-                MessageBox.Show("Search field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
-                searchOwner.Clear();
-            }
-            else
-            {
-                //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
-                adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty " +
-                    "ON Property.propertyId = OwnerWithProperty.propertyId Left Join Owner ON Owner.ownerId = OwnerWithProperty.ownerId " +
-                    "WHERE streetNumber like '%" + searchOwner.Text + "%' " +
-                    "OR firstName like '%" + searchOwner.Text + "%' " +
-                    "OR lastName like '%" + searchOwner.Text + "%' " +
-                    "OR CONCAT(firstName, ' ', lastName) like '%" + searchOwner.Text + "%'", myconnection);
-                dt = new DataTable();
-                adpt.Fill(dt);
-                resultsDataGridView.DataSource = dt;
-                searchOwner.Clear();
-            }
-        }
+       
 
         private void resultsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void searchPropertyStreetLabel_Click(object sender, EventArgs e)
         {
 
         }
