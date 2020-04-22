@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LECCISLogin.exe" size="721416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LECCISLogin.exe" size="723976">
       <assemblyIdentity name="LECCISLogin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GMo32nMxVh0toEyW6/vfTDc8w6QOt0edv8UUVnTWWvM=</dsig:DigestValue>
+        <dsig:DigestValue>1hvyBHy0PhL0c8Sft8/ZcadK+VA+aaYggzOEm5Qs4j4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3UnQ5VXGlcZ6Jt3i0SCGf9hknzDhiu1iZpwjjN1cUcQ=</dsig:DigestValue>
+        <dsig:DigestValue>jGKmM3vFD+veB5DkHetB/piXHOcrzHGajGqoJZBDqGk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -90,30 +90,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Buffers.dll" size="28304">
-      <assemblyIdentity name="System.Buffers" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>crEKfUBHeP7UYPP/AgTPfoGopaecmRMoIZKLY/aumcs=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Memory.dll" size="148760">
-      <assemblyIdentity name="System.Memory" version="4.0.1.1" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QbXhpMWavbHOFGf1jD2f0G053/T8YdUAokEP7OgDf0s=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ubiety.Dns.Core.dll" size="58880">
       <assemblyIdentity name="Ubiety.Dns.Core" version="2.2.1.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -131,7 +107,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Ird8CHIzR6eY9JSG4uqdAQC9GtrvC47rDKUlHeAX6V4=</dsig:DigestValue>
+      <dsig:DigestValue>sKW+2lDLLMR14nHg1MBf1GOwgLIIo3e68SMbsj49PFg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

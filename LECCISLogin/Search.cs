@@ -69,8 +69,8 @@ namespace LECCISSearch
                 else
                 {
                     //   adpt = new MySqlDataAdapter("Select O.firstName, O.lastName, O.email, O.phoneNumber, P.streetNumber, P.city, P.state, P.zip, P.acres, P.sqft From Owner O, Property P, OwnerWithProperty OP where O.OwnerId = OP.OwnerId AND P.PropertyId = OP.PropertyId AND streetNumber like '%" + searchPropertyStreetTextBox.Text + "%'", myconnection);
-                    adpt = new MySqlDataAdapter("SELECT * from Owners " +
-                        "OR firstName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
+                    adpt = new MySqlDataAdapter("SELECT * from Owner " +
+                        "Where firstName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
                         "OR lastName like '%" + searchPropertyNameOrOwnerTextBox.Text + "%' " +
                         "OR CONCAT(firstName, ' ', lastName) like '%" + searchPropertyNameOrOwnerTextBox.Text + "%'", myconnection);
                     dt = new DataTable();
