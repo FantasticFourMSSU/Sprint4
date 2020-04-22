@@ -67,7 +67,7 @@
             this.addRecordPanel.Controls.Add(this.addOwnerButton);
             this.addRecordPanel.Location = new System.Drawing.Point(0, 162);
             this.addRecordPanel.Name = "addRecordPanel";
-            this.addRecordPanel.Size = new System.Drawing.Size(1886, 1012);
+            this.addRecordPanel.Size = new System.Drawing.Size(1892, 1012);
             this.addRecordPanel.TabIndex = 6;
             this.addRecordPanel.Visible = false;
             // 
@@ -144,6 +144,7 @@
             this.editRecordButton.TabIndex = 5;
             this.editRecordButton.Text = "Modify a Record";
             this.editRecordButton.UseVisualStyleBackColor = false;
+            this.editRecordButton.Click += new System.EventHandler(this.editRecordButton_Click);
             // 
             // addRecordButton
             // 

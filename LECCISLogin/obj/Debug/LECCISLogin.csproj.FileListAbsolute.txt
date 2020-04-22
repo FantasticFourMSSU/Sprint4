@@ -157,3 +157,4 @@ C:\Users\savin\Source\Repos\Sprint412\LECCISLogin\obj\Debug\LECCISLogin.exe
 C:\Users\savin\Source\Repos\Sprint412\LECCISLogin\obj\Debug\LECCISLogin.pdb
 C:\Users\savin\Source\Repos\Sprint412\LECCISLogin\obj\Debug\LECCISLogin.modify.resources
 C:\Users\Matt Sommer\source\repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.modify.resources
+C:\Users\Matt Sommer\source\repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache

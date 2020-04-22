@@ -81,7 +81,7 @@ namespace LECCISSearch
             }
             else
             {
-                MessageBox.Show("Wrong way of checking", "Please Check one and only one of the checkbox to search ", MessageBoxButtons.OK);
+                MessageBox.Show("Please Check one and only one of the checkbox to search", "Wrong way of checking", MessageBoxButtons.OK);
                 searchPropertyNameOrOwnerTextBox.Clear();
             }
         }

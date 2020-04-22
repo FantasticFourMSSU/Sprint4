@@ -21,6 +21,17 @@ namespace LECCISLogin
         {
             InitializeComponent();
             myconnection.Open();
+            dataGridViewRefresh();
+        }
+
+        public void dataGridViewRefresh()
+        {
+            adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, " +
+                "state, zip From Property Left Join OwnerWithProperty ON Property.propertyId = OwnerWithProperty.propertyId " +
+                "Left Join Owner On Owner.ownerId = OwnerWithProperty.ownerId", myconnection);
+            dt = new DataTable();
+            adpt.Fill(dt);
+            deletedataGridView.DataSource = dt;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -28,14 +39,16 @@ namespace LECCISLogin
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty ON property.propertyId = OwnerWithProperty.propertyId Left Join Owners ON Owner.ownerId = OwnerWithProperty.ownerId;", myconnection); 
-                dt = new DataTable();
-            adpt.Fill(dt);
-            deletedataGridView.DataSource = dt; 
+        //private void button3_Click(object sender, EventArgs e)
+        //{
+        //    adpt = new MySqlDataAdapter("Select firstName, lastName, phoneNumber, email, streetNumber, city, state, zip From Property Left Join OwnerWithProperty ON property.propertyId = OwnerWithProperty.propertyId Left Join Owners ON Owner.ownerId = OwnerWithProperty.ownerId;", myconnection); 
+        //        dt = new DataTable();
+        //    adpt.Fill(dt);
+        //    deletedataGridView.DataSource = dt; 
 
 
-        }
+        //}
+
+        
     }
 }

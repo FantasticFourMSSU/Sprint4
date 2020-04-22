@@ -17,6 +17,7 @@ namespace LECCISLogin
         LECCISSearch.searchForm search = new LECCISSearch.searchForm();
         LECCISLogin.addOwnerForm addOwner = new LECCISLogin.addOwnerForm();
         LECCISLogin.Login login = new LECCISLogin.Login();
+        LECCISLogin.modify modify = new LECCISLogin.modify();
         
 
         public Dashboard(string usr)
@@ -35,6 +36,10 @@ namespace LECCISLogin
         {
             
             addOwner.ShowDialog();
+        }
+        private void editRecordButton_Click(object sender, EventArgs e)
+        {
+            modify.ShowDialog();
         }
 
         private void addPropertyButton_Click(object sender, EventArgs e)
@@ -71,5 +76,7 @@ namespace LECCISLogin
         {
 
         }
+
+
     }
 }
