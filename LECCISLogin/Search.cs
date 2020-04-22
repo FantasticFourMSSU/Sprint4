@@ -90,6 +90,11 @@ namespace LECCISSearch
                 searchOwner.Clear();
             }
         }
+
+        private void resultsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 
