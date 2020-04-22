@@ -17,11 +17,12 @@ namespace LECCISLogin
         LECCISSearch.searchForm search = new LECCISSearch.searchForm();
         LECCISLogin.addOwnerForm addOwner = new LECCISLogin.addOwnerForm();
         LECCISLogin.Login login = new LECCISLogin.Login();
+        
 
-        public Dashboard()
+        public Dashboard(string usr)
         {
             InitializeComponent();
-            
+            usernameLabel.Text = usr;
         }
 
         private void searchButton_Click(object sender, EventArgs e)
