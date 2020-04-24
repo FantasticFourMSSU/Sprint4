@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(modify));
             this.editButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.deletedataGridView = new System.Windows.Forms.DataGridView();
             this.modifyGroupBox = new System.Windows.Forms.GroupBox();
-            this.SearchOwnerOrPropertyTextbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SearchOwnerOrPropertyTextbox = new System.Windows.Forms.TextBox();
+            this.showAllButton = new System.Windows.Forms.Button();
+            this.textBoxFN = new System.Windows.Forms.TextBox();
+            this.textBoxLN = new System.Windows.Forms.TextBox();
+            this.textBoxPN = new System.Windows.Forms.TextBox();
+            this.textBoxCY = new System.Windows.Forms.TextBox();
+            this.textBoxSN = new System.Windows.Forms.TextBox();
+            this.textBoxE = new System.Windows.Forms.TextBox();
+            this.textBoxZP = new System.Windows.Forms.TextBox();
+            this.textBoxST = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.deletedataGridView)).BeginInit();
             this.modifyGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -42,9 +52,10 @@
             // editButton
             // 
             this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editButton.Location = new System.Drawing.Point(619, 452);
+            this.editButton.Location = new System.Drawing.Point(928, 706);
+            this.editButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(117, 36);
+            this.editButton.Size = new System.Drawing.Size(176, 56);
             this.editButton.TabIndex = 0;
             this.editButton.Text = "Edit ";
             this.editButton.UseVisualStyleBackColor = true;
@@ -53,9 +64,10 @@
             // deleteButton
             // 
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteButton.Location = new System.Drawing.Point(791, 452);
+            this.deleteButton.Location = new System.Drawing.Point(1186, 706);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(101, 36);
+            this.deleteButton.Size = new System.Drawing.Size(152, 56);
             this.deleteButton.TabIndex = 1;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -64,70 +76,152 @@
             // deletedataGridView
             // 
             this.deletedataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.deletedataGridView.Location = new System.Drawing.Point(14, 88);
+            this.deletedataGridView.Location = new System.Drawing.Point(21, 138);
+            this.deletedataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deletedataGridView.Name = "deletedataGridView";
             this.deletedataGridView.RowHeadersWidth = 51;
             this.deletedataGridView.RowTemplate.Height = 24;
-            this.deletedataGridView.Size = new System.Drawing.Size(997, 284);
+            this.deletedataGridView.Size = new System.Drawing.Size(1496, 444);
             this.deletedataGridView.TabIndex = 2;
+            this.deletedataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.deletedataGridView_CellClick);
             this.deletedataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // modifyGroupBox
             // 
+            this.modifyGroupBox.Controls.Add(this.showAllButton);
             this.modifyGroupBox.Controls.Add(this.button1);
             this.modifyGroupBox.Controls.Add(this.label1);
             this.modifyGroupBox.Controls.Add(this.SearchOwnerOrPropertyTextbox);
             this.modifyGroupBox.Controls.Add(this.deletedataGridView);
-            this.modifyGroupBox.Location = new System.Drawing.Point(11, 35);
-            this.modifyGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modifyGroupBox.Location = new System.Drawing.Point(16, 55);
             this.modifyGroupBox.Name = "modifyGroupBox";
-            this.modifyGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.modifyGroupBox.Size = new System.Drawing.Size(1025, 412);
+            this.modifyGroupBox.Size = new System.Drawing.Size(1538, 644);
             this.modifyGroupBox.TabIndex = 4;
             this.modifyGroupBox.TabStop = false;
             // 
-            // SearchOwnerOrPropertyTextbox
-            // 
-            this.SearchOwnerOrPropertyTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchOwnerOrPropertyTextbox.Location = new System.Drawing.Point(421, 34);
-            this.SearchOwnerOrPropertyTextbox.Name = "SearchOwnerOrPropertyTextbox";
-            this.SearchOwnerOrPropertyTextbox.Size = new System.Drawing.Size(279, 30);
-            this.SearchOwnerOrPropertyTextbox.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Search Owner or Property";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(753, 37);
+            this.button1.Location = new System.Drawing.Point(818, 65);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 27);
+            this.button1.Size = new System.Drawing.Size(164, 44);
             this.button1.TabIndex = 7;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(163, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 31);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Search Record";
+            // 
+            // SearchOwnerOrPropertyTextbox
+            // 
+            this.SearchOwnerOrPropertyTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchOwnerOrPropertyTextbox.Location = new System.Drawing.Point(381, 65);
+            this.SearchOwnerOrPropertyTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SearchOwnerOrPropertyTextbox.Name = "SearchOwnerOrPropertyTextbox";
+            this.SearchOwnerOrPropertyTextbox.Size = new System.Drawing.Size(416, 44);
+            this.SearchOwnerOrPropertyTextbox.TabIndex = 5;
+            // 
+            // showAllButton
+            // 
+            this.showAllButton.Location = new System.Drawing.Point(1132, 67);
+            this.showAllButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(244, 44);
+            this.showAllButton.TabIndex = 8;
+            this.showAllButton.Text = "Show All Records";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
+            // 
+            // textBoxFN
+            // 
+            this.textBoxFN.Location = new System.Drawing.Point(71, 701);
+            this.textBoxFN.Name = "textBoxFN";
+            this.textBoxFN.Size = new System.Drawing.Size(336, 31);
+            this.textBoxFN.TabIndex = 5;
+            // 
+            // textBoxLN
+            // 
+            this.textBoxLN.Location = new System.Drawing.Point(71, 755);
+            this.textBoxLN.Name = "textBoxLN";
+            this.textBoxLN.Size = new System.Drawing.Size(336, 31);
+            this.textBoxLN.TabIndex = 6;
+            // 
+            // textBoxPN
+            // 
+            this.textBoxPN.Location = new System.Drawing.Point(71, 813);
+            this.textBoxPN.Name = "textBoxPN";
+            this.textBoxPN.Size = new System.Drawing.Size(336, 31);
+            this.textBoxPN.TabIndex = 7;
+            // 
+            // textBoxCY
+            // 
+            this.textBoxCY.Location = new System.Drawing.Point(71, 985);
+            this.textBoxCY.Name = "textBoxCY";
+            this.textBoxCY.Size = new System.Drawing.Size(336, 31);
+            this.textBoxCY.TabIndex = 10;
+            // 
+            // textBoxSN
+            // 
+            this.textBoxSN.Location = new System.Drawing.Point(71, 927);
+            this.textBoxSN.Name = "textBoxSN";
+            this.textBoxSN.Size = new System.Drawing.Size(336, 31);
+            this.textBoxSN.TabIndex = 9;
+            // 
+            // textBoxE
+            // 
+            this.textBoxE.Location = new System.Drawing.Point(71, 873);
+            this.textBoxE.Name = "textBoxE";
+            this.textBoxE.Size = new System.Drawing.Size(336, 31);
+            this.textBoxE.TabIndex = 8;
+            // 
+            // textBoxZP
+            // 
+            this.textBoxZP.Location = new System.Drawing.Point(71, 1095);
+            this.textBoxZP.Name = "textBoxZP";
+            this.textBoxZP.Size = new System.Drawing.Size(336, 31);
+            this.textBoxZP.TabIndex = 12;
+            // 
+            // textBoxST
+            // 
+            this.textBoxST.Location = new System.Drawing.Point(71, 1041);
+            this.textBoxST.Name = "textBoxST";
+            this.textBoxST.Size = new System.Drawing.Size(336, 31);
+            this.textBoxST.TabIndex = 11;
+            // 
             // modify
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 541);
+            this.ClientSize = new System.Drawing.Size(1572, 1212);
+            this.Controls.Add(this.textBoxZP);
+            this.Controls.Add(this.textBoxST);
+            this.Controls.Add(this.textBoxCY);
+            this.Controls.Add(this.textBoxSN);
+            this.Controls.Add(this.textBoxE);
+            this.Controls.Add(this.textBoxPN);
+            this.Controls.Add(this.textBoxLN);
+            this.Controls.Add(this.textBoxFN);
             this.Controls.Add(this.modifyGroupBox);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.editButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "modify";
-            this.Text = "delete";
+            this.Text = "Law Enforcement Community Check Information System (LECCIS)";
             ((System.ComponentModel.ISupportInitialize)(this.deletedataGridView)).EndInit();
             this.modifyGroupBox.ResumeLayout(false);
             this.modifyGroupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -140,5 +234,14 @@
         private System.Windows.Forms.TextBox SearchOwnerOrPropertyTextbox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button showAllButton;
+        private System.Windows.Forms.TextBox textBoxFN;
+        private System.Windows.Forms.TextBox textBoxLN;
+        private System.Windows.Forms.TextBox textBoxPN;
+        private System.Windows.Forms.TextBox textBoxCY;
+        private System.Windows.Forms.TextBox textBoxSN;
+        private System.Windows.Forms.TextBox textBoxE;
+        private System.Windows.Forms.TextBox textBoxZP;
+        private System.Windows.Forms.TextBox textBoxST;
     }
 }

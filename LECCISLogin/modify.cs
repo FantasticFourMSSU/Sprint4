@@ -41,7 +41,12 @@ namespace LECCISLogin
 
         private void editButton_Click(object sender, EventArgs e)
         {
+            string SN = textBoxSN.Text;
+            string CY = textBoxCY.Text;
+            string ST = textBoxST.Text;
+            string ZP = textBoxZP.Text;
 
+            MessageBox.Show(SN + ", " + CY + ", " + ST + ", " + ZP, "Testing", MessageBoxButtons.OK);
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -61,6 +66,27 @@ namespace LECCISLogin
             adpt.Fill(dt);
             deletedataGridView.DataSource = dt;
        
+        }
+
+        private void showAllButton_Click(object sender, EventArgs e)
+        {
+            dataGridViewRefresh();
+        }
+
+        private void deletedataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            DataGridViewRow selectedRow = deletedataGridView.Rows[index];
+
+            textBoxFN.Text = selectedRow.Cells[0].Value.ToString();
+            textBoxLN.Text = selectedRow.Cells[1].Value.ToString();
+            textBoxPN.Text = selectedRow.Cells[2].Value.ToString();
+            textBoxE.Text = selectedRow.Cells[3].Value.ToString();
+            textBoxSN.Text = selectedRow.Cells[4].Value.ToString();
+            textBoxCY.Text = selectedRow.Cells[5].Value.ToString();
+            textBoxST.Text = selectedRow.Cells[6].Value.ToString();
+            textBoxZP.Text = selectedRow.Cells[7].Value.ToString();
+
         }
 
         //private void button3_Click(object sender, EventArgs e)
