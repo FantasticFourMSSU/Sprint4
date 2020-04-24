@@ -76,11 +76,12 @@ namespace LECCISLogin
             else
             {
 
+        
                 //string sql2 = "SELECT MAX(propertyId) AS LastID from Property;";
                 //MessageBox.Show(sql2);
 
 
-                string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES (' " + this.streetNumber.Text + " ','" + this.city.Text + " ', '" + this.state.Text + " ',' " + this.zip.Text + "')";
+                string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.state.Text + "','" + this.zip.Text + "')";
 
                 string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
 
@@ -92,12 +93,12 @@ namespace LECCISLogin
                     {
                         while (rdr.Read())
                         {
-                            
+
                         }
                     }
                 }
                 myconnection.Close();
-                
+
                 myconnection.Open();
                 using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
                 {
@@ -105,7 +106,7 @@ namespace LECCISLogin
                     {
                         while (rdr2.Read())
                         {
-                            
+
                         }
                         MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
                         myconnection.Close();

@@ -127,6 +127,18 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOwner.Designer.cs">
+      <DependentUpon>EditOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProperty.Designer.cs">
+      <DependentUpon>EditProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="modify.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOwner.resx">
+      <DependentUpon>EditOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProperty.resx">
+      <DependentUpon>EditProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modify.resx">
       <DependentUpon>modify.cs</DependentUpon>

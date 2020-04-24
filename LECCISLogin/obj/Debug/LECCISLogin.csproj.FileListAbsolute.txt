@@ -184,3 +184,5 @@ C:\Users\savin\Source\Repos\Sprint415\LECCISLogin\obj\Debug\LECCISLogin.csproj.C
 C:\Users\savin\Source\Repos\Sprint415\LECCISLogin\obj\Debug\LECCISLogin.exe
 C:\Users\savin\Source\Repos\Sprint415\LECCISLogin\obj\Debug\LECCISLogin.pdb
 C:\Users\savin\Source\Repos\Sprint415\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.EditOwner.resources
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.EditProperty.resources

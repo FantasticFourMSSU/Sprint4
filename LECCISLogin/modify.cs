@@ -17,6 +17,17 @@ namespace LECCISLogin
         MySqlDataAdapter adpt;
         DataTable dt;
 
+        string FN = "";
+        string LN = "";
+        string PH = "";
+        string EM = "";
+        string SN = "";
+        string CT = "";
+        string ST = "";
+        string ZP = "";
+
+        
+
         public modify()
         {
             InitializeComponent();
@@ -41,12 +52,16 @@ namespace LECCISLogin
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            string SN = textBoxSN.Text;
-            string CY = textBoxCY.Text;
-            string ST = textBoxST.Text;
-            string ZP = textBoxZP.Text;
+            string street = SN;
+            string city = CT;
+            string state = ST;
+            string zip = ZP;
+            string Combo = (FN + LN);
 
-            MessageBox.Show(SN + ", " + CY + ", " + ST + ", " + ZP, "Testing", MessageBoxButtons.OK);
+            LECCISLogin.EditProperty editProp = new EditProperty(street,city,state,zip,Combo);
+            editProp.ShowDialog();
+
+
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -78,14 +93,14 @@ namespace LECCISLogin
             int index = e.RowIndex;
             DataGridViewRow selectedRow = deletedataGridView.Rows[index];
 
-            textBoxFN.Text = selectedRow.Cells[0].Value.ToString();
-            textBoxLN.Text = selectedRow.Cells[1].Value.ToString();
-            textBoxPN.Text = selectedRow.Cells[2].Value.ToString();
-            textBoxE.Text = selectedRow.Cells[3].Value.ToString();
-            textBoxSN.Text = selectedRow.Cells[4].Value.ToString();
-            textBoxCY.Text = selectedRow.Cells[5].Value.ToString();
-            textBoxST.Text = selectedRow.Cells[6].Value.ToString();
-            textBoxZP.Text = selectedRow.Cells[7].Value.ToString();
+            FN = selectedRow.Cells[0].Value.ToString();
+            LN = selectedRow.Cells[1].Value.ToString();
+            PH = selectedRow.Cells[2].Value.ToString();
+            EM = selectedRow.Cells[3].Value.ToString();
+            SN = selectedRow.Cells[4].Value.ToString();
+            CT = selectedRow.Cells[5].Value.ToString();
+            ST = selectedRow.Cells[6].Value.ToString();
+            ZP = selectedRow.Cells[7].Value.ToString();
 
         }
 

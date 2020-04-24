@@ -33,10 +33,10 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.deletedataGridView = new System.Windows.Forms.DataGridView();
             this.modifyGroupBox = new System.Windows.Forms.GroupBox();
+            this.showAllButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SearchOwnerOrPropertyTextbox = new System.Windows.Forms.TextBox();
-            this.showAllButton = new System.Windows.Forms.Button();
             this.textBoxFN = new System.Windows.Forms.TextBox();
             this.textBoxLN = new System.Windows.Forms.TextBox();
             this.textBoxPN = new System.Windows.Forms.TextBox();
@@ -45,6 +45,7 @@
             this.textBoxE = new System.Windows.Forms.TextBox();
             this.textBoxZP = new System.Windows.Forms.TextBox();
             this.textBoxST = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.deletedataGridView)).BeginInit();
             this.modifyGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -52,19 +53,19 @@
             // editButton
             // 
             this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editButton.Location = new System.Drawing.Point(928, 706);
+            this.editButton.Location = new System.Drawing.Point(845, 707);
             this.editButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(176, 56);
+            this.editButton.Size = new System.Drawing.Size(190, 56);
             this.editButton.TabIndex = 0;
-            this.editButton.Text = "Edit ";
+            this.editButton.Text = "Edit Property";
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // deleteButton
             // 
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteButton.Location = new System.Drawing.Point(1186, 706);
+            this.deleteButton.Location = new System.Drawing.Point(1295, 707);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(152, 56);
@@ -99,6 +100,17 @@
             this.modifyGroupBox.TabIndex = 4;
             this.modifyGroupBox.TabStop = false;
             // 
+            // showAllButton
+            // 
+            this.showAllButton.Location = new System.Drawing.Point(1132, 67);
+            this.showAllButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(244, 44);
+            this.showAllButton.TabIndex = 8;
+            this.showAllButton.Text = "Show All Records";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(818, 65);
@@ -129,17 +141,6 @@
             this.SearchOwnerOrPropertyTextbox.Name = "SearchOwnerOrPropertyTextbox";
             this.SearchOwnerOrPropertyTextbox.Size = new System.Drawing.Size(416, 44);
             this.SearchOwnerOrPropertyTextbox.TabIndex = 5;
-            // 
-            // showAllButton
-            // 
-            this.showAllButton.Location = new System.Drawing.Point(1132, 67);
-            this.showAllButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showAllButton.Name = "showAllButton";
-            this.showAllButton.Size = new System.Drawing.Size(244, 44);
-            this.showAllButton.TabIndex = 8;
-            this.showAllButton.Text = "Show All Records";
-            this.showAllButton.UseVisualStyleBackColor = true;
-            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
             // 
             // textBoxFN
             // 
@@ -197,11 +198,23 @@
             this.textBoxST.Size = new System.Drawing.Size(336, 31);
             this.textBoxST.TabIndex = 11;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1043, 707);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(190, 56);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Edit Owner";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // modify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1572, 1212);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxZP);
             this.Controls.Add(this.textBoxST);
             this.Controls.Add(this.textBoxCY);
@@ -243,5 +256,6 @@
         private System.Windows.Forms.TextBox textBoxE;
         private System.Windows.Forms.TextBox textBoxZP;
         private System.Windows.Forms.TextBox textBoxST;
+        private System.Windows.Forms.Button button2;
     }
 }
