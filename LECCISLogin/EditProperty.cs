@@ -39,7 +39,7 @@ namespace LECCISLogin
             textBoxCY.Text = city;
             stateComboBox.SelectedItem = state;
             textBoxZP.Text = zip;
-            comboBox1.SelectedItem = combo;
+            comboBox1.Text = combo;
 
         }
 

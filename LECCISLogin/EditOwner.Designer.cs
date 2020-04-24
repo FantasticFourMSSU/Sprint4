@@ -29,87 +29,123 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditOwner));
-            this.textBoxZP = new System.Windows.Forms.TextBox();
-            this.textBoxST = new System.Windows.Forms.TextBox();
-            this.textBoxCY = new System.Windows.Forms.TextBox();
-            this.textBoxSN = new System.Windows.Forms.TextBox();
             this.textBoxE = new System.Windows.Forms.TextBox();
             this.textBoxPN = new System.Windows.Forms.TextBox();
             this.textBoxLN = new System.Windows.Forms.TextBox();
             this.textBoxFN = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.updateButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // textBoxZP
-            // 
-            this.textBoxZP.Location = new System.Drawing.Point(232, 609);
-            this.textBoxZP.Name = "textBoxZP";
-            this.textBoxZP.Size = new System.Drawing.Size(336, 31);
-            this.textBoxZP.TabIndex = 20;
-            // 
-            // textBoxST
-            // 
-            this.textBoxST.Location = new System.Drawing.Point(232, 555);
-            this.textBoxST.Name = "textBoxST";
-            this.textBoxST.Size = new System.Drawing.Size(336, 31);
-            this.textBoxST.TabIndex = 19;
-            // 
-            // textBoxCY
-            // 
-            this.textBoxCY.Location = new System.Drawing.Point(232, 499);
-            this.textBoxCY.Name = "textBoxCY";
-            this.textBoxCY.Size = new System.Drawing.Size(336, 31);
-            this.textBoxCY.TabIndex = 18;
-            // 
-            // textBoxSN
-            // 
-            this.textBoxSN.Location = new System.Drawing.Point(232, 441);
-            this.textBoxSN.Name = "textBoxSN";
-            this.textBoxSN.Size = new System.Drawing.Size(336, 31);
-            this.textBoxSN.TabIndex = 17;
             // 
             // textBoxE
             // 
-            this.textBoxE.Location = new System.Drawing.Point(232, 387);
+            this.textBoxE.Location = new System.Drawing.Point(322, 455);
             this.textBoxE.Name = "textBoxE";
             this.textBoxE.Size = new System.Drawing.Size(336, 31);
             this.textBoxE.TabIndex = 16;
             // 
             // textBoxPN
             // 
-            this.textBoxPN.Location = new System.Drawing.Point(232, 327);
+            this.textBoxPN.Location = new System.Drawing.Point(322, 347);
             this.textBoxPN.Name = "textBoxPN";
             this.textBoxPN.Size = new System.Drawing.Size(336, 31);
             this.textBoxPN.TabIndex = 15;
             // 
             // textBoxLN
             // 
-            this.textBoxLN.Location = new System.Drawing.Point(232, 269);
+            this.textBoxLN.Location = new System.Drawing.Point(322, 243);
             this.textBoxLN.Name = "textBoxLN";
             this.textBoxLN.Size = new System.Drawing.Size(336, 31);
             this.textBoxLN.TabIndex = 14;
             // 
             // textBoxFN
             // 
-            this.textBoxFN.Location = new System.Drawing.Point(232, 215);
+            this.textBoxFN.Location = new System.Drawing.Point(322, 150);
             this.textBoxFN.Name = "textBoxFN";
             this.textBoxFN.Size = new System.Drawing.Size(336, 31);
             this.textBoxFN.TabIndex = 13;
             // 
-            // EditRec
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(136, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 36);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "First Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(138, 243);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 36);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Last Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(79, 343);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(215, 36);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Phone Number";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(206, 451);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 36);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Email";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(228, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(345, 37);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Edit Owner Information";
+            // 
+            // updateButton
+            // 
+            this.updateButton.Location = new System.Drawing.Point(293, 579);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(214, 66);
+            this.updateButton.TabIndex = 22;
+            this.updateButton.Text = "Update";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // EditOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 854);
-            this.Controls.Add(this.textBoxZP);
-            this.Controls.Add(this.textBoxST);
-            this.Controls.Add(this.textBoxCY);
-            this.Controls.Add(this.textBoxSN);
+            this.ClientSize = new System.Drawing.Size(800, 722);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxE);
             this.Controls.Add(this.textBoxPN);
             this.Controls.Add(this.textBoxLN);
             this.Controls.Add(this.textBoxFN);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "EditRec";
+            this.Name = "EditOwner";
             this.Text = "Law Enforcement Community Check Information System (LECCIS)";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,14 +153,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxZP;
-        private System.Windows.Forms.TextBox textBoxST;
-        private System.Windows.Forms.TextBox textBoxCY;
-        private System.Windows.Forms.TextBox textBoxSN;
         private System.Windows.Forms.TextBox textBoxE;
         private System.Windows.Forms.TextBox textBoxPN;
         private System.Windows.Forms.TextBox textBoxLN;
         private System.Windows.Forms.TextBox textBoxFN;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button updateButton;
     }
 }
