@@ -16,6 +16,7 @@ namespace LECCISLogin
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
        
         public int ownerID;
+        public int ownerId;
         public int propID;
         public string combo;
         public string street;
@@ -23,17 +24,19 @@ namespace LECCISLogin
         public string state;
         public string zip;
 
-        public EditProperty(string str, string ct, string st, string zp, string cb)
+        public EditProperty(string str, string ct, string st, string zp, string cb, int OID, int PID)
         {
             street = str;
             city = ct;
             state = st;
             zip = zp;
             combo = cb;
+            ownerId = OID;
+            ownerID = OID;
+            propID = PID;
 
             InitializeComponent();
             Fillcombo();
-            FindProperty();
 
             textBoxSN.Text = street;
             textBoxCY.Text = city;
@@ -71,24 +74,7 @@ namespace LECCISLogin
             myconnection.Close();
         }
 
-        public void FindProperty()
-        {
-            myconnection.Open();
 
-            string query = "SELECT propertyId from Property where streetNumber = '" + street + "' AND city = '" + city + "' AND state = '" + state + "' AND zip = '" + zip + "';";
-            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
-            using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
-            {
-                while (myReader.Read())
-                {
-                    int PID = Convert.ToInt32(myReader.GetString("propertyId"));
-
-                    propID = PID;
-                }
-            }
-            myconnection.Close();
-
-        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             myconnection.Open();
@@ -133,8 +119,8 @@ namespace LECCISLogin
             else
             {
 
-                string sql = "UPDATE Property SET streetNumber = " + this.textBoxSN.Text +", city = "+ this.textBoxCY.Text +", state = "+ this.stateComboBox.Text +", zip = "+ this.textBoxZP.Text +" WHERE propertyId = "+ propID +"";
-                string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + propID + ")";
+                string sql = "UPDATE Property SET streetNumber = '" + this.textBoxSN.Text + "', city = '" + this.textBoxCY.Text + "', state = '" + this.stateComboBox.Text + "', zip = '" + this.textBoxZP.Text + "' WHERE propertyId = " + propID + "";
+                string sql2 = "INSERT INTO OwnerWithProperty  VALUES(" + ownerID + "," + propID + ")";
 
 
 
@@ -150,21 +136,31 @@ namespace LECCISLogin
                 }
                 myconnection.Close();
 
-                myconnection.Open();
-                using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
+                if (ownerId != ownerID)
                 {
-                    using (MySqlDataReader rdr2 = cmd2.ExecuteReader())
+                    myconnection.Open();
+                    using (MySqlCommand cmd2 = new MySqlCommand(sql2, myconnection))
                     {
-                        while (rdr2.Read())
+                        using (MySqlDataReader rdr2 = cmd2.ExecuteReader())
                         {
+                            while (rdr2.Read())
+                            {
 
+                            }
+                            MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
+                            myconnection.Close();
                         }
-                        MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
-                        myconnection.Close();
                     }
                 }
+                else 
+                {
+                    MessageBox.Show("Property updated successfully.", "Success", MessageBoxButtons.OK);
+                }
+                
+
             }
             this.Close();
+            
         }
     }
 }

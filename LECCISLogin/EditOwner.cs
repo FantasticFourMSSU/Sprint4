@@ -21,14 +21,10 @@ namespace LECCISLogin
         public string lastName;
         public string phoneNumber;
         public string email;
-        public string fullname;
+ 
 
-        public EditOwner()
-        {
-            InitializeComponent();
-        }
 
-        public EditOwner(string fn, string ln, string pn, string e)
+        public EditOwner(string fn, string ln, string pn, string e, int oid)
         {
             InitializeComponent();
 
@@ -36,34 +32,20 @@ namespace LECCISLogin
             lastName = ln;
             phoneNumber = pn;
             email = e;
+            ownerID = oid;
 
-            fullname = (fn + " " + ln);
 
             textBoxFN.Text = firstName;
             textBoxLN.Text = lastName;
             textBoxPN.Text = phoneNumber;
             textBoxE.Text = email;
-
-            
-            FindOwnerID();
+          
         }
 
-        public void FindOwnerID()
-        {
-            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + fullname + "';";
-            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
-            using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
-            {
-                while (myReader.Read())
-                {
-                    int OID = Convert.ToInt32(myReader.GetString("ownerId"));
 
-                    ownerID = OID;
-                }
-            }
-        }
         private void updateButton_Click(object sender, EventArgs e)
         {
+            myconnection.Open();
 
             if (textBoxFN.Text == "" || textBoxLN.Text == "" || textBoxPN.Text == "" || textBoxE.Text == "")
             {
@@ -103,7 +85,7 @@ namespace LECCISLogin
                     MessageBox.Show("Values could not be edited", "System Error", MessageBoxButtons.AbortRetryIgnore);
                 }
             }
-            
+            myconnection.Close();
         }
 
         private void textBoxFN_TextChanged(object sender, EventArgs e)
