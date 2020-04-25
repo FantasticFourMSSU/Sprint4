@@ -17,20 +17,30 @@ namespace LECCISLogin
         MySqlDataAdapter adpt;
         DataTable dt;
 
+        public int ownerId;
+
+        public string fullname;
+
         string FN = "";
         string LN = "";
         string PH = "";
         string EM = "";
+
+       
+       
         string SN = "";
         string CT = "";
         string ST = "";
         string ZP = "";
-
+        
         
 
         public modify()
         {
             InitializeComponent();
+
+            fullname = (FN + " " + LN);
+
             myconnection.Open();
             dataGridViewRefresh();
         }
@@ -45,7 +55,22 @@ namespace LECCISLogin
             deletedataGridView.DataSource = dt;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void FindOwnerID()
+        {
+            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + fullname + "';";
+            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
+            using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
+            {
+                while (myReader.Read())
+                {
+                    int OID = Convert.ToInt32(myReader.GetString("ownerId"));
+
+                    ownerId = OID;
+                }
+            }
+        }
+
+            private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -66,7 +91,11 @@ namespace LECCISLogin
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-
+            adpt = new MySqlDataAdapter("DELETE FROM OwnerWithProperty WHERE ownerId =  " + ownerId + "", myconnection);
+           adpt = new MySqlDataAdapter("DELETE FROM Owner WHERE ownerId = " + ownerId + "", myconnection);
+            dt = new DataTable();
+            adpt.Fill(dt);
+            deletedataGridView.DataSource = dt;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -101,6 +130,11 @@ namespace LECCISLogin
             CT = selectedRow.Cells[5].Value.ToString();
             ST = selectedRow.Cells[6].Value.ToString();
             ZP = selectedRow.Cells[7].Value.ToString();
+
+        }
+
+        private void SearchOwnerOrPropertyTextbox_TextChanged(object sender, EventArgs e)
+        {
 
         }
 

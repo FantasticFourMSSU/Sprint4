@@ -105,6 +105,11 @@ namespace LECCISLogin
             }
             
         }
+
+        private void textBoxFN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
