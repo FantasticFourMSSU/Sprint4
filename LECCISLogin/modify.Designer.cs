@@ -77,7 +77,6 @@
             this.deletedataGridView.Size = new System.Drawing.Size(1496, 444);
             this.deletedataGridView.TabIndex = 2;
             this.deletedataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.deletedataGridView_CellClick);
-            this.deletedataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // modifyGroupBox
             // 
@@ -150,7 +149,6 @@
             this.SearchOwnerOrPropertyTextbox.Name = "SearchOwnerOrPropertyTextbox";
             this.SearchOwnerOrPropertyTextbox.Size = new System.Drawing.Size(416, 44);
             this.SearchOwnerOrPropertyTextbox.TabIndex = 5;
-            this.SearchOwnerOrPropertyTextbox.TextChanged += new System.EventHandler(this.SearchOwnerOrPropertyTextbox_TextChanged);
             // 
             // modify
             // 

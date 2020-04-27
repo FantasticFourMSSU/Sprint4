@@ -68,7 +68,6 @@
             this.textBoxFN.Name = "textBoxFN";
             this.textBoxFN.Size = new System.Drawing.Size(336, 31);
             this.textBoxFN.TabIndex = 13;
-            this.textBoxFN.TextChanged += new System.EventHandler(this.textBoxFN_TextChanged);
             // 
             // label1
             // 

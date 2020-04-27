@@ -16,6 +16,11 @@ namespace LECCISLogin
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
 
         public int ownerID;
+        public int propId;
+        public string SN;
+        public string CT;
+        public string ST;
+        public string ZP;
        
 
         public addProperty()
@@ -51,14 +56,33 @@ namespace LECCISLogin
             myconnection.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void FindProperty()
         {
             myconnection.Open();
 
-            var SN = streetNumber.Text;
-            var CT = city.Text;
-            var ST = state.Text;
-            var ZP = zip.Text;
+            string query = "select propertyId From Property where streetNumber = '" + SN + "' AND city = '" + CT + "' AND state = '" + ST + "' AND zip = '" + ZP + "';";
+            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
+            using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
+            {
+                while (myReader.Read())
+                {
+                    int PID = Convert.ToInt32(myReader.GetString("propertyId"));
+
+                    propId = PID;
+                }
+            }
+            myconnection.Close();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+            SN = streetNumber.Text;
+            CT = city.Text;
+            ST = state.Text;
+            ZP = zip.Text;
 
             if (SN == "" || CT == "" || ST == "" || ZP == "" || comboBox1.Text == "")
             {
@@ -75,43 +99,48 @@ namespace LECCISLogin
             }
             else
             {
+                FindProperty();
 
-        
-                //string sql2 = "SELECT MAX(propertyId) AS LastID from Property;";
-                //MessageBox.Show(sql2);
-
-
-                string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.state.Text + "','" + this.zip.Text + "')";
-
-                string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
-
-
-
-                using (MySqlCommand cmd = new MySqlCommand(sql, myconnection))
+                if (propId != 0)
                 {
-                    using (MySqlDataReader rdr = cmd.ExecuteReader())
-                    {
-                        while (rdr.Read())
-                        {
+                    MessageBox.Show("A duplicate exists in the database and cannot be added.", "Database Duplication", MessageBoxButtons.OK);
+                }
+                else
+                {
 
+                    string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.state.Text + "','" + this.zip.Text + "')";
+                    string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
+
+
+                    myconnection.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(sql, myconnection))
+                    {
+                        using (MySqlDataReader rdr = cmd.ExecuteReader())
+                        {
+                            while (rdr.Read())
+                            {
+
+                            }
                         }
                     }
-                }
-                myconnection.Close();
+                    myconnection.Close();
 
-                myconnection.Open();
-                using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
-                {
-                    using (MySqlDataReader rdr2 = cmd2.ExecuteReader())
+                    myconnection.Open();
+                    using (MySqlCommand cmd2 = new MySqlCommand(sql3, myconnection))
                     {
-                        while (rdr2.Read())
+                        using (MySqlDataReader rdr2 = cmd2.ExecuteReader())
                         {
+                            while (rdr2.Read())
+                            {
 
+                            }
+                            MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
+                            myconnection.Close();
                         }
-                        MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
-                        myconnection.Close();
                     }
+                    myconnection.Close();
                 }
+
             }
             this.Close();
         }
@@ -135,9 +164,5 @@ namespace LECCISLogin
 
         }
 
-        private void streetNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

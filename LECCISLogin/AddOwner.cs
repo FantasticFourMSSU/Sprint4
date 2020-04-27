@@ -15,14 +15,40 @@ namespace LECCISLogin
   {
         
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
+       
+        public int ownerId = 0;
+        public string FN;
+        public string LN;
+        public string PN1;
+        public string PN2;
+        public string PN3;
+        public string PN;
+        public string EM;
 
 
         public addOwnerForm()
         {
              InitializeComponent();
-             myconnection.Open();
+
         }
 
+        public void FindOwnerID()
+        {
+            myconnection.Open();
+            string query = "SELECT ownerId from Owner where firstName = '" + FN + "' AND lastName = '" + LN + "' AND phoneNumber = '" + PN + "' AND email = '" + EM + "';";
+            // string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + fullname + "';";
+            MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
+            using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
+            {
+                while (myReader.Read())
+                {
+                    int OID = Convert.ToInt32(myReader.GetString("ownerId"));
+
+                    ownerId = OID;
+                }
+            }
+            myconnection.Close();
+        }
 
         private void button_MouseEnter(object sender, EventArgs e)
         {
@@ -37,13 +63,13 @@ namespace LECCISLogin
 
         private void button_Click(object sender, EventArgs e)
         {
-            var FN = firstName.Text;
-            var LN = lastName.Text;
-            var PN1 = phoneNumber1.Text;
-            var PN2 = phoneNumber2.Text;
-            var PN3 = phoneNumber3.Text;
-            var PN = PN1 + "-" + PN2 + "-" + PN3;
-            var EM = email.Text;
+            FN = firstName.Text;
+            LN = lastName.Text;
+            PN1 = phoneNumber1.Text;
+            PN2 = phoneNumber2.Text;
+            PN3 = phoneNumber3.Text;
+            PN = PN1 + "-" + PN2 + "-" + PN3;
+            EM = email.Text;
 
             if (FN == "" || LN == "" || PN == "" || EM == "")
             {
@@ -62,60 +88,42 @@ namespace LECCISLogin
             }
             else
             {
-                string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES ('" + this.firstName.Text + "','" + this.lastName.Text + " ', '" + PN + " ',' " + this.email.Text + " ' )";
-                MySqlCommand cmd = new MySqlCommand(sql, myconnection);
-                MySqlDataReader rdr;
-                rdr = cmd.ExecuteReader();
-                try
+                FindOwnerID();
+
+                if(ownerId != 0)
                 {
-                    while (rdr.Read())
+                    MessageBox.Show("A duplicate exists in the database and cannot be added.", "Database Duplication", MessageBoxButtons.OK);
+
+                }
+                else
+                {
+
+                    myconnection.Open();
+                    string sql = "INSERT INTO Owner(firstName, lastName, phoneNumber, email) VALUES ('" + this.firstName.Text + "','" + this.lastName.Text + "', '" + PN + "','" + this.email.Text + "' )";
+                    MySqlCommand cmd = new MySqlCommand(sql, myconnection);
+                    MySqlDataReader rdr;
+                    rdr = cmd.ExecuteReader();
+                    try
                     {
+                        while (rdr.Read())
+                        {
+                        }
+                        MessageBox.Show("Owner Added Sucessfully", "Success Message", MessageBoxButtons.OK);
+                        myconnection.Close();
+                        this.Close();
                     }
-                    MessageBox.Show("Owner Added Sucessfully", "Success Message", MessageBoxButtons.OK);
+                    catch
+                    {
+
+                        MessageBox.Show("Values could not be addded", "System Error", MessageBoxButtons.AbortRetryIgnore);
+                    }
                     myconnection.Close();
-                    this.Close();  
                 }
-                catch
-                {
-   
-                    MessageBox.Show("Values could not be addded", "System Error", MessageBoxButtons.AbortRetryIgnore);
-                }
+
             }
-            //        using (MySqlDataReader rdr = cmd.ExecuteReader())
-            //        {
-            //            while (rdr.Read())
-            //            {
-            //                MessageBox.Show(string.Format("{0} {1} {2}", rdr.GetInt32(0), rdr.GetString(1),
-            //                        rdr.GetString(2)));
-
-            //            }
-
-            //        }
-            //    }
-            //    myconnection.Close();
-            //}
-            //MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-            //MySqlDataReader MyReader2;
-            //MyConn2.Open();
-            //MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.  
-            //MessageBox.Show("Save Data");
-            //while (MyReader2.Read())
-            //{
-            //}
-            //MyConn2.Close();
+            this.Close();
 
         }
 
-        private void firstName_TextChanged(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

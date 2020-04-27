@@ -88,10 +88,7 @@ namespace LECCISLogin
             myconnection.Close();
         }
 
-        private void textBoxFN_TextChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
 

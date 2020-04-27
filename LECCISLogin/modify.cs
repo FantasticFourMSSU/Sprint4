@@ -57,7 +57,8 @@ namespace LECCISLogin
         public void FindOwnerID()
         {
             myconnection.Open();
-            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + fullname + "';";
+            string query = "SELECT ownerId from Owner where firstName = '"+ FN + "' AND lastName = '"+ LN +"' AND phoneNumber = '"+ PH +"' AND email = '"+ EM +"';";
+         // string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + fullname + "';";
             MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
             using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
             {
@@ -91,10 +92,6 @@ namespace LECCISLogin
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void editButton_Click(object sender, EventArgs e)
         {
@@ -186,13 +183,13 @@ namespace LECCISLogin
             adpt.Fill(dt);
             deletedataGridView.DataSource = dt;
             myconnection.Close();
-        }
 
+        }
         private void showAllButton_Click(object sender, EventArgs e)
         {
             dataGridViewRefresh();
+            SearchOwnerOrPropertyTextbox.Text = "";
         }
-
         private void deletedataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
@@ -207,19 +204,13 @@ namespace LECCISLogin
             ST = selectedRow.Cells[6].Value.ToString();
             ZP = selectedRow.Cells[7].Value.ToString();
 
-        //  Places Current Value Into Full Name  //
+            //  Places Current Value Into Full Name  //
             fullname = (FN + " " + LN);
-            
-        //  Look Up the OwnerID and PropertyID of the selected row //
+
+            //  Look Up the OwnerID and PropertyID of the selected row //
             FindOwnerID();
             FindProperty();
         }
-
-        private void SearchOwnerOrPropertyTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
 
     }
 }
