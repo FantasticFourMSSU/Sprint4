@@ -68,7 +68,7 @@ namespace LECCISLogin
             PN1 = phoneNumber1.Text;
             PN2 = phoneNumber2.Text;
             PN3 = phoneNumber3.Text;
-            PN = PN1 + "-" + PN2 + "-" + PN3;
+            PN = PN1 + PN2 + PN3;
             EM = email.Text;
 
             if (FN == "" || LN == "" || PN == "" || EM == "")
