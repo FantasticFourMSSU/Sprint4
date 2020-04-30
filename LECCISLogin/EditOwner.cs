@@ -21,7 +21,8 @@ namespace LECCISLogin
         public string lastName;
         public string phoneNumber;
         public string email;
- 
+
+        public string PN;
 
 
         public EditOwner(string fn, string ln, string pn, string e, int oid)
@@ -47,6 +48,8 @@ namespace LECCISLogin
         {
             myconnection.Open();
 
+            PN = textBoxPN.Text;
+
             if (textBoxFN.Text == "" || textBoxLN.Text == "" || textBoxPN.Text == "" || textBoxE.Text == "")
             {
                 MessageBox.Show("Field can not be blank.", "Insert values", MessageBoxButtons.RetryCancel);
@@ -62,8 +65,19 @@ namespace LECCISLogin
                 textBoxPN.Clear();
                 textBoxE.Clear();
             }
+            if (PN.Length != 10)
+            {
+                MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
+            }
+            if (!textBoxE.Text.Contains("@"))
+            {
+                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+            }
             else
             {
+
+
+                
                 string sql = "Update Owner SET firstName = '" + this.textBoxFN.Text + "', " +
                              "lastName = '" + this.textBoxLN.Text + "', phoneNumber = '" + this.textBoxPN.Text + "', " +
                              "email = '" + this.textBoxE.Text + "' WHERE ownerId = " + ownerID +"";

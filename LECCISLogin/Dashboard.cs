@@ -15,7 +15,7 @@ namespace LECCISLogin
     public partial class Dashboard : Form
     {
         LECCISSearch.searchForm search = new LECCISSearch.searchForm();
-        LECCISLogin.addOwnerForm addOwner = new LECCISLogin.addOwnerForm();
+        
         LECCISLogin.Login login = new LECCISLogin.Login();
         LECCISLogin.modify modify = new LECCISLogin.modify();
         
@@ -34,7 +34,7 @@ namespace LECCISLogin
 
         private void addOwnerButton_Click(object sender, EventArgs e)
         {
-            
+            LECCISLogin.addOwnerForm addOwner = new LECCISLogin.addOwnerForm();
             addOwner.ShowDialog();
         }
         private void editRecordButton_Click(object sender, EventArgs e)

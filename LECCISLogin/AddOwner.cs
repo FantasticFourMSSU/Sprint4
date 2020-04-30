@@ -86,6 +86,15 @@ namespace LECCISLogin
                 phoneNumber1.Clear();
                 email.Clear();
             }
+            if (PN.Length != 10)
+            {
+                MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
+
+            }
+            if (!email.Text.Contains("@"))
+            {
+                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+            }
             else
             {
                 FindOwnerID();
