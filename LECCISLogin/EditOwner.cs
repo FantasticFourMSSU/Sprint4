@@ -23,7 +23,7 @@ namespace LECCISLogin
         public string email;
 
         public string PN;
-
+        public int validationKey;
 
         public EditOwner(string fn, string ln, string pn, string e, int oid)
         {
@@ -43,16 +43,18 @@ namespace LECCISLogin
           
         }
 
-
-        private void updateButton_Click(object sender, EventArgs e)
+        public void ValidateInput()
         {
-            myconnection.Open();
-
-            PN = textBoxPN.Text;
+            validationKey = 0;
 
             if (textBoxFN.Text == "" || textBoxLN.Text == "" || textBoxPN.Text == "" || textBoxE.Text == "")
             {
-                MessageBox.Show("Field can not be blank.", "Insert values", MessageBoxButtons.RetryCancel);
+                MessageBox.Show("Field can not be blank.", "Insert values", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                validationKey = validationKey + 1;
             }
             if (textBoxFN.Text.Contains(")") || textBoxFN.Text.Contains("(") || textBoxFN.Text.Contains(";") ||
                 textBoxLN.Text.Contains(")") || textBoxLN.Text.Contains("(") || textBoxLN.Text.Contains(";") ||
@@ -65,9 +67,17 @@ namespace LECCISLogin
                 textBoxPN.Clear();
                 textBoxE.Clear();
             }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
             if (PN.Length != 10)
             {
                 MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
+            }
+            else
+            {
+                validationKey = validationKey + 1;
             }
             if (!textBoxE.Text.Contains("@"))
             {
@@ -75,9 +85,25 @@ namespace LECCISLogin
             }
             else
             {
+                validationKey = validationKey + 1;
+            }
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            myconnection.Open();
+            PN = textBoxPN.Text;
+
+            ValidateInput();
 
 
-                
+            if (validationKey != 4)
+            {
+                MessageBox.Show("Owner information could not be updated. Check your input and try again.", "Update Failure", MessageBoxButtons.RetryCancel);
+                textBoxFN.Focus();
+            }
+            else
+            {                 
                 string sql = "Update Owner SET firstName = '" + this.textBoxFN.Text + "', " +
                              "lastName = '" + this.textBoxLN.Text + "', phoneNumber = '" + this.textBoxPN.Text + "', " +
                              "email = '" + this.textBoxE.Text + "' WHERE ownerId = " + ownerID +"";
