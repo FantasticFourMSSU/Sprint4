@@ -34,8 +34,8 @@
             this.searchPropertyLabel = new System.Windows.Forms.Label();
             this.resultsDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.SearchNameOrPropertyCheckbox = new System.Windows.Forms.CheckBox();
-            this.SearchOwnerOnlyCheckbox = new System.Windows.Forms.CheckBox();
+            this.SearchNameOrPropertyCheckbox = new System.Windows.Forms.RadioButton();
+            this.SearchOwnerOnlyCheckbox = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.resultsDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,7 @@
             this.resultsDataGridView.Name = "resultsDataGridView";
             this.resultsDataGridView.RowHeadersWidth = 82;
             this.resultsDataGridView.RowTemplate.Height = 33;
-            this.resultsDataGridView.Size = new System.Drawing.Size(1171, 269);
+            this.resultsDataGridView.Size = new System.Drawing.Size(1185, 312);
             this.resultsDataGridView.TabIndex = 2;
             this.resultsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.resultsDataGridView_CellContentClick);
             // 
@@ -91,29 +91,30 @@
             this.groupBox1.Controls.Add(this.searchButton);
             this.groupBox1.Location = new System.Drawing.Point(8, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1219, 395);
+            this.groupBox1.Size = new System.Drawing.Size(1300, 395);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
             // SearchNameOrPropertyCheckbox
             // 
             this.SearchNameOrPropertyCheckbox.AutoSize = true;
-            this.SearchNameOrPropertyCheckbox.Location = new System.Drawing.Point(236, 11);
-            this.SearchNameOrPropertyCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchNameOrPropertyCheckbox.Location = new System.Drawing.Point(241, 11);
             this.SearchNameOrPropertyCheckbox.Name = "SearchNameOrPropertyCheckbox";
-            this.SearchNameOrPropertyCheckbox.Size = new System.Drawing.Size(194, 21);
-            this.SearchNameOrPropertyCheckbox.TabIndex = 9;
+            this.SearchNameOrPropertyCheckbox.Size = new System.Drawing.Size(193, 21);
+            this.SearchNameOrPropertyCheckbox.TabIndex = 11;
+            this.SearchNameOrPropertyCheckbox.TabStop = true;
             this.SearchNameOrPropertyCheckbox.Text = "Search Name Or Property";
             this.SearchNameOrPropertyCheckbox.UseVisualStyleBackColor = true;
+            this.SearchNameOrPropertyCheckbox.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // SearchOwnerOnlyCheckbox
             // 
             this.SearchOwnerOnlyCheckbox.AutoSize = true;
-            this.SearchOwnerOnlyCheckbox.Location = new System.Drawing.Point(236, 41);
-            this.SearchOwnerOnlyCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchOwnerOnlyCheckbox.Location = new System.Drawing.Point(241, 42);
             this.SearchOwnerOnlyCheckbox.Name = "SearchOwnerOnlyCheckbox";
-            this.SearchOwnerOnlyCheckbox.Size = new System.Drawing.Size(153, 21);
-            this.SearchOwnerOnlyCheckbox.TabIndex = 10;
+            this.SearchOwnerOnlyCheckbox.Size = new System.Drawing.Size(152, 21);
+            this.SearchOwnerOnlyCheckbox.TabIndex = 12;
+            this.SearchOwnerOnlyCheckbox.TabStop = true;
             this.SearchOwnerOnlyCheckbox.Text = "Search Owner Only";
             this.SearchOwnerOnlyCheckbox.UseVisualStyleBackColor = true;
             // 
@@ -123,7 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1247, 427);
+            this.ClientSize = new System.Drawing.Size(1291, 453);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "searchForm";
@@ -143,8 +144,8 @@
     private System.Windows.Forms.Label searchPropertyLabel;
     private System.Windows.Forms.DataGridView resultsDataGridView;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox SearchOwnerOnlyCheckbox;
-        private System.Windows.Forms.CheckBox SearchNameOrPropertyCheckbox;
+        private System.Windows.Forms.RadioButton SearchNameOrPropertyCheckbox;
+        private System.Windows.Forms.RadioButton SearchOwnerOnlyCheckbox;
     }
 }
 
