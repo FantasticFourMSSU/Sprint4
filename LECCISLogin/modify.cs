@@ -103,7 +103,7 @@ namespace LECCISLogin
 
             LECCISLogin.EditProperty editProp = new EditProperty(street,city,state,zip,Combo,ownerId,propId);
             editProp.ShowDialog();
-
+            dataGridViewRefresh();
 
         }
         private void editOwnerButton_Click(object sender, EventArgs e)
@@ -116,6 +116,7 @@ namespace LECCISLogin
 
             LECCISLogin.EditOwner editOwner = new EditOwner(firstname, lastname, phone, email, ownerId);
             editOwner.ShowDialog();
+            dataGridViewRefresh();
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
