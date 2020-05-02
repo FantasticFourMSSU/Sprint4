@@ -25,12 +25,94 @@ namespace LECCISLogin
         public string PN;
         public string EM;
 
+        public bool p;
+        public int validationKey;
+
 
         public addOwnerForm()
         {
              InitializeComponent();
 
         }
+
+        public bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return p = false;
+            }
+            return p = true;
+        }
+
+        public void ValidateInput()
+        {
+            validationKey = 0;
+
+            IsDigitsOnly(PN);
+
+            if (firstName.Text == "" || lastName.Text == "" || phoneNumber1.Text == "" || email.Text == "")
+            {
+                MessageBox.Show("Field can not be blank.", "Insert values", MessageBoxButtons.OK);
+                firstName.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (firstName.Text.Contains(")") || firstName.Text.Contains("(") || firstName.Text.Contains(";") ||
+                lastName.Text.Contains(")") || lastName.Text.Contains("(") || lastName.Text.Contains(";") ||
+                email.Text.Contains(")") || email.Text.Contains("(") || email.Text.Contains(";"))
+            {
+                MessageBox.Show("Field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
+                firstName.Clear();
+                lastName.Clear();
+                email.Clear();
+                firstName.Focus();
+
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (PN.Length != 10)
+            {
+                MessageBox.Show("Incorrect Format. Phone number should be entered in the format 9999999999.", "Format Error", MessageBoxButtons.OK);
+                phoneNumber1.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (p == false)
+            {
+                MessageBox.Show("Phone number cannot contain letters.", "Invalid Input", MessageBoxButtons.OK);
+                phoneNumber1.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (!email.Text.Contains("@"))
+            {
+                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+                email.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (!email.Text.Contains("."))
+            {
+                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+                email.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+        }
+
 
         public void FindOwnerID()
         {
@@ -63,44 +145,19 @@ namespace LECCISLogin
 
         private void button_Click(object sender, EventArgs e)
         {
+
+
             FN = firstName.Text;
             LN = lastName.Text;
-            PN1 = phoneNumber1.Text;
-            PN2 = phoneNumber2.Text;
-            PN3 = phoneNumber3.Text;
-            PN = PN1 + PN2 + PN3;
+            PN = phoneNumber1.Text;
             EM = email.Text;
 
-            if (FN == "" || LN == "" || PN == "" || EM == "")
+            ValidateInput();
+
+
+            if (validationKey != 6)
             {
-                MessageBox.Show("Field can not be blank.", "Insert values");
-            }
-            if (firstName.Text.Contains(")") || firstName.Text.Contains("(") || firstName.Text.Contains(";") ||
-                lastName.Text.Contains(")") || lastName.Text.Contains("(") || lastName.Text.Contains(";") ||
-                phoneNumber1.Text.Contains(";") ||
-                email.Text.Contains(")") || email.Text.Contains("(") || email.Text.Contains(";"))
-            {
-                MessageBox.Show("Field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
-                //firstName.Clear();
-                //lastName.Clear();
-                //phoneNumber1.Clear();
-                //email.Clear();
-                this.DialogResult = DialogResult.OK;
-            }
-            if (PN.Length != 10)
-            {
-                MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
-                this.DialogResult = DialogResult.OK;
-            }
-            if (!email.Text.Contains("@"))
-            {
-                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
-                this.DialogResult = DialogResult.OK;
-            }
-            else if (!email.Text.Contains("."))
-            {
-                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
-                this.DialogResult = DialogResult.OK;
+                MessageBox.Show("Owner information could not be updated. Check your input and try again.", "Update Failure", MessageBoxButtons.RetryCancel);
             }
             else
             {
@@ -135,11 +192,7 @@ namespace LECCISLogin
                     }
                     myconnection.Close();
                 }
-
             }
-            this.Close();
-
         }
-
     }
 }

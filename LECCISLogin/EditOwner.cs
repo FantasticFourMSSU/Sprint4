@@ -90,7 +90,7 @@ namespace LECCISLogin
             }
             if (PN.Length != 10)
             {
-                MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
+                MessageBox.Show("Incorrect Format. Phone number should be entered in the format 9999999999.", "Format Error", MessageBoxButtons.OK);
                 textBoxPN.Focus();
             }
             else

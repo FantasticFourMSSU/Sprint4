@@ -121,16 +121,14 @@ namespace LECCISLogin
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this record? This will delete" +
-                " " + FN + " " + LN + "'s contact information along with the associated property: " +
-                "" + SN + " " + CT + "," + ST + " " + ZP + ".", "Confirm Action", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this property: " +
+                "" + SN + " " + CT + "," + ST + " " + ZP + "?", "Confirm Action", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
 
                 myconnection.Open();
-                string sql1 = "DELETE FROM OwnerWithProperty WHERE ownerId =  " + ownerId + "";
-                string sql2 = "DELETE FROM Owner WHERE ownerId = " + ownerId + "";
-                string sql3 = "DELETE FROM Property WHERE propertyId = " + propId + "";
+                string sql1 = "DELETE FROM OwnerWithProperty WHERE ownerId =  " + propId + "";
+                string sql2 = "DELETE FROM Property WHERE propertyId = " + propId + "";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql1, myconnection))
                 {
@@ -143,16 +141,6 @@ namespace LECCISLogin
                     }
                 }
                 using (MySqlCommand cmd = new MySqlCommand(sql2, myconnection))
-                {
-                    using (MySqlDataReader rdr = cmd.ExecuteReader())
-                    {
-                        while (rdr.Read())
-                        {
-
-                        }
-                    }
-                }
-                using (MySqlCommand cmd = new MySqlCommand(sql3, myconnection))
                 {
                     using (MySqlDataReader rdr = cmd.ExecuteReader())
                     {
@@ -213,5 +201,44 @@ namespace LECCISLogin
             FindProperty();
         }
 
+        private void deleteOwnerButton_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this owner: " +
+                "" + FN + " " + LN + "," + PH + " " + EM + "?", "Confirm Action", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+
+                myconnection.Open();
+                string sql1 = "DELETE FROM OwnerWithProperty WHERE ownerId =  " + ownerId + "";
+                string sql2 = "DELETE FROM Owner WHERE ownerId = " + ownerId + "";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql1, myconnection))
+                {
+                    using (MySqlDataReader rdr = cmd.ExecuteReader())
+                    {
+                        while (rdr.Read())
+                        {
+
+                        }
+                    }
+                }
+                using (MySqlCommand cmd = new MySqlCommand(sql2, myconnection))
+                {
+                    using (MySqlDataReader rdr = cmd.ExecuteReader())
+                    {
+                        while (rdr.Read())
+                        {
+
+                        }
+                    }
+                }
+                myconnection.Close();
+                dataGridViewRefresh();
+            }
+            else
+            {
+                dataGridViewRefresh();
+            }
+        }
     }
 }

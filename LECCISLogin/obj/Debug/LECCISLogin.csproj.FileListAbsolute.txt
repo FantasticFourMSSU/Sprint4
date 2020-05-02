@@ -212,7 +212,6 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debu
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csproj.CopyComplete
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.exe
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.pdb
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\bin\Debug\LECCISLogin.exe.config
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\bin\Debug\LECCISLogin.exe.manifest
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\bin\Debug\LECCISLogin.application

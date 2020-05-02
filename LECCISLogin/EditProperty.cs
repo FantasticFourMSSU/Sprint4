@@ -47,7 +47,7 @@ namespace LECCISLogin
             textBoxCY.Text = city;
             stateListBox.SelectedItem = state;
             textBoxZP.Text = zip;
-            listBox1.Text = combo;
+            comboBox1.Text = combo;
 
         }
 
@@ -68,7 +68,7 @@ namespace LECCISLogin
                     string lName = myReader.GetString("lastName");
 
 
-                    listBox1.Items.Add(fName + " " + lName);
+                    comboBox1.Items.Add(fName + " " + lName);
                 }
                 
             }
@@ -103,7 +103,7 @@ namespace LECCISLogin
   
 
             
-            if (SN == "" || CT == "" || ST == "" || ZP == "" || listBox1.Text == "")
+            if (SN == "" || CT == "" || ST == "" || ZP == "" || comboBox1.Text == "")
             {
                 MessageBox.Show("Please insert values for each field", "Invalid Input", MessageBoxButtons.OK);
                 textBoxSN.Focus();
@@ -145,13 +145,23 @@ namespace LECCISLogin
             {
                 validationKey = validationKey + 1;
             }
+            // Testing Code //
+            if (!comboBox1.Items.Contains(comboBox1.Text))
+            {
+                MessageBox.Show("Properties must be associated to a listed Owner. Select the owner from the list or close this form and add an owner first.", "Invalid Owner", MessageBoxButtons.OK);
+                comboBox1.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             myconnection.Open();
 
-            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + listBox1.Text + "';";
+            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + comboBox1.Text + "';";
             MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
             using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
             {
@@ -172,7 +182,7 @@ namespace LECCISLogin
 
             ValidateInput();
 
-            if (validationKey !=4)
+            if (validationKey != 5)
             {
                 MessageBox.Show("Property information could not be updated. Check your input and try again.", "Update Failure", MessageBoxButtons.RetryCancel);
                 

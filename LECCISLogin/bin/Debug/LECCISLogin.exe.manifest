@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LECCISLogin.exe" size="1064968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LECCISLogin.exe" size="1066504">
       <assemblyIdentity name="LECCISLogin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ib6lCKDi5Q5UtQME4y7ZiaOqWN0K1CS9gz3uqwtfe6M=</dsig:DigestValue>
+        <dsig:DigestValue>ehXp1CGpXQDwnywc35clK9TUZuw3siW5ggT0brP65OI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6Vpu8Zhq4fsBdhiSwd83PUJn4/80D2askZ3rKZXOd0o=</dsig:DigestValue>
+        <dsig:DigestValue>Sgc1vc014gBVlIafUFUFcswVKi5tHvJxO/9Qmpo3LBc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

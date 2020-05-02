@@ -21,6 +21,9 @@ namespace LECCISLogin
         public string CT;
         public string ST;
         public string ZP;
+
+        public bool z;
+        public int validationKey;
        
 
         public addProperty()
@@ -75,18 +78,39 @@ namespace LECCISLogin
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public bool IsDigitsOnly(string str)
         {
-            
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return z = false;
+            }
+            return z = true;
+        }
 
-            SN = streetNumber.Text;
-            CT = city.Text;
-            ST = state.Text;
-            ZP = zip.Text;
+        public void ValidateInput()
+        {
+            validationKey = 0;
 
-            if (SN == "" || CT == "" || ST == "" || ZP == "" || comboBox1.Text == "")
+            string SN = streetNumber.Text;
+            string CT = city.Text;
+            string ST = listBox1.Text;
+            string ZP = zip.Text;
+
+
+            IsDigitsOnly(ZP);
+
+
+
+            if (SN == "" || CT == "" || ST == "" || ZP == "" || listBox1.Text == "")
             {
                 MessageBox.Show("Please insert values for each field", "Invalid Input", MessageBoxButtons.OK);
+                streetNumber.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+
             }
             if (streetNumber.Text.Contains(")") || streetNumber.Text.Contains("(") || streetNumber.Text.Contains(";") ||
                 city.Text.Contains(")") || city.Text.Contains("(") || city.Text.Contains(";") ||
@@ -96,6 +120,49 @@ namespace LECCISLogin
                 streetNumber.Clear();
                 city.Clear();
                 zip.Clear();
+                streetNumber.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (ZP.Length != 5)
+            {
+                MessageBox.Show("Zip code must be 5 digits.", "Invalid Input", MessageBoxButtons.OK);
+                zip.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (z == false)
+            {
+                MessageBox.Show("Zip code cannot contain letters.", "Invalid Input", MessageBoxButtons.OK);
+                zip.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            // Testing Code //
+            if (!comboBox1.Items.Contains(comboBox1.Text))
+            {
+                MessageBox.Show("Properties must be associated to a listed Owner. Select the owner from the list or close this form and add an owner first.", "Invalid Owner", MessageBoxButtons.OK);
+                comboBox1.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ValidateInput();
+
+            if (validationKey != 5)
+            {
+                MessageBox.Show("Property could not be added. Check your input and try again.", "Input Failure", MessageBoxButtons.RetryCancel);
             }
             else
             {
@@ -108,7 +175,7 @@ namespace LECCISLogin
                 else
                 {
 
-                    string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.state.Text + "','" + this.zip.Text + "')";
+                    string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.listBox1.Text + "','" + this.zip.Text + "')";
                     string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
 
 
@@ -135,14 +202,12 @@ namespace LECCISLogin
 
                             }
                             MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
-                            myconnection.Close();
+                            this.Close();
                         }
                     }
                     myconnection.Close();
                 }
-
             }
-            this.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
