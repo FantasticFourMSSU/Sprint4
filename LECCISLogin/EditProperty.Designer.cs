@@ -38,9 +38,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.updateButton = new System.Windows.Forms.Button();
             this.ownerLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.stateComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.stateListBox = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBoxZP
@@ -49,21 +49,21 @@
             this.textBoxZP.Name = "textBoxZP";
             this.textBoxZP.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBoxZP.Size = new System.Drawing.Size(150, 31);
-            this.textBoxZP.TabIndex = 20;
+            this.textBoxZP.TabIndex = 4;
             // 
             // textBoxCY
             // 
             this.textBoxCY.Location = new System.Drawing.Point(332, 277);
             this.textBoxCY.Name = "textBoxCY";
             this.textBoxCY.Size = new System.Drawing.Size(400, 31);
-            this.textBoxCY.TabIndex = 18;
+            this.textBoxCY.TabIndex = 2;
             // 
             // textBoxSN
             // 
             this.textBoxSN.Location = new System.Drawing.Point(332, 171);
             this.textBoxSN.Name = "textBoxSN";
             this.textBoxSN.Size = new System.Drawing.Size(400, 31);
-            this.textBoxSN.TabIndex = 17;
+            this.textBoxSN.TabIndex = 1;
             // 
             // SNlabel
             // 
@@ -125,19 +125,23 @@
             this.ownerLabel.TabIndex = 26;
             this.ownerLabel.Text = "Owner";
             // 
-            // comboBox1
+            // label4
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(332, 502);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(400, 33);
-            this.comboBox1.TabIndex = 27;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(167, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(500, 46);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Edit Property Infrormation";
             // 
-            // stateComboBox
+            // stateListBox
             // 
-            this.stateComboBox.FormattingEnabled = true;
-            this.stateComboBox.Items.AddRange(new object[] {
+            this.stateListBox.AllowDrop = true;
+            this.stateListBox.FormattingEnabled = true;
+            this.stateListBox.IntegralHeight = false;
+            this.stateListBox.ItemHeight = 25;
+            this.stateListBox.Items.AddRange(new object[] {
             "AK",
             "AL",
             "AR",
@@ -189,29 +193,31 @@
             "WI",
             "WV",
             "WY"});
-            this.stateComboBox.Location = new System.Drawing.Point(332, 393);
-            this.stateComboBox.Name = "stateComboBox";
-            this.stateComboBox.Size = new System.Drawing.Size(100, 33);
-            this.stateComboBox.TabIndex = 28;
+            this.stateListBox.Location = new System.Drawing.Point(321, 395);
+            this.stateListBox.Name = "stateListBox";
+            this.stateListBox.Size = new System.Drawing.Size(96, 32);
+            this.stateListBox.TabIndex = 3;
             // 
-            // label4
+            // listBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(167, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(500, 46);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Edit Property Infrormation";
+            this.listBox1.AllowDrop = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.IntegralHeight = false;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Location = new System.Drawing.Point(332, 502);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(400, 33);
+            this.listBox1.TabIndex = 5;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // EditProperty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 734);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.stateListBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.stateComboBox);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ownerLabel);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.label3);
@@ -241,8 +247,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Label ownerLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox stateComboBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox stateListBox;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

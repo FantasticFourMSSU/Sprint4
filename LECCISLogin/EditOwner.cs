@@ -16,13 +16,16 @@ namespace LECCISLogin
 
         MySqlConnection myconnection = new MySqlConnection("Server=209.106.201.103;Database=group6;uid=dbstudent9;pwd=scarybat74;");
 
+        // Initial variables //
         public int ownerID;
         public string firstName;
         public string lastName;
         public string phoneNumber;
         public string email;
 
+        // Working variables //
         public string PN;
+        public bool p;
         public int validationKey;
 
         public EditOwner(string fn, string ln, string pn, string e, int oid)
@@ -43,14 +46,26 @@ namespace LECCISLogin
           
         }
 
+        public bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return p = false;
+            }
+            return p = true;
+        }
+
         public void ValidateInput()
         {
             validationKey = 0;
 
+            IsDigitsOnly(PN);
+
             if (textBoxFN.Text == "" || textBoxLN.Text == "" || textBoxPN.Text == "" || textBoxE.Text == "")
             {
                 MessageBox.Show("Field can not be blank.", "Insert values", MessageBoxButtons.OK);
-
+                textBoxFN.Focus();
             }
             else
             {
@@ -66,6 +81,8 @@ namespace LECCISLogin
                 textBoxLN.Clear();
                 textBoxPN.Clear();
                 textBoxE.Clear();
+                textBoxFN.Focus();
+
             }
             else
             {
@@ -74,6 +91,16 @@ namespace LECCISLogin
             if (PN.Length != 10)
             {
                 MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
+                textBoxPN.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (p == false)
+            {
+                MessageBox.Show("Phone number cannot contain letters.", "Invalid Input", MessageBoxButtons.OK);
+                textBoxPN.Focus();
             }
             else
             {
@@ -82,6 +109,16 @@ namespace LECCISLogin
             if (!textBoxE.Text.Contains("@"))
             {
                 MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+                textBoxE.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (!textBoxE.Text.Contains("."))
+            {
+                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+                textBoxE.Focus();
             }
             else
             {
@@ -97,10 +134,9 @@ namespace LECCISLogin
             ValidateInput();
 
 
-            if (validationKey != 4)
+            if (validationKey != 6)
             {
                 MessageBox.Show("Owner information could not be updated. Check your input and try again.", "Update Failure", MessageBoxButtons.RetryCancel);
-                textBoxFN.Focus();
             }
             else
             {                 

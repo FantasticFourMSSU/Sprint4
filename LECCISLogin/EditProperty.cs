@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 
 namespace LECCISLogin
@@ -25,6 +26,7 @@ namespace LECCISLogin
         public string state;
         public string zip;
 
+        public bool z;
         public int validationKey;
 
         public EditProperty(string str, string ct, string st, string zp, string cb, int OID, int PID)
@@ -43,9 +45,9 @@ namespace LECCISLogin
 
             textBoxSN.Text = street;
             textBoxCY.Text = city;
-            stateComboBox.SelectedItem = state;
+            stateListBox.SelectedItem = state;
             textBoxZP.Text = zip;
-            comboBox1.Text = combo;
+            listBox1.Text = combo;
 
         }
 
@@ -66,7 +68,7 @@ namespace LECCISLogin
                     string lName = myReader.GetString("lastName");
 
 
-                    comboBox1.Items.Add(fName + " " + lName);
+                    listBox1.Items.Add(fName + " " + lName);
                 }
                 
             }
@@ -77,18 +79,34 @@ namespace LECCISLogin
             myconnection.Close();
         }
 
+        public bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return z = false;
+            }
+            return z = true;
+        }
+
         public void ValidateInput()
         {
             validationKey = 0;
 
-            var SN = textBoxSN.Text;
-            var CT = textBoxCY.Text;
-            var ST = stateComboBox.Text;
-            var ZP = textBoxZP.Text;
+            string SN = textBoxSN.Text;
+            string CT = textBoxCY.Text;
+            string ST = stateListBox.Text;
+            string ZP = textBoxZP.Text;
+
+
+            IsDigitsOnly(ZP);
+  
+
             
-            if (SN == "" || CT == "" || ST == "" || ZP == "" || comboBox1.Text == "")
+            if (SN == "" || CT == "" || ST == "" || ZP == "" || listBox1.Text == "")
             {
                 MessageBox.Show("Please insert values for each field", "Invalid Input", MessageBoxButtons.OK);
+                textBoxSN.Focus();
             }
             else
             {
@@ -103,6 +121,7 @@ namespace LECCISLogin
                 textBoxSN.Clear();
                 textBoxCY.Clear();
                 textBoxZP.Clear();
+                textBoxSN.Focus();
             }
             else
             {
@@ -111,6 +130,16 @@ namespace LECCISLogin
             if (ZP.Length != 5)
             {
                 MessageBox.Show("Zip code must be 5 digits.", "Invalid Input", MessageBoxButtons.OK);
+                textBoxZP.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
+            if (z == false)
+            {
+                MessageBox.Show("Zip code cannot contain letters.", "Invalid Input", MessageBoxButtons.OK);
+                textBoxZP.Focus();
             }
             else
             {
@@ -122,7 +151,7 @@ namespace LECCISLogin
         {
             myconnection.Open();
 
-            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + comboBox1.Text + "';";
+            string query = "SELECT ownerId from Owner where CONCAT(firstName, ' ', lastName) = '" + listBox1.Text + "';";
             MySqlCommand cmdDatabase = new MySqlCommand(query, myconnection);
             using (MySqlDataReader myReader = cmdDatabase.ExecuteReader())
             {
@@ -143,23 +172,24 @@ namespace LECCISLogin
 
             ValidateInput();
 
-            if (validationKey !=3)
+            if (validationKey !=4)
             {
                 MessageBox.Show("Property information could not be updated. Check your input and try again.", "Update Failure", MessageBoxButtons.RetryCancel);
-                textBoxSN.Focus();
+                
             }
             else
             {
-                string sql = "UPDATE Property SET streetNumber = '" + this.textBoxSN.Text + "', city = '" + this.textBoxCY.Text + "', state = '" + this.stateComboBox.Text + "', zip = '" + this.textBoxZP.Text + "' WHERE propertyId = " + propID + "";
-                string sql2 = "UPDATE OwnerWithProperty SET ownerId = " + ownerID + " Where propertyId = " + propID + "";
-                try {
+                string sql = "UPDATE Property SET streetNumber = '" + this.textBoxSN.Text + "', city = '" + this.textBoxCY.Text + "', state = '" + this.stateListBox.Text + "', zip = '" + this.textBoxZP.Text + "' WHERE propertyId = " + propID + "";
+                string sql2 = "DELETE FROM OwnerWithProperty WHERE propertyId =  " + propID + "";
+                string sql3 = "INSERT INTO OwnerWithProperty  VALUES(" + ownerID + "," + propID + ")";
+                try
+                {
                     using (MySqlCommand cmd = new MySqlCommand(sql, myconnection))
                     {
                         using (MySqlDataReader rdr = cmd.ExecuteReader())
                         {
                             while (rdr.Read())
                             {
-
                             }
                         }
                     }
@@ -175,10 +205,18 @@ namespace LECCISLogin
                                 while (rdr2.Read())
                                 {
                                 }
-                                MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
-
                             }
                         }
+                        using (MySqlCommand cmd3 = new MySqlCommand(sql3, myconnection))
+                        {
+                            using (MySqlDataReader rdr3 = cmd3.ExecuteReader())
+                            {
+                                while (rdr3.Read())
+                                {
+                                }
+                            }
+                        }
+                        MessageBox.Show("Property Added Sucessfully", "Sucsess Message", MessageBoxButtons.OK);
                     }
                     else
                     {
