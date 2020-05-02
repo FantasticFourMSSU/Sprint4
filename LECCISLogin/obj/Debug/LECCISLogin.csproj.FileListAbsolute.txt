@@ -193,7 +193,10 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debu
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\LECCISLogin.exe
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\LECCISLogin.pdb
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\en\LECCISLogin.resources.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\MySql.Data.dll
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\Renci.SshNet.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\MySql.Data.xml
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.addOwnerForm.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.addProperty.resources
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.Dashboard.resources
@@ -212,6 +215,7 @@ C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debu
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csproj.CopyComplete
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.exe
 C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.pdb
+C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\bin\Debug\LECCISLogin.exe.config
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\bin\Debug\LECCISLogin.exe.manifest
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\bin\Debug\LECCISLogin.application
@@ -253,11 +257,34 @@ C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\obj\Debug\LECCISLogin.applicat
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\obj\Debug\LECCISLogin.csproj.CopyComplete
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\obj\Debug\LECCISLogin.exe
 C:\Users\savin\Source\Repos\Sprint422\LECCISLogin\obj\Debug\LECCISLogin.pdb
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\System.Buffers.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\System.Memory.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\MySql.Data.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\bin\Debug\MySql.Data.xml
-C:\Users\Matt Sommer\Source\Repos\FantasticFourMSSU\Sprint4\LECCISLogin\obj\Debug\LECCISLogin.csprojAssemblyReference.cache
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\LECCISLogin.exe.config
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\LECCISLogin.exe.manifest
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\LECCISLogin.application
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\LECCISLogin.exe
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\LECCISLogin.pdb
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\en\LECCISLogin.resources.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\MySql.Data.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\System.Buffers.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\System.Memory.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\Zstandard.Net.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\bin\Debug\MySql.Data.xml
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.addOwnerForm.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.addProperty.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.Dashboard.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.EditOwner.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.EditProperty.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.modify.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.Login.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.Properties.Resources.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.LoadingForm.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISSearch.searchForm.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.addProperty.en.resources
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.csproj.GenerateResource.cache
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.csproj.CoreCompileInputs.cache
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\en\LECCISLogin.resources.dll
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.exe.manifest
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.application
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.csproj.CopyComplete
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.exe
+C:\Users\savin\Source\Repos\Sprint423\LECCISLogin\obj\Debug\LECCISLogin.pdb
