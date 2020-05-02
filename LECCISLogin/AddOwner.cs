@@ -81,19 +81,26 @@ namespace LECCISLogin
                 email.Text.Contains(")") || email.Text.Contains("(") || email.Text.Contains(";"))
             {
                 MessageBox.Show("Field cannot contain SQL Statements.", "Invalid Input", MessageBoxButtons.OK);
-                firstName.Clear();
-                lastName.Clear();
-                phoneNumber1.Clear();
-                email.Clear();
+                //firstName.Clear();
+                //lastName.Clear();
+                //phoneNumber1.Clear();
+                //email.Clear();
+                this.DialogResult = DialogResult.OK;
             }
             if (PN.Length != 10)
             {
                 MessageBox.Show("Incorrect Format. Phone number should be entered in the format 999 999 9999.", "Format Error", MessageBoxButtons.OK);
-
+                this.DialogResult = DialogResult.OK;
             }
             if (!email.Text.Contains("@"))
             {
                 MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+                this.DialogResult = DialogResult.OK;
+            }
+            else if (!email.Text.Contains("."))
+            {
+                MessageBox.Show("Incorrect Format. Email should follow the format name@domain.org", "Format Error", MessageBoxButtons.OK);
+                this.DialogResult = DialogResult.OK;
             }
             else
             {
@@ -102,7 +109,7 @@ namespace LECCISLogin
                 if(ownerId != 0)
                 {
                     MessageBox.Show("A duplicate exists in the database and cannot be added.", "Database Duplication", MessageBoxButtons.OK);
-
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
