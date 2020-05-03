@@ -40,7 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.state = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Property
@@ -105,63 +105,63 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // listBox1
+            // state
             // 
-            this.listBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Items.AddRange(new object[] {
-            resources.GetString("listBox1.Items"),
-            resources.GetString("listBox1.Items1"),
-            resources.GetString("listBox1.Items2"),
-            resources.GetString("listBox1.Items3"),
-            resources.GetString("listBox1.Items4"),
-            resources.GetString("listBox1.Items5"),
-            resources.GetString("listBox1.Items6"),
-            resources.GetString("listBox1.Items7"),
-            resources.GetString("listBox1.Items8"),
-            resources.GetString("listBox1.Items9"),
-            resources.GetString("listBox1.Items10"),
-            resources.GetString("listBox1.Items11"),
-            resources.GetString("listBox1.Items12"),
-            resources.GetString("listBox1.Items13"),
-            resources.GetString("listBox1.Items14"),
-            resources.GetString("listBox1.Items15"),
-            resources.GetString("listBox1.Items16"),
-            resources.GetString("listBox1.Items17"),
-            resources.GetString("listBox1.Items18"),
-            resources.GetString("listBox1.Items19"),
-            resources.GetString("listBox1.Items20"),
-            resources.GetString("listBox1.Items21"),
-            resources.GetString("listBox1.Items22"),
-            resources.GetString("listBox1.Items23"),
-            resources.GetString("listBox1.Items24"),
-            resources.GetString("listBox1.Items25"),
-            resources.GetString("listBox1.Items26"),
-            resources.GetString("listBox1.Items27"),
-            resources.GetString("listBox1.Items28"),
-            resources.GetString("listBox1.Items29"),
-            resources.GetString("listBox1.Items30"),
-            resources.GetString("listBox1.Items31"),
-            resources.GetString("listBox1.Items32"),
-            resources.GetString("listBox1.Items33"),
-            resources.GetString("listBox1.Items34"),
-            resources.GetString("listBox1.Items35"),
-            resources.GetString("listBox1.Items36"),
-            resources.GetString("listBox1.Items37"),
-            resources.GetString("listBox1.Items38"),
-            resources.GetString("listBox1.Items39"),
-            resources.GetString("listBox1.Items40"),
-            resources.GetString("listBox1.Items41"),
-            resources.GetString("listBox1.Items42"),
-            resources.GetString("listBox1.Items43"),
-            resources.GetString("listBox1.Items44"),
-            resources.GetString("listBox1.Items45"),
-            resources.GetString("listBox1.Items46"),
-            resources.GetString("listBox1.Items47"),
-            resources.GetString("listBox1.Items48"),
-            resources.GetString("listBox1.Items49"),
-            resources.GetString("listBox1.Items50")});
-            this.listBox1.Name = "listBox1";
+            this.state.FormattingEnabled = true;
+            this.state.Items.AddRange(new object[] {
+            resources.GetString("state.Items"),
+            resources.GetString("state.Items1"),
+            resources.GetString("state.Items2"),
+            resources.GetString("state.Items3"),
+            resources.GetString("state.Items4"),
+            resources.GetString("state.Items5"),
+            resources.GetString("state.Items6"),
+            resources.GetString("state.Items7"),
+            resources.GetString("state.Items8"),
+            resources.GetString("state.Items9"),
+            resources.GetString("state.Items10"),
+            resources.GetString("state.Items11"),
+            resources.GetString("state.Items12"),
+            resources.GetString("state.Items13"),
+            resources.GetString("state.Items14"),
+            resources.GetString("state.Items15"),
+            resources.GetString("state.Items16"),
+            resources.GetString("state.Items17"),
+            resources.GetString("state.Items18"),
+            resources.GetString("state.Items19"),
+            resources.GetString("state.Items20"),
+            resources.GetString("state.Items21"),
+            resources.GetString("state.Items22"),
+            resources.GetString("state.Items23"),
+            resources.GetString("state.Items24"),
+            resources.GetString("state.Items25"),
+            resources.GetString("state.Items26"),
+            resources.GetString("state.Items27"),
+            resources.GetString("state.Items28"),
+            resources.GetString("state.Items29"),
+            resources.GetString("state.Items30"),
+            resources.GetString("state.Items31"),
+            resources.GetString("state.Items32"),
+            resources.GetString("state.Items33"),
+            resources.GetString("state.Items34"),
+            resources.GetString("state.Items35"),
+            resources.GetString("state.Items36"),
+            resources.GetString("state.Items37"),
+            resources.GetString("state.Items38"),
+            resources.GetString("state.Items39"),
+            resources.GetString("state.Items40"),
+            resources.GetString("state.Items41"),
+            resources.GetString("state.Items42"),
+            resources.GetString("state.Items43"),
+            resources.GetString("state.Items44"),
+            resources.GetString("state.Items45"),
+            resources.GetString("state.Items46"),
+            resources.GetString("state.Items47"),
+            resources.GetString("state.Items48"),
+            resources.GetString("state.Items49"),
+            resources.GetString("state.Items50")});
+            resources.ApplyResources(this.state, "state");
+            this.state.Name = "state";
             // 
             // addProperty
             // 
@@ -169,7 +169,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.state);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
@@ -199,7 +199,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox state;
     }
 }
 

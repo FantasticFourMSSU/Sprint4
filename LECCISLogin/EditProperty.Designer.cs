@@ -39,8 +39,8 @@
             this.updateButton = new System.Windows.Forms.Button();
             this.ownerLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.stateListBox = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.stateComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBoxZP
@@ -135,13 +135,19 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Edit Property Infrormation";
             // 
-            // stateListBox
+            // comboBox1
             // 
-            this.stateListBox.AllowDrop = true;
-            this.stateListBox.FormattingEnabled = true;
-            this.stateListBox.IntegralHeight = false;
-            this.stateListBox.ItemHeight = 25;
-            this.stateListBox.Items.AddRange(new object[] {
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(332, 506);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(400, 33);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // stateComboBox
+            // 
+            this.stateComboBox.FormattingEnabled = true;
+            this.stateComboBox.Items.AddRange(new object[] {
             "AK",
             "AL",
             "AR",
@@ -193,27 +199,18 @@
             "WI",
             "WV",
             "WY"});
-            this.stateListBox.Location = new System.Drawing.Point(332, 395);
-            this.stateListBox.Name = "stateListBox";
-            this.stateListBox.Size = new System.Drawing.Size(96, 32);
-            this.stateListBox.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(332, 506);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(400, 33);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.stateComboBox.Location = new System.Drawing.Point(332, 391);
+            this.stateComboBox.Name = "stateComboBox";
+            this.stateComboBox.Size = new System.Drawing.Size(102, 33);
+            this.stateComboBox.TabIndex = 30;
             // 
             // EditProperty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 734);
+            this.Controls.Add(this.stateComboBox);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.stateListBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ownerLabel);
             this.Controls.Add(this.updateButton);
@@ -245,7 +242,7 @@
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Label ownerLabel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox stateListBox;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox stateComboBox;
     }
 }

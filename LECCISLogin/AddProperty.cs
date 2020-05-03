@@ -94,7 +94,7 @@ namespace LECCISLogin
 
             string SN = streetNumber.Text;
             string CT = city.Text;
-            string ST = listBox1.Text;
+            string ST = state.Text;
             string ZP = zip.Text;
 
 
@@ -102,7 +102,7 @@ namespace LECCISLogin
 
 
 
-            if (SN == "" || CT == "" || ST == "" || ZP == "" || listBox1.Text == "")
+            if (SN == "" || CT == "" || ST == "" || ZP == "" || comboBox1.Text == "")
             {
                 MessageBox.Show("Please insert values for each field", "Invalid Input", MessageBoxButtons.OK);
                 streetNumber.Focus();
@@ -145,6 +145,15 @@ namespace LECCISLogin
                 validationKey = validationKey + 1;
             }
             // Testing Code //
+            if (!state.Items.Contains(state.Text))
+            {
+                MessageBox.Show("State selected is not valid.", "Invalid State", MessageBoxButtons.OK);
+                state.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
             if (!comboBox1.Items.Contains(comboBox1.Text))
             {
                 MessageBox.Show("Properties must be associated to a listed Owner. Select the owner from the list or close this form and add an owner first.", "Invalid Owner", MessageBoxButtons.OK);
@@ -154,13 +163,14 @@ namespace LECCISLogin
             {
                 validationKey = validationKey + 1;
             }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ValidateInput();
 
-            if (validationKey != 5)
+            if (validationKey != 6)
             {
                 MessageBox.Show("Property could not be added. Check your input and try again.", "Input Failure", MessageBoxButtons.RetryCancel);
             }
@@ -175,7 +185,7 @@ namespace LECCISLogin
                 else
                 {
 
-                    string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.listBox1.Text + "','" + this.zip.Text + "')";
+                    string sql = "INSERT INTO Property( streetNumber, city, state, zip) VALUES ('" + this.streetNumber.Text + "','" + this.city.Text + "','" + this.state.Text + "','" + this.zip.Text + "')";
                     string sql3 = "INSERT INTO OwnerWithProperty  VALUES( " + ownerID + "," + "LAST_INSERT_ID()" + ")";
 
 

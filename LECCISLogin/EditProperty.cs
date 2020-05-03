@@ -45,7 +45,7 @@ namespace LECCISLogin
 
             textBoxSN.Text = street;
             textBoxCY.Text = city;
-            stateListBox.SelectedItem = state;
+            stateComboBox.SelectedItem = state;
             textBoxZP.Text = zip;
             comboBox1.Text = combo;
 
@@ -95,7 +95,7 @@ namespace LECCISLogin
 
             string SN = textBoxSN.Text;
             string CT = textBoxCY.Text;
-            string ST = stateListBox.Text;
+            string ST = stateComboBox.Text;
             string ZP = textBoxZP.Text;
 
 
@@ -146,6 +146,15 @@ namespace LECCISLogin
                 validationKey = validationKey + 1;
             }
             // Testing Code //
+            if (!stateComboBox.Items.Contains(stateComboBox.Text))
+            {
+                MessageBox.Show("State selected is not valid.", "Invalid State", MessageBoxButtons.OK);
+                comboBox1.Focus();
+            }
+            else
+            {
+                validationKey = validationKey + 1;
+            }
             if (!comboBox1.Items.Contains(comboBox1.Text))
             {
                 MessageBox.Show("Properties must be associated to a listed Owner. Select the owner from the list or close this form and add an owner first.", "Invalid Owner", MessageBoxButtons.OK);
@@ -182,14 +191,14 @@ namespace LECCISLogin
 
             ValidateInput();
 
-            if (validationKey != 5)
+            if (validationKey != 6)
             {
                 MessageBox.Show("Property information could not be updated. Check your input and try again.", "Update Failure", MessageBoxButtons.RetryCancel);
                 
             }
             else
             {
-                string sql = "UPDATE Property SET streetNumber = '" + this.textBoxSN.Text + "', city = '" + this.textBoxCY.Text + "', state = '" + this.stateListBox.Text + "', zip = '" + this.textBoxZP.Text + "' WHERE propertyId = " + propID + "";
+                string sql = "UPDATE Property SET streetNumber = '" + this.textBoxSN.Text + "', city = '" + this.textBoxCY.Text + "', state = '" + this.stateComboBox.Text + "', zip = '" + this.textBoxZP.Text + "' WHERE propertyId = " + propID + "";
                 string sql2 = "DELETE FROM OwnerWithProperty WHERE propertyId =  " + propID + "";
                 string sql3 = "INSERT INTO OwnerWithProperty  VALUES(" + ownerID + "," + propID + ")";
                 try

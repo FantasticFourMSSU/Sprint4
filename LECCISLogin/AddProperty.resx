@@ -456,184 +456,178 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="listBox1.IntegralHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="listBox1.Items" xml:space="preserve">
+  <data name="state.Items" xml:space="preserve">
     <value>AK</value>
   </data>
-  <data name="listBox1.Items1" xml:space="preserve">
+  <data name="state.Items1" xml:space="preserve">
     <value>AL</value>
   </data>
-  <data name="listBox1.Items2" xml:space="preserve">
+  <data name="state.Items2" xml:space="preserve">
     <value>AR</value>
   </data>
-  <data name="listBox1.Items3" xml:space="preserve">
+  <data name="state.Items3" xml:space="preserve">
     <value>AZ</value>
   </data>
-  <data name="listBox1.Items4" xml:space="preserve">
+  <data name="state.Items4" xml:space="preserve">
     <value>CA</value>
   </data>
-  <data name="listBox1.Items5" xml:space="preserve">
+  <data name="state.Items5" xml:space="preserve">
     <value>CO</value>
   </data>
-  <data name="listBox1.Items6" xml:space="preserve">
+  <data name="state.Items6" xml:space="preserve">
     <value>CT</value>
   </data>
-  <data name="listBox1.Items7" xml:space="preserve">
+  <data name="state.Items7" xml:space="preserve">
     <value>DC</value>
   </data>
-  <data name="listBox1.Items8" xml:space="preserve">
+  <data name="state.Items8" xml:space="preserve">
     <value>DE</value>
   </data>
-  <data name="listBox1.Items9" xml:space="preserve">
+  <data name="state.Items9" xml:space="preserve">
     <value>FL</value>
   </data>
-  <data name="listBox1.Items10" xml:space="preserve">
+  <data name="state.Items10" xml:space="preserve">
     <value>GA</value>
   </data>
-  <data name="listBox1.Items11" xml:space="preserve">
+  <data name="state.Items11" xml:space="preserve">
     <value>HI</value>
   </data>
-  <data name="listBox1.Items12" xml:space="preserve">
+  <data name="state.Items12" xml:space="preserve">
     <value>IA</value>
   </data>
-  <data name="listBox1.Items13" xml:space="preserve">
+  <data name="state.Items13" xml:space="preserve">
     <value>ID</value>
   </data>
-  <data name="listBox1.Items14" xml:space="preserve">
+  <data name="state.Items14" xml:space="preserve">
     <value>IL</value>
   </data>
-  <data name="listBox1.Items15" xml:space="preserve">
+  <data name="state.Items15" xml:space="preserve">
     <value>IN</value>
   </data>
-  <data name="listBox1.Items16" xml:space="preserve">
+  <data name="state.Items16" xml:space="preserve">
     <value>KS</value>
   </data>
-  <data name="listBox1.Items17" xml:space="preserve">
+  <data name="state.Items17" xml:space="preserve">
     <value>KY</value>
   </data>
-  <data name="listBox1.Items18" xml:space="preserve">
+  <data name="state.Items18" xml:space="preserve">
     <value>LA</value>
   </data>
-  <data name="listBox1.Items19" xml:space="preserve">
+  <data name="state.Items19" xml:space="preserve">
     <value>MA</value>
   </data>
-  <data name="listBox1.Items20" xml:space="preserve">
+  <data name="state.Items20" xml:space="preserve">
     <value>MD</value>
   </data>
-  <data name="listBox1.Items21" xml:space="preserve">
+  <data name="state.Items21" xml:space="preserve">
     <value>ME</value>
   </data>
-  <data name="listBox1.Items22" xml:space="preserve">
+  <data name="state.Items22" xml:space="preserve">
     <value>MI</value>
   </data>
-  <data name="listBox1.Items23" xml:space="preserve">
+  <data name="state.Items23" xml:space="preserve">
     <value>MN</value>
   </data>
-  <data name="listBox1.Items24" xml:space="preserve">
+  <data name="state.Items24" xml:space="preserve">
     <value>MO</value>
   </data>
-  <data name="listBox1.Items25" xml:space="preserve">
+  <data name="state.Items25" xml:space="preserve">
     <value>MS</value>
   </data>
-  <data name="listBox1.Items26" xml:space="preserve">
+  <data name="state.Items26" xml:space="preserve">
     <value>MT</value>
   </data>
-  <data name="listBox1.Items27" xml:space="preserve">
+  <data name="state.Items27" xml:space="preserve">
     <value>NC</value>
   </data>
-  <data name="listBox1.Items28" xml:space="preserve">
+  <data name="state.Items28" xml:space="preserve">
     <value>ND</value>
   </data>
-  <data name="listBox1.Items29" xml:space="preserve">
+  <data name="state.Items29" xml:space="preserve">
     <value>NE</value>
   </data>
-  <data name="listBox1.Items30" xml:space="preserve">
+  <data name="state.Items30" xml:space="preserve">
     <value>NH</value>
   </data>
-  <data name="listBox1.Items31" xml:space="preserve">
+  <data name="state.Items31" xml:space="preserve">
     <value>NJ</value>
   </data>
-  <data name="listBox1.Items32" xml:space="preserve">
+  <data name="state.Items32" xml:space="preserve">
     <value>NM</value>
   </data>
-  <data name="listBox1.Items33" xml:space="preserve">
+  <data name="state.Items33" xml:space="preserve">
     <value>NV</value>
   </data>
-  <data name="listBox1.Items34" xml:space="preserve">
+  <data name="state.Items34" xml:space="preserve">
     <value>NY</value>
   </data>
-  <data name="listBox1.Items35" xml:space="preserve">
+  <data name="state.Items35" xml:space="preserve">
     <value>OH</value>
   </data>
-  <data name="listBox1.Items36" xml:space="preserve">
+  <data name="state.Items36" xml:space="preserve">
     <value>OK</value>
   </data>
-  <data name="listBox1.Items37" xml:space="preserve">
+  <data name="state.Items37" xml:space="preserve">
     <value>OR</value>
   </data>
-  <data name="listBox1.Items38" xml:space="preserve">
+  <data name="state.Items38" xml:space="preserve">
     <value>PA</value>
   </data>
-  <data name="listBox1.Items39" xml:space="preserve">
+  <data name="state.Items39" xml:space="preserve">
     <value>RI</value>
   </data>
-  <data name="listBox1.Items40" xml:space="preserve">
+  <data name="state.Items40" xml:space="preserve">
     <value>SC</value>
   </data>
-  <data name="listBox1.Items41" xml:space="preserve">
+  <data name="state.Items41" xml:space="preserve">
     <value>SD</value>
   </data>
-  <data name="listBox1.Items42" xml:space="preserve">
+  <data name="state.Items42" xml:space="preserve">
     <value>TN</value>
   </data>
-  <data name="listBox1.Items43" xml:space="preserve">
+  <data name="state.Items43" xml:space="preserve">
     <value>TX</value>
   </data>
-  <data name="listBox1.Items44" xml:space="preserve">
+  <data name="state.Items44" xml:space="preserve">
     <value>UT</value>
   </data>
-  <data name="listBox1.Items45" xml:space="preserve">
+  <data name="state.Items45" xml:space="preserve">
     <value>VA</value>
   </data>
-  <data name="listBox1.Items46" xml:space="preserve">
+  <data name="state.Items46" xml:space="preserve">
     <value>VT</value>
   </data>
-  <data name="listBox1.Items47" xml:space="preserve">
+  <data name="state.Items47" xml:space="preserve">
     <value>WA</value>
   </data>
-  <data name="listBox1.Items48" xml:space="preserve">
+  <data name="state.Items48" xml:space="preserve">
     <value>WI</value>
   </data>
-  <data name="listBox1.Items49" xml:space="preserve">
+  <data name="state.Items49" xml:space="preserve">
     <value>WV</value>
   </data>
-  <data name="listBox1.Items50" xml:space="preserve">
+  <data name="state.Items50" xml:space="preserve">
     <value>WY</value>
   </data>
-  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="state.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 356</value>
   </data>
-  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 38</value>
+  <data name="state.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 33</value>
   </data>
-  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="state.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
-    <value>listBox1</value>
+  <data name="&gt;&gt;state.Name" xml:space="preserve">
+    <value>state</value>
   </data>
-  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;state.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;state.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;state.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
